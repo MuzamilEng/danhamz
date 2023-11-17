@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font -babeas nue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font - pt serif */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* font-family: 'PT Serif', serif; */
+.clip-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 3vw 7vw; /* Adjust the values to control the triangle size */
+    border-color: transparent transparent transparent #d40774; /* Adjust the color as needed */
+    border-radius: 2px; /* Adjust the border-radius value for the right-angle corner */
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    animation: scroll infinite linear 30s; /* Adjust the duration as needed */
+  
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .review-item {
+    flex: 0 0 auto; /* Set the width of each review item */
+    margin-right: 2vw; /* Add margin between review items */
+  }
+  
+@media (min-width: 1366px) and (max-width: 6500px) {
+    .main_container {
+        /* max-width: 1366px; */
+        width: 100%;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+}
+@media (max-width: 1366px) {}
+@media (max-width: 768px) {}
