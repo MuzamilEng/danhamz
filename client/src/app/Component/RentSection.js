@@ -8,8 +8,8 @@ const RentSection = () => {
     <div className='bg-white w-full max-w-[38vw] m-vw'>
         <div className="flex flex-col justify-center items-center p-vw w-full">
             <section className='flex justify-between items-centers w-full p-0.5vw'>
-                <p className='bg-purple-600 hover:bg-purple-700 cursor-pointer border-[1px] font-medium border-gray-400 text-center text-white p-vw w-17vw '>Student</p>
-                <p className='hover:bg-purple-600 border-[1px] hover:text-white cursor-pointer border-gray-400 font-medium text-center text-blue-900 p-vw w-17vw '>Professional</p>
+                <p className='bg-purple-600 hover:bg-purple-700 cursor-pointer border-[1px] font-medium border-gray-400 text-center text-vw text-white p-vw w-17vw '>Student</p>
+                <p className='hover:bg-purple-600 border-[1px] hover:text-white cursor-pointer text-vw border-gray-400 font-medium text-center text-blue-900 p-vw w-17vw '>Professional</p>
             </section>
             <section className='mt-0.5vw p-vw w-full'>
                 <p className='text-black text-[0.9vw]'>How many bedrooms do you need?</p>
@@ -34,14 +34,14 @@ const RentSection = () => {
                     <span className='text-[0.8vw] ml-0.5vw'>Show Let Agreed</span>
                 </div>
                 <div className="flex items-end justify-end mr-vw">
-                    <section className='flex justify-center mr-vw items-center bg-slate-300 p-vw'>
-                    <Icon icon="solar:settings-linear" className='text-[1.3vw] text-white' />
-                    <span className='text-white font-medium pl-[0.3vw] cursor-pointer'>Advanced search</span>
-                    </section>
-                    <section className='flex justify-center items-center bg-pink-400 p-vw'>
-                    <Icon icon="solar:settings-linear" className='text-[1.3vw] text-white' />
-                    <span className='text-white font-medium pl-[0.3vw] cursor-pointer'>Search</span>
-                    </section>
+                <section className='flex justify-center mr-vw items-center bg-slate-300 p-vw'>
+                            <Icon icon="solar:settings-linear" className='text-[1.3vw] text-white' />
+                            <span className='text-white text-vw font-medium pl-[0.3vw] cursor-pointer'>Advanced search</span>
+                        </section>
+                        <section className='flex justify-center items-center bg-pink-400 p-vw'>
+                            <Icon icon="solar:settings-linear" className='text-[1.3vw] text-white' />
+                            <span className='text-white text-vw font-medium pl-[0.3vw] cursor-pointer'>Search</span>
+                        </section>
                 </div>
             </section>
         </div>

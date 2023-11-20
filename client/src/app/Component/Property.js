@@ -9,12 +9,12 @@ const Property = ({tag, icon, quantity, price, location, icon2, bed_rooms, img})
             <article className="relative w-full">
                 <div className='relative'>
                     <div className=' absolute top-0 left-0 p-2vw w-[7vw] h-[6vw] text-white clip-triangle'></div>
-                    <p className='absolute top-0 left-0 p-2vw text-white'>{tag}</p>
+                    <p className='absolute top-0 left-0 p-2vw text-vw text-white'>{tag}</p>
                 </div>
                 <img src={img} alt={tag} className='w-full h-[15vw]'/>
                 <section className='flex absolute bottom-0 right-0 items-center border-[1px] border-gray-300 bg-white p-vw'>
                     <span className='text-[1.2vw]'>{icon}</span>
-                    <span className='text-0.6vw ml-0.5vw text-black'>{quantity}</span>
+                    <span className='text-[0.6vw] ml-0.5vw text-black'>{quantity}</span>
                 </section>
             </article>
             <section className='p-2vw bg-white'>

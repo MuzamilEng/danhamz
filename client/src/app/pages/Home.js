@@ -1,43 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Topbar from '../Component/Topbar'
 import Navbar from '../Component/Navbar'
 import Slider from "react-slick";
 import RentSection from '../Component/RentSection'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { approach, banner, investors, lettingProperties, properties, ratings, studentHomes, toggleInfo, welcome } from '../Data';
+import { approach, banner, investors, lettingProperties, news, properties, ratings, studentHomes, toggleInfo, welcome } from '../Data';
 import Category from '../Component/Category';
 import { Link } from 'react-router-dom';
 import Property from '../Component/Property';
 import Reviews from '../Component/Reviews';
 import LettingProperty from '../Component/LettingProperty';
 import Services from '../Component/Services';
+import News from '../Component/News';
+import Footer from '../Component/Footer';
+import BuySection from '../Component/BuySection';
 
 const Home = () => {
+  const [showRentSection, setShowRentSection] = useState(true);
   const images = ["images/home.jpg", "images/main.jpg", "images/home.jpg"];
 
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
+  const settings = { dots: true, arrows: false, infinite: true, speed: 500,  slidesToShow: 1,  slidesToScroll: 1,  autoplay: true,  autoplaySpeed: 3000 };
   return (
     <div>
       <main className='bg-gray-300 relative w-full h-screen overflow-x-hidden'>
         <Topbar />
         <Navbar />
-        <div className="absolute flex left-[11vw] top-[10.3vw]">
-          <p className='bg-white w-7vw cursor-pointer hover:bg-gray-300 p-vw text-center'>Rent</p>
-          <p className='bg-gray-300 w-7vw cursor-pointer p-vw text-center'>Buy</p>
-        </div>
-        <article className='flex mt-[.35rem] flex-col justify-center items-center w-full p-2vw'>
+        <div className="absolute flex left-[11vw] top-[10.66vw]">
+  <p className={`${ showRentSection ? 'bg-white' : 'bg-gray-300' } text-vw w-7vw cursor-pointer hover:bg-gray-300 p-vw text-center`} onClick={() => setShowRentSection(true)} > Rent</p>
+  <p className={`${ showRentSection ? 'bg-gray-300' : 'bg-white' } text-vw ml-0.3vw w-7vw hover:bg-white cursor-pointer p-vw text-center`} onClick={() => setShowRentSection(false)} >Buy </p>
+</div>
+        <article className='flex mt-[.54rem] flex-col justify-center items-center w-full p-2vw'>
         <div className="flex -ml-3vw justify-between items-start">
-        <RentSection />
+       {showRentSection ? <RentSection /> : <BuySection />}
         <section className='w-full mt-vw max-w-[35vw] ml-vw'>
         <Slider {...settings}>
       {images.map((image, index) => (
@@ -49,7 +44,7 @@ const Home = () => {
         </section>
         </div>
         </article>
-        <article className='w-full bg-[#ffff] flex justify-center items-center p-2vw'>
+        <article className='w-full bg-[#ffff] flex justify-center items-center p-4vw'>
           {banner?.map((item, index) => (
           <section className='flex justify-between items-start' key={index}>
             <div className="w-full max-w-[40vw]">
@@ -69,9 +64,9 @@ const Home = () => {
           {approach?.map((item, index) => (
             <section className='flex justify-between items-center'>
               <div className="w-full max-w-[40vw]">
-                <h2 className='text-blue-950 text-[1.9vw] font-medium w-[35vw]'>{item?.title}</h2>
-                <p className='text-black text-[vw]'>{item?.info}</p>
-                <p className='text-black mt-vw text-[vw]'>{item?.para}</p>
+                <h2 className='text-blue-950 text-[1.9vw] font-medium w-full max-w-[35vw]'>{item?.title}</h2>
+                <p className='text-black text-vw'>{item?.info}</p>
+                <p className='text-black mt-vw text-vw'>{item?.para}</p>
                 <section className="flex -ml-vw mt-vw items-center">
                   <Link to="/" className="bg-pink-400 p-vw m-vw text-white font-medium text-[0.8vw] text-center">Selling with Danhamz</Link>
                   <Link to="/" className="bg-purple-700 m-vw text-center p-vw font-medium text-[0.8vw] text-white">Free Instant Valuation</Link>
@@ -174,9 +169,9 @@ const Home = () => {
           {welcome?.map((item, index) => (
             <section className='flex justify-between items-center' key={index}>
               <div className="w-full max-w-[40vw]">
-                <h2 className='text-blue-950 text-[2.2vw] font-medium w-[30vw]'>{item?.title}</h2>
-                <p className='text-black text-[vw] w-full max-w-[32vw]'>{item?.info}</p>
-                <p className='text-black mt-vw text-[vw] w-full max-w-[32vw]'>{item?.para}</p>
+                <h2 className='text-blue-950 text-[1.9vw] font-medium w-full max-w-[35vw]'>{item?.title}</h2>
+                <p className='text-black text-vw'>{item?.info}</p>
+                <p className='text-black mt-vw text-vw'>{item?.para}</p>
               </div>
               <div className="w-full max-w-[40vw] ml-2vw">
                   <iframe
@@ -202,6 +197,27 @@ const Home = () => {
           </article>
           </div>
         </div>
+        {/* news */}
+        <div className="w-full flex-col bg-white p-3vw flex justify-center items-center">
+          <h1 className='text-blue-950 text-[1.8vw]'>Latest News</h1>
+          <div className="grid grid-cols-3 gap-3 mt-2vw p-2vw">
+            {news?.map((item, index) => {
+              return <News img={item?.img} key={index} title={item?.title} date={item?.date} investment={item?.investment} news={item?.news}/>
+            })}
+          </div>
+          <div className="mt-2vw">
+            <Link to="/" className="bg-purple-900 p-vw text-white font-medium text-[0.8vw] text-center">View all news</Link>
+            </div>
+               {/* icons-logos */}
+      <div className="flex justify-evenly mt-2vw p-2vw items-center">
+        <section className="flex text-2vw font-bold text-blue-950 ml-5vw">StuRenst</section>
+        <section className="flex text-2vw font-bold text-blue-950 ml-5vw">PrimeLocation.com</section>
+        <section className="flex text-2vw font-bold text-blue-950 ml-5vw">HomeSearch</section>
+        <section className="flex text-2vw font-bold text-blue-950 ml-5vw">One Deme</section>
+      </div>
+        </div>
+     {/* footer section */}
+     <Footer />
       </main>
     </div>
   )

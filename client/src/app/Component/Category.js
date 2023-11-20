@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Category = () => {
   return (
     <div>
-        <main className='flex justify-center items-center bg-gray-200 w-full p-3vw'>
+        <main className='flex justify-center items-center bg-gray-200 w-full p-4vw'>
         <div className="grid grid-cols-3 gap-4">
     {categories?.map((category, index) => 
         <section key={index} className='relative w-full max-w-[70vw] h-[15vw]'>

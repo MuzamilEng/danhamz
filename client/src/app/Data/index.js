@@ -234,6 +234,109 @@ export const rentContainer = [
     }
 ]
 
+export const buyContainer = [
+    {
+        price: [
+            {
+                type: "select",
+                options: [
+                    {
+                        title: "Min Price",
+                    }, 
+                    {
+                        title: "Less than $1000",
+                    }, {
+                        title: "$1000 - $2000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                ]
+            },
+            {
+                type: "select",
+                options: [
+                    {
+                        title: "Max Price",
+                    }, 
+                    {
+                        title: "Less than $1000",
+                    }, {
+                        title: "$1000 - $2000",
+                    },{
+                        title: "$2000 - $3000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                ]
+            }
+        ],
+        beds: [
+            {
+                type: "select",
+                options: [
+                    {count: "Min beds", value: "min"},
+                    {count: "1", value: "1"},
+                    {count: "2", value: "2"},
+                    {count: "3", value: "3"},
+                    {count: "4", value: "4"},
+                    {count: "5", value: "5"},
+                    {count: "6", value: "6"},
+                    {count: "7", value: "7"},
+                    {count: "8", value: "8"},
+                    {count: "9", value: "9"},
+                ]
+            },
+            {
+                type: "select",
+                options: [
+                    {count: "Max beds", value: "Max"},
+                    {count: "1", value: "1"},
+                    {count: "2", value: "2"},
+                    {count: "3", value: "3"},
+                    {count: "4", value: "4"},
+                    {count: "5", value: "5"},
+                    {count: "6", value: "6"},
+                    {count: "7", value: "7"},
+                    {count: "8", value: "8"},
+                    {count: "9", value: "9"},
+                    {count: "10", value: "10"},
+                ]
+            }
+        ],
+        Type: [
+            {
+                type: "select",
+                options: [
+                    {title: "City Center"},
+                    {title: "Organization"},
+                    {title: "Parley"},
+                    {title: "Armley"},
+                ]
+            },
+            {
+                type: "select",
+                options: [
+                    {title: "Home"},
+                    {title: "Appartment"},
+                    {title: "Bungalow"},
+                    {title: "Cater"},
+                    {title: "Combined"},
+                ]
+            }
+        ]
+    }
+]
 
 export const banner = [
     {
@@ -540,4 +643,89 @@ export const toggleInfo = [
         title: "Comprehensive property management",
         info: "We provide a full range of property services to landlords, tenants, buyers and sellers in Leeds. Our highly experienced team can help you to buy, sell, let or rent a property anywhere in the city and with our award-winning customer service, you know you are going to get the best deal possible whatever your needs may be.Rather than becoming fixated on churn, that is closing the deal regardless of the quality of the match, we take a more patient approach. We don’t try to force square pegs into round holes. We know that it’s better for everyone involved, including us and our reputation, if we take a little extra time and exert a little extra effort to make the ideal match. If you would like to take advantage of any of our property services in Leeds, get in touch with us today."
     },
+]
+
+
+export const news= [
+    {
+        img:"images/student.jpg",
+        investment: "Investment",
+        news: "Landlord News",
+        date: '2017-12-3',
+        title: "National Landlord News Summary Show and Description",
+    },
+    {
+        img:"images/img6.jpg",
+        news: "Company News",
+        investment: "Investment",
+        date: '2017-12-3',
+        title: "Danhamz latest News Summary Show and Description",
+    },
+    {
+        img:"images/img3.jpg",
+        investment: "Investment",
+        news: "Company News",
+        date: '2017-12-3',
+        title: "London we are coming!",
+    },
+]
+
+export const footer = [
+    {
+        title: "Get in touch",
+        Links: [
+            {icon: <Icon icon="ic:baseline-email" />, title: "contact@danhamz.co.uk", url:"http://www.danhamz.co.uk"},
+            {icon: <Icon icon="fa-solid:phone" />, title: "0113 230 90000", url:"http://www.danhamz.co.uk"},
+            {icon: <Icon icon="mdi:location" />, title: "Home Of Property", url:"http://www.danhamz.co.uk"},
+            
+        ],
+        find: "Find us on social media",
+        social: [
+            {icon: <Icon icon="devicon:facebook" />, title: "Danhamz", url:"http://www.danhamz.co.uk"},
+            {icon: <Icon icon="devicon:facebook" />, title: "Danhamz on Facebook", url:"http://www.danhamz.com"},
+            {icon: <Icon icon="mdi:instagram" />, title: "@danhamz_sales", url:"http://www.danhamz.com.au"},
+            {icon: <Icon icon="logos:twitter" />, title: "Follow us on Twitter", url:""},
+            {icon: <Icon icon="ri:linkedin-fill" />, title: "Connect on LinkedIn", url:""},
+        ]
+    },
+    {
+        title: "Customer links",
+        Links: [
+            {title: "Estate Agents in leeds", url:""},
+            {title: "Block Property Management Leeds", url:""},
+            {title: "Students Accomodation Leeds", url:""},
+            {title: "Letting Agents Pudsey", url:""},
+            {title: "Estate Agent Services", url:""},
+            {title: "Property Resource Leeds", url:""},
+            {title: "Property Development leeds", url:""},
+            {title: "Danhamz Investor Club", url:""},
+            {title: "Report A Repair", url:""},
+            {title: "Areas Covered", url:""},
+            {title: "Careers at Danhamz", url:""},
+        ]
+    },
+    {
+        title: "Legal Policies",
+        Links: [
+            {title: "Terms", url: ""},
+            {title: "Privacy Policy", url: ""},
+            {title: "Client Money Handling", url: ""},
+            {title: "Sitemap", url: ""},
+            {title: "Our Fees", url: ""},
+            {title: "Complaints", url: ""},
+        ]
+    },
+    {
+        logo: "images/investor_logo.png",
+        Links: [
+            {title: "Home of Property Ltd trading as HOP"},
+            {title: "Registered in England, Company Number 6804475."},
+            {title: "HOP Horsforth is accredited by PropertyMark."},
+            {title: "VAT Number 323 659 887. ICO Number Z2040400."},
+            {title: "Home of Property Ltd trading as"},
+            {title: "HOP Horsforth is accredited by PropertyMark."},
+            {title: "HOP is accredited by SafeAgent with accreditation number A6303."},
+        ]
+    }
+
 ]
