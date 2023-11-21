@@ -883,14 +883,9 @@ export const scope = [
 
 export const staff = [
     {
-        title: "Staff Stories",
-        employee: [
-            {
                 name: "Cris' Story",
-                info: "During my time at HOP, I’ve seen the company grow substantially and it’s been fantastic to play a part in that. After originally starting as Branch Manager of our Pudsey Branch back in 2015, I stepped up to General Manager as the business expanded before becoming Commerical I have worked in the property industry for a number of years. When I returned from travelling in my early 20s, I knew I wanted to be involved in this exciting industry and I didn’t mind starting at the bottom of the ladder. I accepted my first property job as an inventory clerk for a leading agency in Leeds City Centre and went from there! Before joining HOP, I was looking for a company that shared my excitement for new technology and entrepreneurialism. Happily, I found that here and I’ve been on an exciting journey ever since. You’d be hard pressed to find a better property company to work for than HOP. I love the culture, which is something which is very important to me. It’s always difficult to put into words but I think “forward-thinking, hard-working, trustworthy and open to change” sums it up. If this sounds like you, why not get in touch and send us a copy of your CV? We’re always on the lookout for talented people that share our values.",
-                img: "images/student.jpg",
-            }
-        ]
+                info: "During my time at HOP, I’ve seen the company grow substantially and it’s been fantastic to play a part in that. After originally starting as Branch Manager of our Pudsey Branch back in 2015, I stepped up to General Manager as the business expanded before becoming Commerical Director. I have worked in the property industry for a number of years. When I returned from travelling in my early 20s, I knew I wanted to be involved in this exciting industry and I didn’t mind starting at the bottom of the ladder. I accepted my first property job as an inventory clerk for a leading agency in Leeds City Centre and went from there! Before joining HOP, I was looking for a company that shared my excitement for new technology and entrepreneurialism. Happily, I found that here and I’ve been on an exciting journey ever since. You’d be hard pressed to find a better property company to work for than HOP. I love the culture, which is something which is very important to me. It’s always difficult to put into words but I think “forward-thinking, hard-working, trustworthy and open to change” sums it up. If this sounds like you, why not get in touch and send us a copy of your CV? We’re always on the lookout for talented people that share our values.",
+                img: "images/emp5.jpg",
     }
 ]
 
@@ -924,43 +919,38 @@ export const roles = [
 ]
 
 export const recruitment = [
-    {
-        title: "Our Recruitment Process",
-        methods: [
             {
-                img: "images/",
+                img: "images/emp9.jpg",
                 title :" Application Review",
                 info: "Each application is reviewed individually by the management team. Remember, it’s not always about the person with the most experience. We are looking for hard working people that share our passion and values."
             },
-            {
-                img: "images/",
-                title :"Telephone Chat",
-                info: "Once we have looked over your application, we will call you for a laid back, casual chat and to arrange an interview. There is no pressure at this stage, it’s just great way for us to get a better idea of what you’re looking for and to arrange a suitable time for us to meet.",
-            },
-            {
-                img: "images/",
-                title: "Zoom Interview or First Stage Interview",
-                info: "The first stage interview will be hosted either face to face or via Zoom. This allows us to put a face to a name and to find out a little bit more about you and your experience. There will be a mix of general interview questions and competency based questions. We will also do a quick fire round of 5 questions. There is no right or wrong answer here, this just helps us to get a feel for you and your personality. This is a great time for applicants to ask questions and learn as much as possible about"
-            },
-            {
-                img: "images/",
-                title: "Second Interview",
-                info: "Should you be successful following the first stage interview, we will invite you to our head office for a second stage interview. This interview will likely be with a manager and director and will involve further standard interview and competency based questions. We will also touch on your expectations and what you hope to achieve from this role. Our team here are all lovely so there is no need to feel nervous or under pressure. Remember to just be yourself!"
-            },
-            {
-                img: "images/",
-                title: "Job Offer",
-                info: "Congratulations! If you are a successful candidate, our team will discuss their thoughts and a proposal will be put together. You will then receive a call to wish you congratulations and offer you the job. A formal job offer will be sent to you by email and a start date will be discussed. Once all has been agreed a contract and any further details will be sent out to you."
-            },
-        ]
-    }
+            // {
+            //     img: "images/emp1.jpg",
+            //     title :"Telephone Chat",
+            //     info: "Once we have looked over your application, we will call you for a laid back, casual chat and to arrange an interview. There is no pressure at this stage, it’s just great way for us to get a better idea of what you’re looking for and to arrange a suitable time for us to meet.",
+            // },
+            // {
+            //     img: "images/emp4.jpg",
+            //     title: "Zoom Interview or First Stage Interview",
+            //     info: "The first stage interview will be hosted either face to face or via Zoom. This allows us to put a face to a name and to find out a little bit more about you and your experience. There will be a mix of general interview questions and competency based questions. We will also do a quick fire round of 5 questions. There is no right or wrong answer here, this just helps us to get a feel for you and your personality. This is a great time for applicants to ask questions and learn as much as possible about"
+            // },
+            // {
+            //     img: "images/emp6.jpg",
+            //     title: "Second Interview",
+            //     info: "Should you be successful following the first stage interview, we will invite you to our head office for a second stage interview. This interview will likely be with a manager and director and will involve further standard interview and competency based questions. We will also touch on your expectations and what you hope to achieve from this role. Our team here are all lovely so there is no need to feel nervous or under pressure. Remember to just be yourself!"
+            // },
+            // {
+            //     img: "images/emp8.jpg",
+            //     title: "Job Offer",
+            //     info: "Congratulations! If you are a successful candidate, our team will discuss their thoughts and a proposal will be put together. You will then receive a call to wish you congratulations and offer you the job. A formal job offer will be sent to you by email and a start date will be discussed. Once all has been agreed a contract and any further details will be sent out to you."
+            // },
 ]
 
 export const history = [
     {
         title: "The History of HOP",
         info : "At HOP, we now have over 30 staff members working from one of our three branches, Pudsey, Horsforth and Leeds City Centre, and are excited to continue our growth across Leeds, and beyond, in all our departments. Opening our third branch and HOP hub (during the pandemic!) is typical of our commitment to growth. The launch of the new branch, and new Sales division, has been met with great success as we continue to expanding team and the kinds of services that we offer customers.",
-        img: "images/",
+        img: "images/main.jpg",
     }
 ]
 
