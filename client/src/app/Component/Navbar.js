@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="bg-[#fff] flex justify-center items-center w-full">
+            <nav className="bg-[#fff] z-50 flex justify-center items-center w-full">
                 {navbar?.map((item, index) => {
                     return (
                         <main className="flex flex-col justify-center items-center w-full" key={index}>

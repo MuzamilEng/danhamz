@@ -21,7 +21,7 @@ const RentSection = () => {
                 </div>
                 <div className="mt-2vw">
                     {rentContainer?.[0]?.container?.map((item, index) =>(
-                       <select key={index} defaultValue="no preferences" className='cursor-pointer m-vw border-[1px] font-medium border-gray-400 text-center text-black p-vw w-15vw'>
+                       <select key={index} defaultValue="no preferences" style={{ outline: 'none' }} className='cursor-pointer m-vw border-[1px] font-medium border-gray-400 text-center text-black p-vw w-full max-w-[15vw]'>
                        <option value="no preferences" className='text-blue-950 focus:outline-none text-[0.9vw]' disabled hidden>No Preferences</option>
                        {item?.options?.map((option, index) => (
                         <option key={index} value={option?.id} className='text-start text-[0.9vw] focus:outline-none text-blue-950 p-vw' style={{ outline: 'none' }}>{option?.title}</option>
@@ -30,7 +30,7 @@ const RentSection = () => {
                     ) )}
                 </div>
                 <div className="flex ml-vw items-center">
-                    <input type="checkbox" />
+                    <input type="checkbox" className="w-2vw h-2vw" />
                     <span className='text-[0.8vw] ml-0.5vw'>Show Let Agreed</span>
                 </div>
                 <div className="flex items-end justify-end mr-vw">

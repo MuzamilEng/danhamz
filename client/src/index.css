@@ -8,6 +8,19 @@
 /* font - pt serif */
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+
+html, body {
+  overflow: hidden;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 /* font-family: 'PT Serif', serif; */
 .clip-triangle {
     width: 0;
