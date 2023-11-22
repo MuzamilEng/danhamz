@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RentSection from '../Component/RentSection'
-import { approach, banner, investors, lettingProperties, news, properties, ratings, studentHomes, toggleInfo, welcome } from '../Data';
+import { approach, banner, investors, lettingProperties, news, partnerBanner, properties, ratings, studentHomes, toggleInfo, welcome } from '../Data';
 import Category from '../Component/Category';
 import Property from '../Component/Property';
 import Reviews from '../Component/Reviews';
@@ -22,18 +22,20 @@ const Home = () => {
   return (
     <div>
       <Layout>
-          <div className="absolute flex left-[11vw] top-[12vw]">
+          <section className='relative'>
+          <div className="absolute flex left-[11.5vw] top-0">
             <p className={`${showRentSection ? 'bg-white' : 'bg-gray-300'} text-vw w-7vw cursor-pointer hover:bg-gray-300 p-vw text-center`} onClick={() => setShowRentSection(true)} > Rent</p>
             <p className={`${showRentSection ? 'bg-gray-300' : 'bg-white'} text-vw ml-0.3vw w-7vw hover:bg-white cursor-pointer p-vw text-center`} onClick={() => setShowRentSection(false)} >Buy </p>
           </div>
-          <article className='flex mt-[.46rem] flex-col justify-center items-center w-full p-2vw'>
+          </section>
+          <article className='flex mt-[0.5vw] flex-col justify-center items-center w-full p-2vw'>
             <div className="flex -ml-3vw justify-between items-start">
               {showRentSection ? <RentSection /> : <BuySection />}
               <section className='w-full mt-vw max-w-[35vw] ml-vw'>
                 <Slider {...settings}>
                   {images.map((image, index) => (
                     <div key={index}>
-                      <img src={image} alt={`slide-${index}`} className="w-full" />
+                    <img src={image} alt={`slide-${index}`} className="w-full" loading="lazy" />
                     </div>
                   ))}
                 </Slider>
@@ -117,15 +119,14 @@ const Home = () => {
             ))}
           </section>
           {/* marketing parteners */}
-          <div className="flex justify-center items-center w-full bg-slate-200 p-2vw flex-col">
+          <section className='col-center bg-gray-200 p-3vw'>
             <h1 className='text-blue-950 text-2vw font-semibold'>Merketing partners</h1>
-            <div className="flex justify-evenly p-2vw items-center">
-              <section className="flex text-vw font-bold text-blue-950 ml-5vw">StuRenst</section>
-              <section className="flex text-vw font-bold text-blue-950 ml-5vw">PrimeLocation.com</section>
-              <section className="flex text-vw font-bold text-blue-950 ml-5vw">HomeSearch</section>
-              <section className="flex text-vw font-bold text-blue-950 ml-5vw">One Deme</section>
+            <div className="flex mt-2vw justify-evenly items-center">
+            {partnerBanner?.map((item, index) => (
+                <img src={item?.img} alt={index} className='w-full ml-4vw max-w-[10vw]'/>
+            ))}
             </div>
-          </div>
+        </section>
           {/* students homes  */}
           <div className="flex justify-center items-center w-full bg-white p-2vw">
             <section className='w-full max-w-[80vw]'>

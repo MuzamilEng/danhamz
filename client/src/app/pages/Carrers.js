@@ -2,9 +2,10 @@ import React from "react";
 import Layout from "../Layout/Layout";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import { benefits, carrerBanner, doings, history, interested, investInPeople, ourTeam, roles, scope, staff, teams, workAtDanhamz} from "../Data";
+import { benefits, carrerBanner, doings, history, interested, investInPeople, news, ourTeam, roles, scope, staff, teams, vacancies, workAtDanhamz} from "../Data";
 import Card from "../Component/Card";
 import RecruitmentRule from "../Component/RecruitmentRule";
+import News from "../Component/News";
 
 const Carrers = () => {
   return (
@@ -102,10 +103,10 @@ const Carrers = () => {
                 className="flex slider-container justify-center items-center flex-col"
                 key={index}
               >
-                <h1 className="text-blue-900 text-center pt-3vw text-[2vw] text-semibold">
+                <h1 className="text-blue-900 text-center pt-3vw text-2vw text-semibold">
                   {item?.title}
                 </h1>
-                <p className="text-gary-400 text-center pt-0.5vw text-[vw]">
+                <p className="text-gary-400 text-center pt-0.5vw text-vw">
                   {item?.info}
                 </p>
                 <div className="flex slider mt-2vw w-full">
@@ -122,7 +123,7 @@ const Carrers = () => {
                       <h1 className="text-blue-900 text-[1.5vw] text-semibold">
                         {person?.name}
                       </h1>
-                      <h4 className="text-gay-300 text-[vw]">
+                      <h4 className="text-gay-300 text-vw">
                         {person?.title}
                       </h4>
                       <div className="flex items-center mt-vw">
@@ -151,7 +152,6 @@ const Carrers = () => {
             );
           })}
         </main>
-
         {/* investor in people */}
         <article className="w-full flex flex-col justify-center items-center p-3vw">
           {investInPeople?.map((item, index) => {
@@ -316,7 +316,9 @@ const Carrers = () => {
         {/* our recruitment  */}
         <div className="section w-full flex justify-center items-center flex-col p-3vw">
             <h1 className="text-purple-950 font-medium text-[1.9vw]">Our Recruitment Process</h1>
-            <RecruitmentRule />
+           <div className="mt-vw">
+           <RecruitmentRule />
+           </div>
         </div>
         {/* history */}
         <article className="w-full flex bg-white flex-col justify-center items-center p-3vw">
@@ -360,6 +362,46 @@ const Carrers = () => {
                 </section>
             ))}
         </section>
+        {/* partener banner */}
+        <div className="flex justify-center items-center w-full bg-white p-2vw flex-col">
+            <div className="flex justify-evenly p-2vw items-center">
+              <section className="flex text-vw font-bold text-blue-950 ml-5vw">StuRenst</section>
+              <section className="flex text-vw font-bold text-blue-950 ml-5vw">PrimeLocation.com</section>
+              <section className="flex text-vw font-bold text-blue-950 ml-5vw">HomeSearch</section>
+              <section className="flex text-vw font-bold text-blue-950 ml-5vw">One Deme</section>
+            </div>
+          </div>
+          {/* news */}
+          <div className="w-full flex-col bg-gray-200 p-3vw flex justify-center items-center">
+            <h1 className='text-blue-950 font-semibold text-[1.8vw]'>Latest News From Danhamz</h1>
+            <div className="grid grid-cols-3 gap-3 mt-2vw p-2vw">
+              {news?.map((item, index) => {
+                return <News img={item?.img} key={index} title={item?.title} date={item?.date} investment={item?.investment} news={item?.news} />
+              })}
+            </div>
+            <div className="mt-2vw">
+              <Link to="/" className="bg-purple-900 p-vw text-white font-medium text-[0.8vw] text-center">View all news</Link>
+            </div>
+          </div>
+           {/* vacancies banner */}
+        <div className="banner flex w-full justify-center items-center bg-purple-950 p-4vw">
+          <h1 className='text-center text-white text-2vw font-medium'>Current Vacancies</h1>
+        </div>
+          {/* vacancies */}
+          <article className="bg-gray-200 w-full flex justify-center items-center p-3vw">
+            <main className="w-full flex">
+              {vacancies?.map((item, index) => (
+                <section className="bg-white m-vw p-2vw w-full max-w-[28vw]" key={index}>
+                  <h1 className="text-blue-950 text-[1.4vw]">{item?.title}</h1>
+                  <p className="text-[0.8vw] text-black mt-2vw w-full max-w-[25vw]">{item?.info}</p>
+                  <div className="flex mt-vw items-center">
+                    <Link to="" className="text-blue-800 text-[0.8vw]">See full spec</Link>
+                    <Link to="" className="text-blue-800 flex items-center text-[0.8vw] ml-2vw">Apply <Icon icon="fe:arrow-right" className="text-[0.8vw] ml-0.5vw text-blue-800" /></Link>
+                  </div>
+                </section>
+              ))}
+            </main>
+          </article>
       </Layout>
     </div>
   );

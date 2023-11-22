@@ -19,9 +19,9 @@ const RentSection = () => {
                                 <p key={index} className='flex justify-center hover:text-white items-center border-[1px] border-gray-400 hover:bg-purple-600 text-[0.9vw] p-vw text-center w-[2.5vw] h-[2.5vw] text-blue-900'>{item?.count}</p>
                             ))}
                 </div>
-                <div className="mt-2vw">
+                <div className="mt-vw -ml-vw flex items-center">
                     {rentContainer?.[0]?.container?.map((item, index) =>(
-                       <select key={index} defaultValue="no preferences" style={{ outline: 'none' }} className='cursor-pointer m-vw border-[1px] font-medium border-gray-400 text-center text-black p-vw w-full max-w-[15vw]'>
+                       <select key={index} defaultValue="no preferences" style={{ outline: 'none' }} className='cursor-pointer text-[0.9vw] m-vw border-[1px] font-medium border-gray-400 text-center text-black p-vw w-full max-w-[15vw]'>
                        <option value="no preferences" className='text-blue-950 focus:outline-none text-[0.9vw]' disabled hidden>No Preferences</option>
                        {item?.options?.map((option, index) => (
                         <option key={index} value={option?.id} className='text-start text-[0.9vw] focus:outline-none text-blue-950 p-vw' style={{ outline: 'none' }}>{option?.title}</option>
@@ -30,7 +30,7 @@ const RentSection = () => {
                     ) )}
                 </div>
                 <div className="flex ml-vw items-center">
-                    <input type="checkbox" className="w-2vw h-2vw" />
+                    <input type="checkbox" className="w-vw h-vw" />
                     <span className='text-[0.8vw] ml-0.5vw'>Show Let Agreed</span>
                 </div>
                 <div className="flex items-end justify-end mr-vw">

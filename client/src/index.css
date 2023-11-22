@@ -58,7 +58,21 @@ html, body {
     flex: 0 0 auto; /* Set the width of each review item */
     margin-right: 2vw; /* Add margin between review items */
   }
-  
+  .row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-decimal{
+    list-style: disc;
+  }
 @media (min-width: 1366px) and (max-width: 6500px) {
     .main_container {
         /* max-width: 1366px; */

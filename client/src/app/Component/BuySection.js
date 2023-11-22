@@ -8,7 +8,7 @@ const BuySection = () => {
         <div className='bg-white w-full max-w-[38vw] m-vw'>
             <div className="flex flex-col -ml-vw justify-center items-center p-vw w-full">
                 <section className='mt-0.5vw p-vw w-full'>
-                    <div className="mt-2vw">
+                    <div className="">
                         {buyContainer?.map((item, index) => (
                             <section className='' key={index}>
                                 <div className="flex items-center">

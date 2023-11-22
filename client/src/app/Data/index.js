@@ -12,15 +12,15 @@ export const topbar = [
                 title: 'Careers at Danhamz',
             },
             {
-                path: '/',
+                path: '/knowledge-bank',
                 title: 'Knowledge Bank',
             },
             {
-                path: '/',
+                path: '/news',
                 title: 'News',
             },
             {
-                path: '/',
+                path: '/about',
                 title: 'About',
             },
             {
@@ -920,30 +920,50 @@ export const roles = [
 
 export const recruitment = [
             {
-                img: "images/emp9.jpg",
                 title :" Application Review",
-                info: "Each application is reviewed individually by the management team. Remember, it’s not always about the person with the most experience. We are looking for hard working people that share our passion and values."
+                info: [
+                   { 
+                    img: "images/emp9.jpg",
+                    para: "Each application is reviewed individually by the management team. Remember, it’s not always about the person with the most experience. We are looking for hard working people that share our passion and values."
+                },
+                ],
             },
-            // {
-            //     img: "images/emp1.jpg",
-            //     title :"Telephone Chat",
-            //     info: "Once we have looked over your application, we will call you for a laid back, casual chat and to arrange an interview. There is no pressure at this stage, it’s just great way for us to get a better idea of what you’re looking for and to arrange a suitable time for us to meet.",
-            // },
-            // {
-            //     img: "images/emp4.jpg",
-            //     title: "Zoom Interview or First Stage Interview",
-            //     info: "The first stage interview will be hosted either face to face or via Zoom. This allows us to put a face to a name and to find out a little bit more about you and your experience. There will be a mix of general interview questions and competency based questions. We will also do a quick fire round of 5 questions. There is no right or wrong answer here, this just helps us to get a feel for you and your personality. This is a great time for applicants to ask questions and learn as much as possible about"
-            // },
-            // {
-            //     img: "images/emp6.jpg",
-            //     title: "Second Interview",
-            //     info: "Should you be successful following the first stage interview, we will invite you to our head office for a second stage interview. This interview will likely be with a manager and director and will involve further standard interview and competency based questions. We will also touch on your expectations and what you hope to achieve from this role. Our team here are all lovely so there is no need to feel nervous or under pressure. Remember to just be yourself!"
-            // },
-            // {
-            //     img: "images/emp8.jpg",
-            //     title: "Job Offer",
-            //     info: "Congratulations! If you are a successful candidate, our team will discuss their thoughts and a proposal will be put together. You will then receive a call to wish you congratulations and offer you the job. A formal job offer will be sent to you by email and a start date will be discussed. Once all has been agreed a contract and any further details will be sent out to you."
-            // },
+            {
+                title :"Telephone Chat",
+                info: [
+                    {
+                img: "images/emp1.jpg",
+                para: "Once we have looked over your application, we will call you for a laid back, casual chat and to arrange an interview. There is no pressure at this stage, it’s just great way for us to get a better idea of what you’re looking for and to arrange a suitable time for us to meet.",
+            },
+        ],
+            },
+            {
+                title: "Zoom Interview or First Stage Interview",
+                info: [
+                    { 
+                img: "images/emp4.jpg",
+                para: "The first stage interview will be hosted either face to face or via Zoom. This allows us to put a face to a name and to find out a little bit more about you and your experience. There will be a mix of general interview questions and competency based questions. We will also do a quick fire round of 5 questions. There is no right or wrong answer here, this just helps us to get a feel for you and your personality. This is a great time for applicants to ask questions and learn as much as possible about"
+            },
+        ],
+            },
+            {
+                title: "Second Interview",
+                info: [
+                    { 
+                img: "images/emp6.jpg",
+                para: "Should you be successful following the first stage interview, we will invite you to our head office for a second stage interview. This interview will likely be with a manager and director and will involve further standard interview and competency based questions. We will also touch on your expectations and what you hope to achieve from this role. Our team here are all lovely so there is no need to feel nervous or under pressure. Remember to just be yourself!"
+            },
+        ],
+            },
+            {
+                title: "Job Offer",
+                info: [
+                    { 
+                img: "images/emp8.jpg",
+                para: "Congratulations! If you are a successful candidate, our team will discuss their thoughts and a proposal will be put together. You will then receive a call to wish you congratulations and offer you the job. A formal job offer will be sent to you by email and a start date will be discussed. Once all has been agreed a contract and any further details will be sent out to you."
+            },
+        ],
+            },
 ]
 
 export const history = [
@@ -963,17 +983,293 @@ export const interested = [
 ]
 
 export const vacancies = [
+        {
+            title: "Property Manager",
+            info: "At HOP, we now have over 30 staff members working from one of our three branches, Pudsey, Horsforth and Leeds City Centre, and are excited to continue our growth across Leeds, and beyond, in all our departments. Opening our third branch and HOP hub (during the pandemic!) is typical of our commitment to growth. The launch of the new branch, and new Sales division, has been met with great success as we continue to expanding team and the kinds of services that we offer customers."
+        },
+        {
+            title: "Resident House Manager",
+            info: "At HOP, we now have over 30 staff members working from one of our three branches, Pudsey, Horsforth and Leeds City Centre, and are excited to continue our growth across Leeds, and beyond, in all our departments. Opening our third branch and HOP hub (during the pandemic!) is typical of our commitment to growth. The launch of the new branch, and new Sales division, has been met with great success as we continue to expanding team and the kinds of services that we offer customers."
+        },
+]
+
+
+// knowlewdge bank page
+export const catagories = [
+  {
+    title: "Choose a Category...",
+    option: [
+      // Area Guides
+      {
+        url: "",
+        title: "Choose a Category...",
+      },
+      {
+        url: "",
+        title: "Area Guides",
+      },
+      {
+        url: "",
+        title: "Downloads",
+      },
+      {
+        url: "",
+        title: "Fees",
+      },
+      {
+        url: "",
+        title: "General",
+      },
+      {
+        url: "",
+        title: "Landlord",
+      },
+      {
+        url: "",
+        title: "Professional",
+      },
+      {
+        url: "",
+        title: "Refubs",
+      },
+      {
+        url: "",
+        title: "Sales",
+      },
+      {
+        url: "",
+        title: "Students",
+      },
+    ]
+  }
+]
+
+export const catagoryCard = [
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    bg: "bg-purple-950",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+ },
+ {
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  bg: "bg-purple-950",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  bg: "bg-purple-950",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  bg: "bg-purple-950",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},  {
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+{
+  title: "PROFESSIONAL, STUDENT",
+  featured: "Featured",
+  title2: "Tenant Handbook 2023",
+  info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+},
+
+]
+
+export const newsCategory = [
     {
-        title: "Current Vacancies",
-        posts: [
-            {
-                title: "Property Manager",
-                info: "At HOP, we now have over 30 staff members working from one of our three branches, Pudsey, Horsforth and Leeds City Centre, and are excited to continue our growth across Leeds, and beyond, in all our departments. Opening our third branch and HOP hub (during the pandemic!) is typical of our commitment to growth. The launch of the new branch, and new Sales division, has been met with great success as we continue to expanding team and the kinds of services that we offer customers."
-            },
-            {
-                title: "Resident House Manager",
-                info: "At HOP, we now have over 30 staff members working from one of our three branches, Pudsey, Horsforth and Leeds City Centre, and are excited to continue our growth across Leeds, and beyond, in all our departments. Opening our third branch and HOP hub (during the pandemic!) is typical of our commitment to growth. The launch of the new branch, and new Sales division, has been met with great success as we continue to expanding team and the kinds of services that we offer customers."
-            },
+        title: "Choose a Category...",
+        option: [
+          // Area Guides
+          {
+            url: "",
+            title: "Choose a Category...",
+          },
+          {
+            url: "",
+            title: "Block Management",
+          },
+          {
+            url: "",
+            title: "Company News",
+          },
+          {
+            url: "",
+            title: "Investments",
+          },
+          {
+            url: "",
+            title: "Landlord News",
+          },
+          {
+            url: "",
+            title: "Professionals",
+          },
+          {
+            url: "",
+            title: "Sales",
+          },
+          {
+            url: "",
+            title: "Sales & Letting Reports",
+          },
+          {
+            url: "",
+            title: "Students",
+          },
         ]
+      }
+]
+export const allNews= [
+    {
+        img:"images/student.jpg",
+        investment: "Investment",
+        news: "Landlord News",
+        date: '2017-12-3',
+        title: "National Landlord News Summary Show and Description",
+    },
+    {
+        img:"images/img6.jpg",
+        news: "Company News",
+        investment: "Investment",
+        date: '2017-12-3',
+        title: "Danhamz latest News Summary Show and Description",
+    },
+    {
+        img:"images/img3.jpg",
+        investment: "Investment",
+        news: "Company News",
+        date: '2017-12-3',
+        title: "London we are coming!",
+    },
+    {
+        img:"images/student.jpg",
+        investment: "Investment",
+        news: "Landlord News",
+        date: '2017-12-3',
+        title: "National Landlord News Summary Show and Description",
+    },
+    {
+        img:"images/img6.jpg",
+        news: "Company News",
+        investment: "Investment",
+        date: '2017-12-3',
+        title: "Danhamz latest News Summary Show and Description",
+    },
+    {
+        img:"images/img3.jpg",
+        investment: "Investment",
+        news: "Company News",
+        date: '2017-12-3',
+        title: "London we are coming!",
+    },
+]
+// knowlewdge bank page
+
+
+// about page
+export const about_award = [
+    {
+        title:"An Award-Winning Agent",
+        info: "At HOP,  we offer Sales, Lettings, Block Management and Investments all under one roof, to deliver a completely holistic property service. Whether you are looking rent, buy, sell, invest or have an entire block of apartments to take care of, our friendly experts are here to help.",
+        img: "images/awards.png",
     }
 ]
+
+export const about_story = [
+    {
+        title: "Our Story",
+        info: "In 2009, we started out as a ‘Let Leeds’ a pure lettings agency offering property management across Leeds. From the outset, our goal was to offer a more dynamic and innovative service to the tenants and landlords of Leeds. At the start, Let Leeds was the perfect name for us and we soon became the leading independent Letting Agency in Leeds. Over time, we expanded our offering and the name ‘Let Leeds’ no longer embodied everything we do. In 2020, we changed our name to HOP, which stands for the Home of Property.  As HOP, we bringing that same fresh and personal approach we’re renowned for across a wider range of property services to customers in Leeds and beyond. As HOP, we also now offer Sales and Block Management, and Investments alongside our award-winning Lettings service.0 Creating happy homes is still at the heart of our business. Whether it’s a property to rent, a home to buy, an investment to purchase, or ensuring the efficient management of a block, every move matters to HOP.",
+        img: "images/coffee.jpg",
+    }
+]
+
+export const partnerBanner = [
+    {
+        img: "images/logo1.svg",
+    },
+    {
+        img: "images/logo2.svg",
+    },
+    {
+        img: "images/logo3.svg",
+    },
+    {
+        img: "images/logo4.svg",
+    },
+    {
+        img: "images/logo5.svg",
+    },
+]
+// about page
