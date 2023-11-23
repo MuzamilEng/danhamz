@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../Layout/Layout'
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import { about_award, about_story, doings, ourTeam, partnerBanner, ratings, studentHomes } from '../Data';
+import { about_award, about_story, doings, letting_awards, ourTeam, partnerBanner, ratings, studentHomes } from '../Data';
 import Card from '../Component/Card';
 import Reviews from '../Component/Reviews';
 
@@ -29,10 +29,10 @@ const About = () => {
                 {about_award?.map((item, index) => (
                     <div className="relative w-full" key={index}>
                         <img src={item?.img} alt="about" className="w-full h-20vw" />
-                        <div className="absolute top-0 p-vw left-7vw w-full max-w-[35vw]">
+                        <div className="absolute top-0 p-vw left-10vw w-full max-w-[35vw]">
                             <h1 style={{lineHeight: "2.7vw"}} className='text-white text-[2.5vw] font-medium w-full max-w-[30vw]'>{item?.title}</h1>
-                            <p className='text-white text-vw mt-2vw font-medium w-full max-w-[30vw]'>{item?.info}</p>
-                            <div className="mt-vw">
+                            <p className='text-white text-vw mt-[1.5vw] font-medium w-full max-w-[30vw]'>{item?.info}</p>
+                            <div className="mt-2vw">
                             <Link to="" className="p-vw bg-purple-950 text-white font-medium text-center">Get in touch</Link>
                             </div>
                         </div>
@@ -127,10 +127,21 @@ const About = () => {
           })}
         </main>
         {/* awards */}
-        <article className='col-center bg-gray-200 p-3vw'>
+        <article className='col-center w-full slider-container bg-gray-200 p-3vw'>
         <h1 className='text-center text-purple-950 text-[2.3vw] text-semibold'>Our Awards</h1>
-        <p className='text-vw text-gray-700 w-full text-center max-w-[80vw]'>HOP is proud to have won multiple awards since 2012. <br />
-        We are incredibly proud of our award wins, which most recently includes the Best Estate Agent Award, officially recognising us as in the top 3% of letting agents in the whole of the UK.</p>
+        <p className='text-vw text-gray-700 w-full text-center max-w-[80vw]'>
+          HOP is proud to have won multiple awards since 2012. <br />
+          We are incredibly proud of our award wins, which most recently includes the Best Estate Agent Award,
+          officially recognising us as in the top 3% of letting agents in the whole of the UK.</p>
+        <div className="mt-2vw flex w-full items-start slider">
+          {letting_awards?.map((item, index) => (
+            <section className='max-w-[15vw] w-full p-0.5vw m-[0.2vw] review-item' key={index}>
+              <img src={item?.img} alt={item?.title} className='w-full h-11vw object-cover' />
+              <h1 className='text-blue-950 mt-0.5vw text-[0.7vw] text-semibold'>{item?.title}</h1>
+              <p className='text-gay-300 w-full mt-0.5vw max-w-[14vw] text-[0.7vw]'>{item?.info}</p>
+            </section>
+          ))}
+        </div>
         </article>
         {/* partener banner */}
         <section className='row-center bg-white p-3vw'>

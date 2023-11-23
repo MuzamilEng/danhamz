@@ -24,15 +24,15 @@ export const topbar = [
                 title: 'About',
             },
             {
-                path: '/',
+                path: '/instant-valuation',
                 title: 'Instant Valuation',
             },
             {
-                path: '/',
+                path: '/contact',
                 title: 'Contact us',
             },
             {
-                path: '/',
+                path: '/report',
                 title: 'Report a Repair',
             },
         ],
@@ -1272,4 +1272,297 @@ export const partnerBanner = [
         img: "images/logo5.svg",
     },
 ]
+
+export const letting_awards = [
+    {
+        img: "images/awards1.jpg",
+        title: "2015: Best Single Northern Office – Gold",
+        info: "The judges commented that “Let Leeds is positive and helpful and works to ethical and stringent standards. There is a real urge to demonstrate a dynamic, innovative approach and they are very vocal in wanting to shake the market up.”",
+    },
+    {
+        img: "images/awards2.jpg",
+        title: "2014: Northern Letting Agent of the Year - Silver",
+        info: "MD Luke Gidney commented “We always strive to do the very best for our Tenants and Landlords. It is a great honour and privilege for Let Leeds to pick up its second national gold award in a matter of weeks.”",
+    },
+    {
+        img: "images/awards3.jpg",
+        title: "2013: Yorkshire & Humber ESTAS Award – Gold",
+        info: "Our fifth consecutive win at these awards! The judging panel commented: “Let Leeds is a great business. Its ethos is that ‘Every Move Matters” and the panel found that the Let Leeds team seek to embody this at every turn”",
+    },
+    {
+        img: "images/awards4.jpg",
+        title: "2016: Best Small Northern Lettings Agency of the Year - Silver",
+        info: "The judges commented that “Let Leeds is positive and helpful and works to ethical and stringent standards. There is a real urge to demonstrate a dynamic, innovative approach and they are very vocal in wanting to shake the market up.”",
+    },
+    {
+        img: "images/awards5.jpg",
+        title: "2012: Best Northern Single Letting Agency - Silver",
+        info: "Our fifth consecutive win at these awards! The judging panel commented: “Let Leeds is a great business. Its ethos is that ‘Every Move Matters” and the panel found that the Let Leeds team seek to embody this at every turn”",
+    },
+    {
+        img: "images/awards6.jpg",
+        title: "2013: Sunday Times Letting Agency of the Year, Northern Office - Gold",
+        info: "MD Luke Gidney commented “We always strive to do the very best for our Tenants and Landlords. It is a great honour and privilege for Let Leeds to pick up its second national gold award in a matter of weeks.”",
+    },
+    {
+        img: "images/awards1.jpg",
+        title: "2015: Best Single Northern Office – Gold",
+        info: "Our fifth consecutive win at these awards! The judging panel commented: “Let Leeds is a great business. Its ethos is that ‘Every Move Matters” and the panel found that the Let Leeds team seek to embody this at every turn”",
+    },
+    {
+        img: "images/awards4.jpg",
+        title: "2014: Northern Letting Agent of the Year - Silver",
+        info: "MD Luke Gidney commented “We always strive to do the very best for our Tenants and Landlords. It is a great honour and privilege for Let Leeds to pick up its second national gold award in a matter of weeks.”",
+    },
+    {
+        img: "images/awards1.jpg",
+        title: "2015: Best Single Northern Office – Gold",
+        info: "The judges commented that “Let Leeds is positive and helpful and works to ethical and stringent standards. There is a real urge to demonstrate a dynamic, innovative approach and they are very vocal in wanting to shake the market up.”",
+    },
+    {
+        img: "images/awards2.jpg",
+        title: "2014: Northern Letting Agent of the Year - Silver",
+        info: "MD Luke Gidney commented “We always strive to do the very best for our Tenants and Landlords. It is a great honour and privilege for Let Leeds to pick up its second national gold award in a matter of weeks.”",
+    },
+    {
+        img: "images/awards3.jpg",
+        title: "2013: Yorkshire & Humber ESTAS Award – Gold",
+        info: "Our fifth consecutive win at these awards! The judging panel commented: “Let Leeds is a great business. Its ethos is that ‘Every Move Matters” and the panel found that the Let Leeds team seek to embody this at every turn”",
+    },
+]
 // about page
+
+
+// instant valuation page
+export const instantValuation = [
+    {
+        img: "images/bg-valu.jpg",
+        title: "Danhamz",
+        online: "Free Instant Online Valuation",
+        info: "Enter the property postcode below to receive your instant online valuation from HOP. One of our team will then be in touch to arrange a full market appraisal.",
+        icon: <Icon icon="mdi:location" />,
+        location: "Find Address",
+        address: {
+            type: "input",
+        },
+        choose: [
+            {
+                noOfbeds: 'How many bedrooms do you need?',
+                quantity:[
+                    {count: "Number Of Bedrooms", value: ""},
+                    {count: "Studio", value: "Studio"},
+                    {count: "1", value: "1"},
+                    {count: "2", value: "2"},
+                    {count: "3", value: "3"},
+                    {count: "4", value: "4"},
+                    {count: "5", value: "5"},
+                    {count: "6", value: "6"},
+                ],
+            },
+            {
+                noOfbeds: 'Property Type',
+                quantity:[
+                    {count: "Property Type", value: ""},
+                    {count: "Flat", value: "Flat"},
+                    {count: "Terraced House", value: "Terraced House"},
+                    {count: "Semi Detatched House", value: "Semi Detatched House"},
+                    {count: "Detatched House", value: "Detatched House"},
+                    {count: "Detatched Bunglow", value: "Detatched Bunglow"},
+                    
+                ],
+            },             
+        ],
+        typeOfval: [
+            {
+                noOfbeds: 'Type of Valuation',
+                quantity:[
+                    {count: "Type of Valuation", value: ""},
+                    {count: "Sales And Letting Valuation", value: "Sales And Letting Valuation"},
+                    {count: "Sales Valuation", value: "Sales Valuation"},
+                    {count: "Lettings Valuation", value: "Lettings Valuation"},
+                    {count: "Detatched House", value: "Detatched House"},
+                    {count: "Detatched Bunglow", value: "Detatched Bunglow"},
+                ],
+            }, 
+        ]
+
+    }
+]
+
+export const timings = [
+    {
+        title: "Leeds",
+        info: [
+            {
+                icon: <Icon icon="iconoir:phone" />,
+                title: "0311 0211 0990"
+            },
+            {
+                icon: <Icon icon="mdi:location" />,
+                title: "Coburg House, St Andrews Court, Leeds, LS3 1JY",
+            }
+        ],
+        detail: [
+            {
+                title: 'Opening Hours',
+                timimngs: [
+                    {
+                        day: 'Monday - Thursday',
+                        time: "9:00am - 5:30pm",
+                    },
+                    {
+                        day: 'Friday',
+                        time: "9:00am - 4:30pm",
+                    },
+                    {
+                        day: 'Saturday',
+                        time: "9:00am - 1:30pm",
+                    }
+                ]
+            },
+            {
+                title: 'Viewing Hours',
+                timimngs: [
+                    {
+                        day: 'Monday - Thursday',
+                        time: "9:00am - 5:30pm",
+                    },
+                    {
+                        day: 'Friday',
+                        time: "9:00am - 4:30pm",
+                    },
+                    {
+                        day: 'Saturday',
+                        time: "9:00am - 1:30pm",
+                    }
+                ]
+            },
+        ]
+    },
+]
+
+export const timings2= [
+    {
+        title: "Horsforth",
+        info: [
+            {
+                icon: <Icon icon="iconoir:phone" />,
+                title: "0311 0211 0990"
+            },
+            {
+                icon: <Icon icon="mdi:location" />,
+                title: "Coburg House, St Andrews Court, Leeds, LS3 1JY",
+            }
+        ],
+        detail: [
+            {
+                title: 'Opening Hours',
+                timimngs: [
+                    {
+                        day: 'Monday - Thursday',
+                        time: "9:00am - 5:30pm",
+                    },
+                    {
+                        day: 'Friday',
+                        time: "9:00am - 4:30pm",
+                    },
+                    {
+                        day: 'Saturday',
+                        time: "9:00am - 1:30pm",
+                    }
+                ]
+            },
+            {
+                title: 'Viewing Hours',
+                timimngs: [
+                    {
+                        day: 'Monday - Thursday',
+                        time: "9:00am - 5:30pm",
+                    },
+                    {
+                        day: 'Friday',
+                        time: "9:00am - 4:30pm",
+                    },
+                    {
+                        day: 'Saturday',
+                        time: "9:00am - 1:30pm",
+                    }
+                ]
+            },
+        ]
+    },
+]
+
+export const timings3 = [
+    {
+        title: "HOP Investments",
+        info: [
+            {
+                icon: <Icon icon="iconoir:phone" />,
+                title: "0311 0211 0990"
+            },
+            {
+                icon: <Icon icon="mdi:location" />,
+                title: "Coburg House, St Andrews Court, Leeds, LS3 1JY",
+            }
+        ],
+        detail: [
+            {
+                title: 'Opening Hours',
+                timimngs: [
+                    {
+                        day: 'Monday - Thursday',
+                        time: "9:00am - 5:30pm",
+                    },
+                ]
+            },
+        ]
+    },
+]
+
+export const timings4 = [
+    {
+        title: "HOP Block Management",
+        info: [
+            {
+                icon: <Icon icon="iconoir:phone" />,
+                title: "0311 0211 0990"
+            },
+            {
+                icon: <Icon icon="mdi:location" />,
+                title: "Coburg House, St Andrews Court, Leeds, LS3 1JY",
+            }
+        ],
+        detail: [
+            {
+                title: 'Opening Hours',
+                timimngs: [
+                    {
+                        day: 'Monday - Thursday',
+                        time: "9:00am - 5:30pm",
+                    },
+                ]
+            },
+        ]
+    }
+]
+
+export const getInTouch = [
+    {
+        title:"Get in touch",
+        info: "If you’re looking to rent Leeds property, we’re dedicated to making moving simple, for all types of accommodation Leeds has to offer. As your local online Letting Agents Leeds, we’re dedicated to making moving simple; this includes online property search, personal viewings, online application, bond payment and credit checking with acceptance usually within 24 hours. HOP decided it was time Leeds experienced a fresh approach to lettings, offering simple and personal letting agent services for Leeds Student Accommodation and Professional Accommodation Leeds. Our belief is based on giving tenants the chance to move into their perfect home simply, quickly and affordably.",
+        img: "images/Get_contact.gif",
+    }
+]
+// instant valuation page
+
+// report page
+export const report_nav = [
+    {
+        title:"Need to report a repair?",
+        info: "Use our 24 hour automated system.",
+        img: "images/clock1.png",
+        info2: "At HOP, we operate a fully automated online reporting system for property repairs and maintenance.",
+        para: "To help us to help you as quickly as possible, HOP operates a fully automated online reporting system for repairs and maintenance that is available around the clock, 24 hours a day. Our online system enables us to diagnose your problems, log and diarise maintenance, fully monitor our contractors, and swiftly get the right contractors out to you. You can even upload photos of your problem to help our Contractors assess what they might need to bring with them to fix the issue. Until a request is logged online, we cannot send anyone out to deal with the issue. Once you have logged your issue, we’ll be in touch to discuss the next steps and, if required, arrange for a contractor to come out and see you.",
+    }
+]
