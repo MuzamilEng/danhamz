@@ -6,6 +6,8 @@ import { benefits, carrerBanner, doings, history, interested, investInPeople, ne
 import Card from "../Component/Card";
 import RecruitmentRule from "../Component/RecruitmentRule";
 import News from "../Component/News";
+import RightImageContainer from "../Component/RightImageContainer";
+import LeftImageContainer from "../Component/LeftImageContainer";
 
 const Carrers = () => {
   return (
@@ -153,32 +155,11 @@ const Carrers = () => {
           })}
         </main>
         {/* investor in people */}
-        <article className="w-full flex flex-col justify-center items-center p-3vw">
-          {investInPeople?.map((item, index) => {
-            return (
-              <main className="flex items-center" key={index}>
-                <img
-                  src={item?.img}
-                  alt={item?.title}
-                  className="w-full max-w-[35vw]"
-                />
-                <section className="ml-4vw">
-                  <h1 className="text-blue-950 text-[2.1vw] font-medium">
-                    {item?.title}
-                  </h1>
-                  <p className="text-gray-600 text-vw mt-vw w-full max-w-[40vw]">
-                    {item?.info}
-                  </p>
-                  <Link to="#" className=" mt-2vw">
-                    <p className="text-white text-[0.9vw] w-full max-w-[20vw] p-vw text-center font-semibold bg-pink-400">
-                      Read more about our IIP Accrediation
-                    </p>
-                  </Link>
-                </section>
-              </main>
-            );
-          })}
-        </article>
+        <div>
+              {investInPeople?.map((item, index) => (
+                  <RightImageContainer key={index} img={item?.img} info={item?.info} title={item?.title} button={item?.button} url={item?.url} bg_color={item?.bg_color} title_color={item?.title_color} info_color={item?.info_color} btn_bg={item?.btn_bg} btn_text={item?.btn_text}  />
+              ))}
+          </div>
         {/* work at danhamz */}
         <article className="w-full flex flex-col justify-center items-center">
           {workAtDanhamz?.map((item, index) => {
@@ -321,33 +302,11 @@ const Carrers = () => {
            </div>
         </div>
         {/* history */}
-        <article className="w-full flex bg-white flex-col justify-center items-center p-3vw">
-          {history?.map((item, index) => {
-            return (
-              <main className="flex justify-between w-full max-w-[85vw] items-center" key={index}>
-               
-                <section className="ml-4vw">
-                  <h1 className="text-blue-950 text-[2.1vw] font-medium">
-                    {item?.title}
-                  </h1>
-                  <p className="text-gray-600 text-vw mt-vw w-full max-w-[40vw]">
-                    {item?.info}
-                  </p>
-                  <Link to="#" className=" mt-4vw">
-                    <p className="text-white text-[0.9vw] mt-2vw w-full max-w-[20vw] p-vw text-center font-semibold bg-pink-400">
-                      Read more about our story
-                    </p>
-                  </Link>
-                </section>
-                <img
-                  src={item?.img}
-                  alt={item?.title}
-                  className="w-full max-w-[35vw]"
-                />
-              </main>
-            );
-          })}
-        </article>
+        <div>
+              {history?.map((item, index) => (
+                  <LeftImageContainer key={index} img={item?.img} info={item?.info} title={item?.title} button={item?.button} url={item?.url} bg_color={item?.bg_color} title_color={item?.title_color} info_color={item?.info_color} btn_bg={item?.btn_bg} btn_text={item?.btn_text}  />
+              ))}
+          </div>
         {/* interested */}
         <section className="bg-purple-950 w-full flex justify-center items-center flex-col p-4vw">
             {interested?.map((item, index) => (

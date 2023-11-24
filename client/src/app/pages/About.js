@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { about_award, about_story, doings, letting_awards, ourTeam, partnerBanner, ratings, studentHomes } from '../Data';
 import Card from '../Component/Card';
 import Reviews from '../Component/Reviews';
+import ContentImage from '../Component/ContentImage';
+import RightImageContainer from '../Component/RightImageContainer';
 
 const About = () => {
     const lists = ["Student Lets", "Professional Lets", "Property Management", "Residential Sales", "Investment Sales", "Refurbishments", "Property Sourcing", "Block Management"];
@@ -27,16 +29,7 @@ const About = () => {
           </nav>
             <section className='relative w-full bg-purple-500'>
                 {about_award?.map((item, index) => (
-                    <div className="relative w-full" key={index}>
-                        <img src={item?.img} alt="about" className="w-full h-20vw" />
-                        <div className="absolute top-0 p-vw left-10vw w-full max-w-[35vw]">
-                            <h1 style={{lineHeight: "2.7vw"}} className='text-white text-[2.5vw] font-medium w-full max-w-[30vw]'>{item?.title}</h1>
-                            <p className='text-white text-vw mt-[1.5vw] font-medium w-full max-w-[30vw]'>{item?.info}</p>
-                            <div className="mt-2vw">
-                            <Link to="" className="p-vw bg-purple-950 text-white font-medium text-center">Get in touch</Link>
-                            </div>
-                        </div>
-                    </div>
+                  <ContentImage key={index} img={item?.img} info={item?.info} title={item?.title} button={item?.button} url={item?.url} title_color={item?.title_color} info_color={item?.info_color} btn_bg={item?.btn_bg} btn_text={item?.btn_text}  />
                 ))}
             </section>
             {/* services */}
@@ -78,23 +71,10 @@ const About = () => {
               </div>
             </article>
                  {/* story */}
-            <div className="flex justify-center items-center w-full bg-gray-200 p-2vw">
-            <section className='w-full max-w-[85vw]'>
+            <div>
               {about_story?.map((item, index) => (
-                <div className="flex justify-between items-start p-vw" key={index}>
-                      <section className='w-[40vw]'>
-                    <img src={item?.img} alt="rmote" className='w-full h-[30vw]' />
-                  </section>
-                  <section className='w-[40vw]'>
-                    <p className='text-blue-950 text-[1.9vw] font-semibold'>{item?.title}</p>
-                    <p className='text-gray-700 text-vw w-full max-w-[35vw]'>{item?.info}</p>
-                    <div className="mt-2vw">
-                      <Link to="/" className="bg-pink-400 p-vw text-white font-medium text-[0.8vw] text-center">Learn more</Link>
-                    </div>
-                  </section>
-                </div>
+              <RightImageContainer key={index} img={item?.img} info={item?.info} title={item?.title} button={item?.button} url={item?.url} title_color={item?.title_color} info_color={item?.info_color} btn_bg={item?.btn_bg} btn_text={item?.btn_text}  />
               ))}
-            </section>
             </div>
              {/* teams */}
         <main className="w-full bg-white">

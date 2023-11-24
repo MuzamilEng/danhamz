@@ -8,6 +8,7 @@ import About from './app/pages/About'
 import InstantValuation from './app/pages/InstantValuation'
 import Contact from './app/pages/Contact'
 import Report from './app/pages/Report'
+import Signup from './app/pages/Signup'
 
 const App = () => {
   return (
@@ -21,9 +22,7 @@ const App = () => {
         <Route path='/instant-valuation' element={<InstantValuation />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/report' element={<Report />} />
-
-
-
+        <Route path='/login' element={<Signup />} />
       </Routes>
     </>
   )

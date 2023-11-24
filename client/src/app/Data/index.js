@@ -540,10 +540,19 @@ export const investors = [
 
 export const studentHomes = [
     {
+        // bg_color, title, info, img, title_color, info_color, button, btn_text, btn_bg, url, icon
         icon: <Icon icon="mdi:lightbulb-on-30" />,
         title: "All-inclusive student homes",
         img: "images/student.jpg",
         info: "Life as a student is busy and stressful enough, so choose an all-inclusive property from Danhamz to take all the hassle out of renting. We’ve got you covered with our DELUXE Bills Package. All Danhamz managed properties come with: Gas, Electric, Water, the best available 1GB Superfast Broadband, TV Licence and Contents Insurance (with £1,000 laptop cover). Don’t worry about things like rising energy prices or how to split the bills  – you simply pay the same thing every month and it’s all taken care of.  It’s a no brainer!",
+        button: "Get Started",
+        btn_bg: "bg-pink-300",
+        url: "/",
+        title_color: "text-blue-950",
+        info_color: "text-gray-800",
+        bg_color: "bg-white",
+        btn_text: "text-white",
+
 
     }
 ]
@@ -854,6 +863,13 @@ export const investInPeople = [
         img: "images/invest.png",
         title: "Investors in People",
         info: "In our industry, it’s the people that really make the difference. That’s why we firmly believe in supporting our staff to be the very best they can be. We have worked very hard as a business to achieve the world-renowned Investors in People accreditation, and we are very proud of it too!Growing the best team is one of our core business goals and the award is recognition of our commitment to making Danhamz a great place to work. It acknowledges how we choose to run the business and our continual investment in the training, development and engagement of our highly valued team.",
+        button: "Read more about our IIP Accrediation",
+        btn_bg: "bg-pink-300",
+        url: "/",
+        title_color: "text-blue-950",
+        info_color: "text-gray-800",
+        bg_color: "bg-gray-200",
+        btn_text: "text-white",
     }
 ]
 
@@ -971,6 +987,13 @@ export const history = [
         title: "The History of HOP",
         info : "At HOP, we now have over 30 staff members working from one of our three branches, Pudsey, Horsforth and Leeds City Centre, and are excited to continue our growth across Leeds, and beyond, in all our departments. Opening our third branch and HOP hub (during the pandemic!) is typical of our commitment to growth. The launch of the new branch, and new Sales division, has been met with great success as we continue to expanding team and the kinds of services that we offer customers.",
         img: "images/main.jpg",
+        button: "Read more about our story",
+        btn_bg: "bg-pink-300",
+        url: "/",
+        title_color: "text-blue-950",
+        info_color: "text-gray-800",
+        bg_color: "bg-gray-200",
+        btn_text: "text-white",
     }
 ]
 
@@ -1241,17 +1264,32 @@ export const allNews= [
 // about page
 export const about_award = [
     {
+        // img, info, title, button, bg_color, url, title_color, info_color, btn_bg, btn_text
         title:"An Award-Winning Agent",
         info: "At HOP,  we offer Sales, Lettings, Block Management and Investments all under one roof, to deliver a completely holistic property service. Whether you are looking rent, buy, sell, invest or have an entire block of apartments to take care of, our friendly experts are here to help.",
         img: "images/awards.png",
+        button: "Get in touch",
+        bg_color: "bg-purple-500",
+        url: "#",
+        title_color: "text-white",
+        info_color: "text-white",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
     }
 ]
 
 export const about_story = [
     {
+        // bg_color, title, info, img, title_color, info_color, button, btn_text, btn_bg, url // 
         title: "Our Story",
         info: "In 2009, we started out as a ‘Let Leeds’ a pure lettings agency offering property management across Leeds. From the outset, our goal was to offer a more dynamic and innovative service to the tenants and landlords of Leeds. At the start, Let Leeds was the perfect name for us and we soon became the leading independent Letting Agency in Leeds. Over time, we expanded our offering and the name ‘Let Leeds’ no longer embodied everything we do. In 2020, we changed our name to HOP, which stands for the Home of Property.  As HOP, we bringing that same fresh and personal approach we’re renowned for across a wider range of property services to customers in Leeds and beyond. As HOP, we also now offer Sales and Block Management, and Investments alongside our award-winning Lettings service.0 Creating happy homes is still at the heart of our business. Whether it’s a property to rent, a home to buy, an investment to purchase, or ensuring the efficient management of a block, every move matters to HOP.",
         img: "images/coffee.jpg",
+        bg_color: "bg-gray-200",
+        title_color: "text-blue-950",
+        info_color: "text-gray-900",
+        button: "Learn More",
+        btn_text: "text-white",
+        btn_bg: "bg-pink-300",
     }
 ]
 
@@ -1566,3 +1604,103 @@ export const report_nav = [
         para: "To help us to help you as quickly as possible, HOP operates a fully automated online reporting system for repairs and maintenance that is available around the clock, 24 hours a day. Our online system enables us to diagnose your problems, log and diarise maintenance, fully monitor our contractors, and swiftly get the right contractors out to you. You can even upload photos of your problem to help our Contractors assess what they might need to bring with them to fix the issue. Until a request is logged online, we cannot send anyone out to deal with the issue. Once you have logged your issue, we’ll be in touch to discuss the next steps and, if required, arrange for a contractor to come out and see you.",
     }
 ]
+
+export const report_article = [
+    {
+        title: "We are committed to providing a quick, trustworthy and reliable maintenance service.",
+        info: "It’s really important that you use our online portal to log any issues you might have that involve maintenance and repairs, because we can only handle requests once they are logged in the system. Logging maintenance requests via our portal means that repairs and issues are likely to be dealt with more quickly than those that are reported by telephone or by email. All emergencies should also be reported in the portal too.",
+        info2: "If you have an out of hours emergency, simply log your issue in the usual way and you will also find out of hours contact numbers to call. You can also just call our main office number on 0113 320 2000, which has a recorded message out of hours with numbers of our emergency maintenance contacts, The system allows us to communicate between the Landlord and the Contractor and means that we can diagnose your problems, log and diarise maintenance, get the right Contractors out to you quickly and also monitor the Contractors to ensure they do a good job.",
+    },
+    {
+        title: "We promise to respond as swiftly as we can to your maintenance requests.",
+        info: "We only use a handful of trusted contractors to do repairs and they prioritise the urgency of the work and will respond accordingly. Here’s an idea of the timeframes that they will aim to work to wherever possible:",
+        img: "images/data-table.png",
+        info2: "Please note: we cannot agree to the above timescales unless the maintenance request has been logged online first. If our contractors are unable to complete the job within the agreed timescales above, please report this to your Property Manager immediately. It may be that major works need quoting for and boiler replacements could take longer due to ordering parts.",
+    }
+]
+
+export const report_section = [
+            {
+                title: "If there has been a break-in at the property, be sure to ring the police on 999.",
+            },
+            {
+                title: "If you lose power or water, then please contact your utility provider in the first instance.",
+            },
+            {
+                title: "If there has been a break-in at the property, be sure to ring the police on 999.",
+            },
+            {
+                title: "If you smell gas, ring the National Grid on 0800 111 999.",
+            },
+            {
+                title: "If you are calling out of hours and the office is closed, we have pre-recorded emergency details for you to follow. Just call the usual office number:  0113 320 2000",
+            },
+]
+
+// report page
+
+
+// login page
+
+export const login = [
+    {
+        name: "email",
+        label: "Email Address",
+        placeholder: "Email address",
+        type: "email",
+        icon: <Icon icon="ic:round-email" />,
+        rules : {
+            required: 'Email is required',
+            pattern: {
+                value: /^\S+@\S+$/i,
+                message: 'Invalid email format',
+            }
+        }
+    },
+    {
+        name: "password",
+        label: "Password",
+        placeholder: "Password",
+        type: "password",
+        icon: <Icon icon="ic:outline-lock" />,
+        rules : {
+            required: 'Password is required',
+            pattern: {
+                value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+                message: 'please enter a strong password',
+            }
+        }
+    }
+]
+
+// login page
+
+export const signup_content = [
+    {
+        title: "So what is PropertyFile?",
+        info: "PropertyFile is an online platform designed to keep you informed & updated on your properties whether you’re selling, letting or renting.",
+        content: [
+            {
+                img: "images/rent_img.png",
+                title: "Landlords",
+                info: "Managing your account has never been easier. Track payments, statements and invoices. Follow maintenance job progress. Find out key tenancy related information on your properties.",
+            },
+            {
+                img: "images/key_img.png",
+                title: "Tenants",
+                info: "Managing your account has never been easier. Track payments, statements and invoices. Follow maintenance job progress. Find out key tenancy related information on your properties.",
+            },
+        ]
+    }
+]
+
+
+export const download_app = [
+    {
+        title: "Download our tenant app",
+        info: "Our tenant app keeps you notified throughout your tenancy with notifications for important events. Also report problems at your property and track their progress.",
+        img: "images/timeline.jpg",
+    }
+]
+// signup page
+

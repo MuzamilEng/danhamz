@@ -13,6 +13,7 @@ import Services from '../Component/Services';
 import News from '../Component/News';
 import BuySection from '../Component/BuySection';
 import Layout from '../Layout/Layout';
+import LeftImageContainer from '../Component/LeftImageContainer';
 
 const Home = () => {
   const [showRentSection, setShowRentSection] = useState(true);
@@ -128,25 +129,10 @@ const Home = () => {
             </div>
         </section>
           {/* students homes  */}
-          <div className="flex justify-center items-center w-full bg-white p-2vw">
-            <section className='w-full max-w-[80vw]'>
+          <div>
               {studentHomes?.map((item, index) => (
-                <div className="flex justify-between items-start p-vw" key={index}>
-                  <section className='w-[40vw]'>
-                    <span className='text-pink-700 text-8vw'>{item?.icon}</span>
-                    <p className='text-blue-950 text-[1.9vw] font-semibold'>{item?.title}</p>
-                    <p className='text-black text-vw w-full max-w-[35vw]'>{item?.info}</p>
-                    <div className="mt-2vw">
-                      <Link to="/" className="bg-pink-400 p-vw text-white font-medium text-[0.8vw] text-center">Read more</Link>
-                    </div>
-                  </section>
-                  <section className='w-[40vw]'>
-                    <img src={item?.img} alt="rmote" className='w-full h-[30vw]' />
-                  </section>
-
-                </div>
+                  <LeftImageContainer key={index} img={item?.img} info={item?.info} icon={item?.icon} title={item?.title} button={item?.button} url={item?.url} bg_color={item?.bg_color} title_color={item?.title_color} info_color={item?.info_color} btn_bg={item?.btn_bg} btn_text={item?.btn_text}  />
               ))}
-            </section>
           </div>
           {/* letting properties */}
           <div className="flex flex-col justify-center items-center w-full p-3vw">
