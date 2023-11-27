@@ -1704,3 +1704,115 @@ export const download_app = [
 ]
 // signup page
 
+// professional-page
+export const pr_nav = [
+    {
+        title:"Professional Letting Agents Leeds",
+        info:"Let’s find a home for you to love.",
+    }
+]
+
+export const pr_banner= [
+    {
+        title:"Welcome to the Home of Property",
+        info: "At HOP, we have a growing portfolio of quality accommodation across Leeds including West Leeds, North Leeds and Leeds City Centre.  Take a look at our hand-picked properties and let’s find a home for you to love."
+    }
+]
+
+export const aBit = [
+    {
+        title:"A bit about HOP",
+        info: "Creating happy homes is at the heart of our business and we love nothing more than matching professional tenants with their perfect homes. That means getting to know you, and your requirements, when you call. Whether you are looking for somewhere you can bring your fourlegged friend or somewhere near your favourite bars and shops, we’ll help you find a place that is right for you. Previously known as Let Leeds, HOP is a vibrant company growing in reputation, we decided it was time to set up a web-based letting agency, dedicated to Leeds, dedicated to quick and affordable lettings. In particular, we deal with West and North Leeds and can offer professional accommodation in: Leeds City Centre, Alwoodley, Armley, Bramley, Burley, Burley Park, Chapel Allerton, Farsley, Headingley, Hyde Park, Kirkstall, Meanwood, Pudsey, Rodley, Stanningley.",
+        img: "images/pr_img1.jpg",
+    },
+]
+
+export const families = [
+    {
+        title:"Rental for families",
+        info: "At HOP,  we offer a growing portfolio of Family Houses and Accommodation across Leeds. If you are looking for somewhere with a garden to exercise little legs, or want to find a place close to the best schools in the area, we have a selection of hand-picked professional properties perfect for families",
+        img: "images/pr_img2.jpg",
+    },
+]
+
+export const young_pr = [
+    {
+        title:"Rental for Young Professionals",
+        info: "Creating happy homes is at the heart of our business and we love nothing more than matching professional tenants with their perfect homes. That means getting to know you, and your requirements, when you call. Whether you are looking for somewhere you can bring your fourlegged friend or somewhere near your favourite bars and shops, we’ll help you find a place that is right for you. Previously known as Let Leeds, HOP is a vibrant company growing in reputation, we decided it was time to set up a web-based letting agency, dedicated to Leeds, dedicated to quick and affordable lettings. In particular, we deal with West and North Leeds and can offer professional accommodation in: Leeds City Centre, Alwoodley, Armley, Bramley, Burley, Burley Park, Chapel Allerton, Farsley, Headingley, Hyde Park, Kirkstall, Meanwood, Pudsey, Rodley, Stanningley.",
+        img: "images/pr_img2.jpg",
+    },
+]
+
+export const area_guide = [
+    {
+        title:"Area Guides",
+        info: "To help you select the area that you want to live in, we have put together some area guides detailing what each area has to offer.",
+        img: "images/pr_img3.jpg",
+    },
+]
+
+export const repair_report = [
+    {
+        title:"Report a Repair",
+        info: "Once you’re in the property, you can contact us if you ever have any problems with your property and if you need to report a repair, or have a maintenance issue, you can simply log a request on our specialist online portal.You can report a maintenance issue at any time using our round-the-clock repair portal. We promise to get on the case within 24 hours. Sometimes we may need to conduct major repair works which may take some time, but usually we aim to get minor issues resolved within 48 hours.",
+        img: "images/phone1.jpg",
+    },
+]
+
+export const simple_process = [
+    {
+        title :" Step 1: Look at our properties",
+        info: [
+           { 
+            img: "images/emp9.jpg",
+            para: "Find properties that fit your criteria using our Property Search. You can also keep an eye on our social media feeds and you’ll find all our properties listed on the major property portals including Rightmove and OnTheMarket."
+        },
+        ],
+    },
+    {
+        title :"Step 2: Contact us",
+        info: [
+            {
+        img: "images/emp1.jpg",
+        para: "All of our properties have Virtual Tours so you can explore them online. Once you have found a property you like the look of, contact us to discuss the property and your requirements in more detail and we can book you an in-person viewing.  Simply call us or submitting a ‘Book Viewing’ request, and one of our friendly team will get back to you.",
+    },
+],
+    },
+    {
+        title: "Step 3: Online Application",
+        info: [
+            { 
+        img: "images/emp4.jpg",
+        para: "Once you’ve chosen your perfect property, our Lettings Administrator will take you through the application process step by step. Much of the process can be completely very simply online."
+    },
+],
+    },
+    {
+        title: "Step 4: Holding Deposit",
+        info: [
+            { 
+        img: "images/emp6.jpg",
+        para: "To reserve your favourite property for 7 days while the Application Process is in progress, we take a Holding Deposit, which will go towards the full deposit  once the Tenancy Agreement is completed."
+    },
+],
+    },
+    {
+        title: "Step 5: Tenancy Agreement",
+        info: [
+            { 
+        img: "images/emp8.jpg",
+        para: "Congratulations! If you are a successful candidate, our team will discuss their thoughts and a proposal will be put together. You will then receive a call to wish you congratulations and offer you the job. A formal job offer will be sent to you by email and a start date will be discussed. Once all has been agreed a contract and any further details will be sent out to you."
+    },
+],
+    },
+]
+// professional-page
+
+// student-page
+export const stu_nav = [
+    {
+        title:"All-inclusive student accommodation in Leeds.",
+    }
+]
+
+// student-page
