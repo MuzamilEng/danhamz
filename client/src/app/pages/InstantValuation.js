@@ -1,10 +1,16 @@
 import React from 'react'
 import { instantValuation } from '../Data'
+import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
+
 
 const InstantValuation = () => {
   return (
     <div>
-        <main className='w-full h-full flex-col flex justify-center'>
+        <main className='w-full h-full relative flex-col flex justify-center'>
+        <Link to='/' className='absolute top-2vw left-2vw cursor-pointer'>
+        <Icon icon="majesticons:arrow-left-line"className='relative text-4vw text-white cursor-pointer'/>
+        </Link>
             {instantValuation?.map((item, index) => (
                 <article key={index} className='w-full relative'>
                     <img src={item?.img} alt={item?.title} className='w-full h-full z-50' />

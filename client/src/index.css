@@ -77,6 +77,9 @@ html, body {
   #signup_container{
     background-image: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D";
   }
+
+
+  
 @media (min-width: 1366px) and (max-width: 6500px) {
     .main_container {
         /* max-width: 1366px; */

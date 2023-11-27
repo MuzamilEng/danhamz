@@ -1,24 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { download_app, signup_content } from '../Data';
 import { Link } from 'react-router-dom';
+import Layout from '../Layout/Layout';
+import Login from './Login';
+import { Icon } from '@iconify/react';
 
 const Signup = () => {
+  const [loginContainer, setLoginContainer] = useState(false)
     const images = ["images/carousel-1.jpg", "images/carousel-2.jpg", "images/carousel-3.jpg"];
 
     const settings = { dots: false, arrows: true, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
  
   return (
-    <div>
-<main className='relative w-full min-h-screen overflow-y-auto'>
+     <div className='relative w-full h-screen overflow-x-hidden '>
+     <main className='relative w-full h-full'>
+     <Link to='/' className='absolute top-2vw left-2vw cursor-pointer'>
+     <Icon icon="majesticons:arrow-left-line"className='relative text-4vw text-white cursor-pointer'/>
+     </Link>
         <img src="images/bg-valu.jpg" alt="signin" className='w-full' />
         <article className='w-full absolute top-2vw col-center'>
           <section className='col-center w-full p-2vw'>
-            <h1 className='text-purple-950 italic text-3vw font-bold'>Keeping landlords connected with their properties</h1>
+            <h1 className='text-purple-950 italic text-3vw font-bold'>Keeping <span className=''>landlords</span> connected with their properties</h1>
             <p className='text-white font-medium text-[1.3vw] text-center w-full max-w-[60vw]'>PropertyFile is an online platform designed to keep you informed & updated on your properties whether you’re selling, letting or renting.</p>
-            <button className='text-white text-vw font-semibold bg-purple-950 hover:bg-pink-400 text-center p-0.3vw mt-vw rounded-md w-full max-w-[10vw]'>Sign In</button>
+            <button className='text-white text-vw font-semibold bg-purple-950 hover:bg-pink-400 text-center p-0.3vw mt-vw rounded-md w-full max-w-[10vw]' onClick={() => setLoginContainer(true)}>Sign In</button>
           <div className="relative cursor-pointer">
           <img src="images/macbook.png" alt="signin" className='w-full max-w-[50vw] mt-2vw' />
             <section className='w-full absolute top-2vw left-[6.5vw] mt-vw max-w-[35vw] ml-vw'>
@@ -33,6 +40,15 @@ const Signup = () => {
           </div>
           </section>
         </article>
+        {/* signin container */}
+        {loginContainer && (
+          <main className='fixed inset-0 flex mt-4vw justify-center items-center z-50'>
+            <div className=' w-full max-w-[40vw] shadow-gray-500 shadow-2xl'>
+              <Login onCancel={() => setLoginContainer(false)} />
+            </div>
+          </main>
+        )}
+
         {/* property file */}
         <article className='w-full bg-white col-center p-3vw'>
             {
@@ -46,7 +62,7 @@ const Signup = () => {
                                 <img src={item?.img} alt={item?.title} className='w-full h-[10vw] max-w-[10vw]' />
                                 <h1 className='text-black itali mt-vw text-[1.7vw] font-semibold'>{item?.title}</h1>
                                 <p className='text-gray-800 mt-vw font-medium text-vw text-center w-full max-w-[27vw]'>{content.info}</p>
-                                <Link className="p-0.4vw border-2 hover:bg-purple-950 hover:text-white text-center border-black text-purple-950 font-medium mt-vw">Find Out More</Link>
+                                <Link className="p-0.4vw border-[0.2vw] hover:bg-purple-950 hover:text-white text-center border-black text-purple-950 font-medium mt-vw">Find Out More</Link>
                                 </div>
                             ))}
                         </section>
@@ -100,7 +116,7 @@ const Signup = () => {
             </Link>
         </footer>
       </main>
-    </div>
+     </div>
   );
 }
 
