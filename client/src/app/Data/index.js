@@ -39,7 +39,7 @@ export const topbar = [
     },
 ];
 
-export const navbar = [
+export const navbar = [ 
     {
         icon: <Icon icon="uiw:home" />,
         link: "/",
@@ -52,22 +52,22 @@ export const navbar = [
                 options: [
                     {
                         title: "Professionals",
-                        link: "/",
+                        link: "/professionals",
                         icon: <Icon icon="healthicons:city-worker-outline" />,
                     },
                     {
                         title: "Students",
-                        link: "/",
+                        link: "/students",
                         icon: <Icon icon="mdi:account-student-outline" />,
                     },
                     {
                         title: "Landlords",
-                        link: "/",
+                        link: "/landlords",
                         icon: <Icon icon="healthicons:city-worker-outline" />,
                     },
                     {
                         title: "Refer A Friend",
-                        link: "/",
+                        link: "/refer-a-friend",
                         icon: <Icon icon="fluent:chat-32-regular" />,
                     }
                 ]
@@ -1715,7 +1715,10 @@ export const pr_nav = [
 export const pr_banner= [
     {
         title:"Welcome to the Home of Property",
-        info: "At HOP, we have a growing portfolio of quality accommodation across Leeds including West Leeds, North Leeds and Leeds City Centre.  Take a look at our hand-picked properties and let’s find a home for you to love."
+        info: "At HOP, we have a growing portfolio of quality accommodation across Leeds including West Leeds, North Leeds and Leeds City Centre.  Take a look at our hand-picked properties and let’s find a home for you to love.",
+        bg_color: "bg-purple-950",
+        title_color: "text-white",
+        info_color: "text-white",
     }
 ]
 
@@ -1724,6 +1727,13 @@ export const aBit = [
         title:"A bit about HOP",
         info: "Creating happy homes is at the heart of our business and we love nothing more than matching professional tenants with their perfect homes. That means getting to know you, and your requirements, when you call. Whether you are looking for somewhere you can bring your fourlegged friend or somewhere near your favourite bars and shops, we’ll help you find a place that is right for you. Previously known as Let Leeds, HOP is a vibrant company growing in reputation, we decided it was time to set up a web-based letting agency, dedicated to Leeds, dedicated to quick and affordable lettings. In particular, we deal with West and North Leeds and can offer professional accommodation in: Leeds City Centre, Alwoodley, Armley, Bramley, Burley, Burley Park, Chapel Allerton, Farsley, Headingley, Hyde Park, Kirkstall, Meanwood, Pudsey, Rodley, Stanningley.",
         img: "images/pr_img1.jpg",
+        button: "Property Search",
+        url: "/property-search",
+        bg_color: "bg-white",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
     },
 ]
 
@@ -1732,6 +1742,14 @@ export const families = [
         title:"Rental for families",
         info: "At HOP,  we offer a growing portfolio of Family Houses and Accommodation across Leeds. If you are looking for somewhere with a garden to exercise little legs, or want to find a place close to the best schools in the area, we have a selection of hand-picked professional properties perfect for families",
         img: "images/pr_img2.jpg",
+        button: "Find out more",
+        url: "/find-out-more",
+        bg_color: "bg-white",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+
     },
 ]
 
@@ -1739,7 +1757,14 @@ export const young_pr = [
     {
         title:"Rental for Young Professionals",
         info: "Creating happy homes is at the heart of our business and we love nothing more than matching professional tenants with their perfect homes. That means getting to know you, and your requirements, when you call. Whether you are looking for somewhere you can bring your fourlegged friend or somewhere near your favourite bars and shops, we’ll help you find a place that is right for you. Previously known as Let Leeds, HOP is a vibrant company growing in reputation, we decided it was time to set up a web-based letting agency, dedicated to Leeds, dedicated to quick and affordable lettings. In particular, we deal with West and North Leeds and can offer professional accommodation in: Leeds City Centre, Alwoodley, Armley, Bramley, Burley, Burley Park, Chapel Allerton, Farsley, Headingley, Hyde Park, Kirkstall, Meanwood, Pudsey, Rodley, Stanningley.",
-        img: "images/pr_img2.jpg",
+        img: "images/pr_img9.jpg",
+        button: "Property Search",
+        url: "/property-search",
+        bg_color: "bg-gray-300",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
     },
 ]
 
@@ -1748,6 +1773,13 @@ export const area_guide = [
         title:"Area Guides",
         info: "To help you select the area that you want to live in, we have put together some area guides detailing what each area has to offer.",
         img: "images/pr_img3.jpg",
+        button: "View our Area Guides",
+        url: "/property-search",
+        bg_color: "bg-[#6665a9]",
+        title_color: "text-white",
+        info_color: "text-white",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
     },
 ]
 
@@ -1756,6 +1788,13 @@ export const repair_report = [
         title:"Report a Repair",
         info: "Once you’re in the property, you can contact us if you ever have any problems with your property and if you need to report a repair, or have a maintenance issue, you can simply log a request on our specialist online portal.You can report a maintenance issue at any time using our round-the-clock repair portal. We promise to get on the case within 24 hours. Sometimes we may need to conduct major repair works which may take some time, but usually we aim to get minor issues resolved within 48 hours.",
         img: "images/phone1.jpg",
+        button: "Report a Repair",
+        url: "/report-a-repair",
+        bg_color: "bg-gray-200",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
     },
 ]
 
@@ -1764,7 +1803,7 @@ export const simple_process = [
         title :" Step 1: Look at our properties",
         info: [
            { 
-            img: "images/emp9.jpg",
+            img: "images/pr_img4.jpg",
             para: "Find properties that fit your criteria using our Property Search. You can also keep an eye on our social media feeds and you’ll find all our properties listed on the major property portals including Rightmove and OnTheMarket."
         },
         ],
@@ -1773,7 +1812,7 @@ export const simple_process = [
         title :"Step 2: Contact us",
         info: [
             {
-        img: "images/emp1.jpg",
+        img: "images/pr_img5.jpg",
         para: "All of our properties have Virtual Tours so you can explore them online. Once you have found a property you like the look of, contact us to discuss the property and your requirements in more detail and we can book you an in-person viewing.  Simply call us or submitting a ‘Book Viewing’ request, and one of our friendly team will get back to you.",
     },
 ],
@@ -1782,7 +1821,7 @@ export const simple_process = [
         title: "Step 3: Online Application",
         info: [
             { 
-        img: "images/emp4.jpg",
+        img: "images/pr_img6.jpg",
         para: "Once you’ve chosen your perfect property, our Lettings Administrator will take you through the application process step by step. Much of the process can be completely very simply online."
     },
 ],
@@ -1791,7 +1830,7 @@ export const simple_process = [
         title: "Step 4: Holding Deposit",
         info: [
             { 
-        img: "images/emp6.jpg",
+        img: "images/pr_img7.jpg",
         para: "To reserve your favourite property for 7 days while the Application Process is in progress, we take a Holding Deposit, which will go towards the full deposit  once the Tenancy Agreement is completed."
     },
 ],
@@ -1800,10 +1839,113 @@ export const simple_process = [
         title: "Step 5: Tenancy Agreement",
         info: [
             { 
-        img: "images/emp8.jpg",
+        img: "images/pr_img8.jpg",
         para: "Congratulations! If you are a successful candidate, our team will discuss their thoughts and a proposal will be put together. You will then receive a call to wish you congratulations and offer you the job. A formal job offer will be sent to you by email and a start date will be discussed. Once all has been agreed a contract and any further details will be sent out to you."
     },
 ],
+    },
+]
+
+export const professionalCard = [
+    {
+      title: "PROFESSIONAL, STUDENT",
+      featured: "Featured",
+      bg: "bg-purple-950",
+      title2: "Tenant Handbook 2023",
+      info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+   },
+   {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    bg: "bg-purple-950",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    bg: "bg-purple-950",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    bg: "bg-purple-950",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  {
+    title: "PROFESSIONAL, STUDENT",
+    featured: "Featured",
+    title2: "Tenant Handbook 2023",
+    info: "We will arrange an inspection of your property with you every three months or at least once in every Tenancy term; also if should you decide to renew or if you are in arrears. This is just to check that everything is as it should be, so we can help head off any issues before they become more serious. We do send a copy of the inspection report to the Landlord, so it’s a good idea to make sure everything is clean and tidy before we come round. We also have to do..."
+  },
+  ]
+
+  export const tenantNews= [
+    {
+        img:"images/tenant_news1.jpg",
+        investment: "Investment",
+        news: "Landlord News",
+        date: '2017-12-3',
+        title: "National Landlord News Summary Show and Description",
+    },
+    {
+        img:"images/tenant_news2.jpg",
+        news: "Company News",
+        investment: "Investment",
+        date: '2017-12-3',
+        title: "Danhamz latest News Summary Show and Description",
+    },
+    {
+        img:"images/tenant_news3.jpg",
+        investment: "Investment",
+        news: "Company News",
+        date: '2017-12-3',
+        title: "London we are coming!",
     },
 ]
 // professional-page
@@ -1812,7 +1954,48 @@ export const simple_process = [
 export const stu_nav = [
     {
         title:"All-inclusive student accommodation in Leeds.",
+        img:"images/stu_img.png",
+        button: "Join The Danhamz List for Property Alerts",
+        btn_bg:"bg-purple-950",
+        btn_color:"text-white",
+        title_color:"text-purple-950",
+        btn_text: "text-white"
     }
+]
+
+export const student_search = [
+    {
+        img: "images/stu_img2.jpg",
+        title: "Start your search here",
+        info: "If you are looking for a place of your own, a room in a houseshare or somewhere for you and all your housemates to call home, we can help. Pop in your criteria below to start the search for your all-inclusive student property with HOP or hit ‘Advanced Search’ for even more options.",
+    }
+]
+
+export const stu_accommodation = [
+    {
+        title: "All-inclusive Student Accommodation",
+        icon: <Icon icon="mdi:lightbulb-on-outline" />,
+        info: "Life as a student is busy and stressful enough, so choose an all-inclusive property from HOP to take all the hassle out of renting. Fancy an all-inclusive tenancy? We’ve got you covered! All HOP 3+ bedroom managed properties come with our ESSENTIALS bills package included: Gas, Electric, Water & Broadband. For a more hassle-free way to rent, our clever bills package means that you simply pay the same thing every month and it’s all taken care of.  It’s a no brainer!",
+        img: "images/stu_img3.jpg",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        button:"Find out more"
+    }
+]
+
+export const quick_search = [
+    {title: "View all 1 beds", url: "/",  value: "1 bed"},
+    {title: "View all 2 beds", url: "/",  value: "2 bed"},
+    {title: "View all 3 beds", url: "/",  value: "3 bed"},
+    {title: "View all 4 beds", url: "/",  value: "4 bed"},
+    {title: "View all 5 beds", url: "/",  value: "5 bed"},
+    {title: "View all 6 beds", url: "/",  value: "6 bed"},
+    {title: "View all 7 beds", url: "/",  value: "7 bed"},
+    {title: "View all 7+ beds", url: "/",  value: "8 bed"},
+    {title: "View all", url: "/",  value: "9 bed"},
+    {title: "Advanced Property Search", url: "/",  value: "10 bed"},
 ]
 
 // student-page

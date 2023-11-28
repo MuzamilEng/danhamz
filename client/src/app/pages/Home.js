@@ -16,7 +16,7 @@ import Layout from '../Layout/Layout';
 import LeftImageContainer from '../Component/LeftImageContainer';
 
 const Home = () => {
-  const [showRentSection, setShowRentSection] = useState(true);
+    const [showRentSection, setShowRentSection] = useState(true);
   const images = ["images/home.jpg", "images/main.jpg", "images/home.jpg"];
 
   const settings = { dots: true, arrows: false, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };

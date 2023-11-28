@@ -10,7 +10,7 @@ const ContentImage = ({img, info, title, button, bg_color, url, title_color, inf
                             <h1 style={{lineHeight: "2.7vw"}} className={`${title_color} text-[2.5vw] font-medium w-full max-w-[30vw]`}>{title}</h1>
                             <p className={` ${info_color} text-vw mt-[1.5vw] font-medium w-full max-w-[30vw]`}>{info}</p>
                             <div className="mt-2vw">
-                           {button && <Link to={url} className={`p-vw ${btn_bg} ${btn_text} font-medium text-center`}>{button}</Link>}
+                           {button && <Link to={url} className={`p-vw ${btn_bg} ${btn_text} text-vw font-medium text-center`}>{button}</Link>}
                            </div>
                         </div>
                     </section>
