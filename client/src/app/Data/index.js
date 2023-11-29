@@ -1998,4 +1998,184 @@ export const quick_search = [
     {title: "Advanced Property Search", url: "/",  value: "10 bed"},
 ]
 
+export const smart_rent = [
+    {
+        video: "https://youtu.be/B_JVGLIGmuw",
+        mainTitle: "A smarter way to rent",
+        infos: [
+            {
+                title :"Amazing places",
+                info: "From 1 bed apartments to 10 bedroom shared houses in all the most popular student areas in Leeds, you’ll have plenty of choice when it comes to finding your next student home.",
+            
+            },
+            {
+                title:"Online viewings & applications",
+                info:"Your next home is just a scroll away! Browse our selection of handpicked homes in our property search and take a Virtual Tour of your favourites. You can also follow us on social for the latest listings and complete your application online once you’ve found ‘the one’."
+            },
+            {
+                title: "All-inclusive",
+                info:"All 3+ bedroom HOP managed properties come with bills included, so all your essentials are covered in one simple payment with your rent. Our ESSENTIALS bills package covers your Gas, Electric, Water & the all-important Broadband.",
+            }
+        ]
+        
+    }
+]
+
+export const property_loc = [
+    {title: "Properties in Headlingly", url: "/Headlingly",  value: "Headlingly"},
+    {title: "Properties in Hyde Park", url: "/Park",  value: "Park"},
+    {title: "Properties in Woodhouse", url: "/Woodhouse",  value: "Woodhouse"},
+    {title: "Properties in Burley", url: "/Burley",  value: "Burley"},
+    {title: "Properties in All Student Properties", url: "/student-properties",  value: "student-properties"},
+]
+
+export const danhamzList = [
+    {
+        img: "images/stu_img4.png",
+        title: "Join The Danhamz List",
+        info: "Be the first in line for the best properties for 2024 by signing up to our student mailing list. There are loads of ways to find your new home with HOP. Scroll through our social media channels, browse our website or take a look around on the major property portals and you’ll find our listings there too. You can also get properties right to your inbox by joining our HOP List mailing list and we’ll send you our ‘Hot Properties’ emails",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        button:"Join the list for property alerts",
+        url: "/"
+    }
+]
+
+export const reasons = [
+    {
+        title: "All-inclusive homes",
+        number:1,
+        info: "All our HOP student properties can be all-inclusive, which means you don’t have to worry about bills. We take care of it all for you so you can enjoy a stress-free student renting experience.",
+    },
+    {
+        title: "Essential Bills Covered",
+        number:2,
+        info: "We’ve got you covered. with 3-bedrooms or more, then our ESSENTIALS Bills Package is included as standard. That’s Gas, Electric, Water & Broadband – all sorted with your rent!",
+    },
+    {
+        title: "No Fees",
+        number:3,
+        info: "There are no signing fees to pay when you rent with us.",
+    },
+    {
+        title: "We know the market",
+        number:4,
+        info: "We know the student market inside out and have been doing this for well over a decade, so you know you are in safe hands. Plus we are Unipol Code Accredited too!",
+    },
+    {
+        title: "24/7 reporting",
+        number:5,
+        info: "If you need anything once you are in the property, we have a handy online repair portal for 24/7 reporting.",
+    },
+]
+
+export const abit_about = [
+    {
+        title: "A bit about HOP",
+        info: "We’re old hands when it comes to matching students to their ultimate accommodation. First as Let Leeds and now as HOP, we have been leading the way in lettings since 2009. Nothing gives us more of a fuzzy feeling inside than helping students find their perfect match. From the get-go, we have been determined to provide an innovative service for young people who are searching for student accommodation in Leeds. Our motto is ‘Every Move Matters’ and it’s an ethos that captures how we feel about everything we do here at HOP.  From start to finish, we aim to offer every student a truly top notch and personal experience. We’ve even won a number of awards for our customer service and have received heaps of positive reviews on Feefo and Google from happy landlords and tenants. We could let that kind of thing go to our collective heads, but that’s not the way we operate at HOP. In our minds, if customers are happier with us than they have been with any other agency, that just means we’re doing our job. Our friendly team – many of whom were once students themselves – are here to help you find the home that is right for you. Rest assured that we will go the extra mile to find, not just any available rental, but the perfect location that matches your budget, academic needs and safety considerations.",
+        img: 'images/stu_img5.png',
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        bg_color: "bg-white",
+       
+    }
+]
+
+export const our_process = [
+    {
+      title: "Step 1: Start the search",
+      info: [
+        {
+          img: "images/stu_img6.png",
+          para: "Search our available student accommodation. Whether you’d prefer to browse our website, check out Rightmove or scroll through our social channels, the first step in finding your perfect student home is to take a look at our properties and see what takes your fancy. Click here for our property search or we can also send our hottest picks straight to your inbox, just register your details here.",
+        },
+      ],
+    },
+    {
+      title: "Step 2: Call us to arrange a viewing",
+      info: [
+        {
+          img: "images/stu_img7.png",
+          para: "Call us to arrange a viewing Give us a call to book in a viewing and we can match you to other suitable properties at the same time. All our staff are super friendly and will take you through the options available to you, just give the Leeds Team a call on 0113 322 9324. We’ve invested in high tech cameras and virtual tour technology so you can fully explore the property online without even leaving home.",
+        },
+      ],
+    },
+    {
+      title: "Step 3: Viewings",
+      info: [
+        {
+          img: "images/stu_img8.png",
+          para: "Viewings All our properties have virtual tours, meaning you are free to explore your potential new homes from the comfort of your sofa! If you would prefer to view in person, give us a call or click ‘book a viewing’ on your fave property to arrange an appointment and we’ll book you in. Our viewings take place with our knowledgeable student property experts who will meet you at the property, show you round and can give you the low-down on all you need to know.",
+        },
+      ],
+    },
+    {
+      title: "Step 4: Reserve the property",
+      info: [
+        {
+          img: "images/stu_img9.png",
+          para: "Reserve the propertyFallen in love with your dream student home?We’ll fill out a Pre-Tenancy Agreement with you, which details key information regarding the Tenancy.  In addition, we’ll take a Holding Deposit to take it off the market, this is usually one week’s rent.You will then have 15 days to complete your application or it goes back on the market! Holding Deposit will go towards your Deposit and transferred to a deposit account upon signing the Tenancy Agreement.",
+        },
+      ],
+    },
+    {
+      title: "Step 5: Complete your application",
+      info: [
+        {
+          img: "images/stu_img10.png",
+          para: "Complete your application Completing your application is easy using the HOP Online Application. Fill in the details and submit the required documents – all electronically! You can even do it from your phone. These details will form part of the final Tenancy Agreement that you and your housemates will need to sign at the end of the process.",
+        },
+      ],
+    },
+    {
+      title: "Step 6: Guarantor paperwork",
+      info: [
+        {
+          img: "images/stu_img11.png",
+          para: "Guarantor paperwork As a Student you will require a Guarantor who will guarantee that you will pay your rent for the duration of the Tenancy. If for some reason, you don’t pay your rent, then the Guarantor will be liable for it. A Guarantor is usually a parent or guardian earning over £25,000 p/a. As you complete your HOP Online Application with their details, the Guarantor will be emailed a link to fill in their information too and upload the relevant documents online. The Guarantor will then be referenced and credit checked as part of the application process.",
+        },
+      ],
+    },
+    {
+      title: "Step 7: The property is yours!",
+      info: [
+        {
+          img: "images/stu_img12.png",
+          para: "The property is yours! Once the application, paperwork and referencing is complete, the final Tenancy Agreement will be sent electronically to all parties to sign. Once signed, we’ll check everything is as it should be, countersign it, and the balance of the Deposit becomes due. The final, signed Tenancy Agreement will be issued with prescribed information automatically, once completed. You’ll then need to pay the remainder of your Deposit. The Holding Deposit carries forward to become part of your deposit, and the whole thing is held by the TDS (Tenancy Deposit Scheme), which holds it securely throughout your Tenancy.",
+        },
+      ],
+    },
+    {
+      title: "Step 8: Pay first month's rent",
+      info: [
+        {
+          img: "images/stu_img13.jpg",
+          para: "Pay first month’s rent As it will state in your Tenancy Agreement, 14 days before your Tenancy start date, you’ll need to pay your first rent instalment and arrange key collection dates with the HOP team. It’s important you set up a standing order to pay the initial rent payment by this deadline, as we can’t release keys until these funds are cleared. On a joint tenancy, where you are sharing with housemates, all parties will need to have paid their first rent instalment in full before the keys can be released to anyone in the group.",
+        },
+      ],
+    },
+    {
+      title: "Step 9: Move in a day!",
+      info: [
+        {
+          img: "images/stu_img14.jpg",
+          para: "Move in day! Book an appointment with the team to collect your keys and Tenancy Pack either on, or a few days after, your Tenancy start date (usually around the 1st July for students). Don’t forget that you will need to bring your passport/ID with you so we can release the keys. Then you can move in to your perfect pad and set about making it your new home!",
+        },
+      ],
+    },
+  ];
+
+  export const thingsToremember = [
+    {
+        title: "Things to Remember on Move-In Day",
+        info: "When it’s time to move into your student accommodation in Leeds, of course you’ll be keen to start experiencing student life in Leeds and really see what the city has to offer. However, there are a few things you have to consider on move-in da Firstly, you’ll need to collect your keys from the HOP office. Remember to bring your ID with you as we’ll be giving all sets of keys to the nominated tenant that comes into the office. Each tenant should have their own set, and we recommend testing each of these You’ll then be given a photographic inventory – listing everything in the property and showing the condition it’s in. Please take this seriously. You have the option to respond if anything in the inventory isn’t accurate Our last tip is to test your appliances. You should ensure this is done as soon as possible as, after 14 days, you will be liable for anything that is faulty",
+        img: "images/stu_img13.jpg",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        bg_color: "bg-gray-200",
+    }
+  ]
+  
 // student-page
