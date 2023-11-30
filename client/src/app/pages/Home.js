@@ -14,6 +14,7 @@ import News from '../Component/News';
 import BuySection from '../Component/BuySection';
 import Layout from '../Layout/Layout';
 import LeftImageContainer from '../Component/LeftImageContainer';
+import RatingsContainer from '../Component/RatingsContainer';
 
 const Home = () => {
     const [showRentSection, setShowRentSection] = useState(true);
@@ -94,16 +95,9 @@ const Home = () => {
             <Link to="/" className="bg-pink-400 mt-2vw block p-vw m-vw text-white font-medium text-[0.8vw] text-center">Start your search</Link>
           </div>
           {/* reviews */}
-          <div className="slider-container bg-gray-200">
-            <h1 className='text-center text-blue-900 text-[1.9vw] text-semibold'>Customer Reviews</h1>
-            <div className="slider m-vw">
-              {ratings?.map((item, index) => (
-                <div key={index} className="review-item m-vw">
-                  <Reviews ratings={item?.icon} title={item?.title} para={item?.para} name={item?.name} />
-                </div>
-              ))}
-            </div>
-          </div>
+         <div className="w-full">
+          <RatingsContainer />
+         </div>
           {/* investors */}
           <section className='w-full flex justify-center items-center bg-white p-2vw'>
             {investors?.map((item, index) => (

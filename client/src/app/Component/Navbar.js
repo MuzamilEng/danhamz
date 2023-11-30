@@ -24,8 +24,9 @@ const Navbar = () => {
                         <main className="flex relative flex-col justify-center items-center w-full" key={index}>
                             <div className="flex justify-between p-[1.5vw] items-center w-full max-w-[80vw]">
                                 <Link to={item?.link} className="flex items-center">
-                                    <span className="text-blue-950 text-[2.7vw]">{item?.icon}</span>
-                                    <span className="ml-2 font-semibold text-blue-950 text-[2.5]">{item?.title}</span>
+                                <img src="images/Danhamz_logo.gif" alt="danhamz" className="w-full max-w-[12vw]" />
+                                    {/* <span className="text-blue-950 text-[2.7vw]">{item?.icon}</span>
+                                    <span className="ml-2 font-semibold text-blue-950 text-[2.5]">{item?.title}</span> */}
                                 </Link>
                                 <section className="flex justify-evenly items-center w-full max-w-[60vw]">
                                     {item?.lists?.map((list, index) => {

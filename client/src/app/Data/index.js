@@ -2178,4 +2178,276 @@ export const our_process = [
     }
   ]
   
+  export const Remembering  = [
+    {
+        title: "Remembering Your Responsibilities",
+        info: "We know it’s an exciting time to move out of student halls, but as one of the prime Leeds student letting agents, we feel we should remind you that you do have some responsibilities when it comes to looking after your rental property during your time at university.",
+        img: "images/stu_img14.jpg",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        bg_color: "bg-white",
+        lists: [
+            {
+                title: "Bleeding radiators to ensure they are clear of air and will actually heat your home",
+            },
+            {
+                title: "Keeping sinks clear of silt, hair and anything else that may cause a blockage",
+            },
+            {
+                title: "Replacing light bulb",
+            },
+            {
+                title: "Regularly testing smoke alarms and replacing batteries as needed",
+            },
+            {
+                title: "Keeping external drains free of debris – so surface water can flow",
+            },
+            {
+                title: "Keeping rooms well ventilated (windows open) – especially bathrooms",
+            }
+        ]
+    }
+  ]
+
+  export const propertyClean  = [
+    {
+        title: "Keeping Your Property Clean",
+        info: "We know it’s an exciting time to move out of student halls, but as one of the prime Leeds student letting agents, we feel What you do in your own time is up to you, but it’s vital that you keep your student let clean! Here are a few things we suggest you do to keep it in good condition, and ensure you get your full deposit back:",
+        img: "images/stu_img15.jpg",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        bg_color: "bg-white",
+        lists: [
+            {
+                title: "Hoover up on a regular basis and wipe down skirting boards – they get dusty!",
+            },
+            {
+                title: "Clean the cooker after use",
+            },
+            {
+                title: "Don’t leave out-of-date food to rot in your fridge",
+            },
+            {
+                title: "Keep bathrooms clean to prevent mould",
+            },
+            {
+                title: "Act quickly if you spill anything on carpets or upholstery",
+            },
+        ]
+    }
+  ]
+
+  export const leedsGuide = [
+    {
+        title: "Leeds Student Area Guides ",
+        info: "From Headingley to Burley, Woodhouse to Hyde Park, Leeds City Centre and beyond, we provide an award-winning, personal service and a range of first class student accommodation. If you’re looking for student houses in Leeds,  if you are new to Leeds, or perhaps you’re just considering moving to a new corner of our fair city, why not check out our Student Area Guides for a little inspiration on which area would suit you best. Whether you want to be able to roll out of bed and make it to lectures in 5 minutes, prefer a leafier suburb, or budget is your number one priority, Leeds has a number of key student areas to investigate in order to find the student house that is right for you. Leeds is huge. If it’s your first time living here, or you want to explore something different from your current stomping ground, it can be hard to know where to start.  We’ve put together these handy area guides so you can get to know a bit more about the top student areas such as Hyde Park, Headingley, Burley and Kirksta ",
+        img: "images/stu_img16.png",
+        title_color: "text-white",
+        info_color: "text-white",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        button:"Leeds Student Area Guide",
+        url: "/property-search",
+        bg_color: "bg-purple-950",
+    }
+]
+
+export const testimonial = [
+    {
+        img: "images/stu_logos0.png",
+        title: "Report a Repair",
+        url: "/report-a-repair",
+    },
+    {
+        img: "images/stu_logos1.png",
+        title: "Tenant Book 2023",
+        url: "/tenant-book-2023",
+    },
+    {
+        img: "images/stu_logos2.png",
+        title: "Tenant Book 2022",
+        url: "/tenant-book-2022",
+    },
+    {
+        img: "images/stu_logos3.png",
+        title: "Students FAQs",
+        url: "/students-faqs",
+    },
+    {
+        img: "images/stu_logos4.png",
+        title: "Knowledge Bank",
+        url: "/knowledge-bank",
+    },
+    {
+        img: "images/stu_logos5.png",
+        title: "Student Insurance",
+        url: "/student-insurance",
+    },
+]
+
+export const downloadBook = [
+    {
+        title: "Download the HOP Tenant Handbook",
+        info: "In this handbook we’ve covered the basics about the property, paying your rent, what your responsibilities are as a Tenant and how to report things like maintenance issues. Hopefully we’ve covered most of what you need to know, but if you’ve got any further questions just give the Leeds Team a call.",
+        img: "images/stu_img17.jpg",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        button:"Studenet Tenant Book 2023",
+        url: "/property-search",
+        bg_color: "bg-gray-200",
+    }
+]
+export const rep_report = [
+    {
+        title: "Report a Repair        ",
+        info: "Once you’re in the property, you can contact us if you ever have any problems. You can report a maintenance issue at any time, and we promise to get on the case within 24 hours. Sometimes we may need to conduct major repair works which may take some time, but usually we aim to get minor issues resolved within 48 hours.",
+        img: "images/stu_logos0.png",
+        title_color: "text-purple-950",
+        info_color: "text-gray-800",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        button:"Leeds Student Area Guide",
+        url: "/property-search",
+        bg_color: "bg-white",
+    }
+]
+
 // student-page
+
+// landlord page
+export const landlord_nav = [
+    {
+        title:"landlords",
+        img:"images/landLord_nav.jpg",
+        button: "Free valuation",
+        btn_bg:"bg-pink-400",
+        btn_color:"text-white",
+        title_color:"text-purple-950",
+        btn_text: "text-white"
+    }
+]
+
+export const letProperty = [
+    {
+        title: "Guaranteed Rent",
+        info: "With our Rent Guarantee service, you’ll not be out of pocket should the unexpected happen. Our Rent Guarantee service comes with nil excess, rent arrears paid for up to 15 months and up to 100,000 legal expenses cover.        ",
+        para: "Danhamz is an award-winning Letting Agent in Leeds that provides a complete 360° service for Landlords, helping them to maximise their investment. Our long established  Lettings Team manages over 2,000 happy student and professional tenants.",
+        question: "",
+        desc: "Enjoy extra peace of mind with our extensive rent protection and legal expenses cover",
+    },
+    {
+        title: "Maximise your investment",
+        info: "Our fully managed service aims to maximise your property portfolio.        ",
+        para: "Our fresh, flexible and friendly approach to sales means you get the customer service you deserve, while our top-notch marketing will make your property stand out from the crowd Danhamz’s friendly expert Estate Agents provide a seamless sales service from start to finish",
+        question: "",
+        desc: "Minimise void periods by having new tenants ready to move in at the end of a tenancy.        ",
+    },
+    {
+        title: "Local Expertise        ",
+        info: "With over a decade of experience in the Leeds rental market, our team are highly adept in letting and managing all kind of properties.        ",
+        para: "Danhamz Investments provides a turnkey solution for investors looking to take advantage of investing in Buy to Let property in Leeds. We’ll source the right property, spec and handle any works to optimise the investment, and then let and manage it for you, wherever in the world you are based.",
+        // question: "We can market your property to savvy students and professionals in Leeds        ",
+        desc: "Property Sourcing",
+    },
+    {
+        title: "Services to suit you",
+        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.        ",
+        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+        // question: "Read more about Danhamz Block Management",
+        desc: "Full Property Management        ",
+    },
+]
+
+export const findTenant = [
+    {
+        img: "images/landlord_1.jpg",
+        title: "Finding the Right Tenant        ",
+        info: "Finding the right tenants who pay their rent on time, and take care of the property they have rented, is of the upmost importance for us and for our Landlords too Happy tenants, mean happy homes and that makes for a happy Landlord and Agent too! Reliable tenants are at the heart of a successful lettings business as well as warm relationship between the landlord and the agent. That’s why we deliver a great, personal service to our tenants, and take careful measures to find the right Tenant for all our Landlord’s propertie Tenant Retention – We look after your Tenants, ensuring your property is occupi Tenant Vetting – Credit checked and referenced tenants that will look after your proper Tenant Deposits – We safeguard the deposit with the D Extensive knowledge – We know the Leeds lettings market inside o Professional or Student Let – We can recommend the best rental strategy for your proper Good communication – Your dedicated Property Manager is on hand for any queri Flexible Services – To suit your lifestyle and experience lev Negotiable Fees – To suit your budget",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        bg_color : "bg-white"
+    }
+]
+export const makingYourProperty = [
+    {
+        img: "images/landlord_2.jpg",
+        title: "Marketing your property",
+        info: "Finding the right tenants who pay their rent on time, and take care of the property they have rented, is of the upmost importance for us and for our Landlords too Happy tenants, mean happy homes and that makes for a happy Landlord and Agent too! Reliable tenants are at the heart of a successful lettings business as well as warm relationship between the landlord and the agent. That’s why we deliver a great, personal service to our tenants, and take careful measures to find the right Tenant for all our Landlord’s propertie Tenant Retention – We look after your Tenants, ensuring your property is occupi Tenant Vetting – Credit checked and referenced tenants that will look after your proper Tenant Deposits – We safeguard the deposit with the D Extensive knowledge – We know the Leeds lettings market inside o Professional or Student Let – We can recommend the best rental strategy for your proper Good communication – Your dedicated Property Manager is on hand for any queri Flexible Services – To suit your lifestyle and experience lev Negotiable Fees – To suit your budget",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        button:"Find out more",
+        url: "/",
+        bg_color : "bg-gray-200"
+
+    }
+]
+
+export const land_testimonial = [
+    {
+        img: "images/landlord_tes1.png",
+        title: "Property Management",
+        url: "/report-a-repair",
+    },
+    {
+        img: "images/landlord_tes2.jpg",
+        title: "Landlord Supplies",
+        url: "/tenant-book-2023",
+    },
+    {
+        img: "images/landlord_tes3.jpg",
+        title: "Refubs",
+        url: "/tenant-book-2022",
+    },
+    {
+        img: "images/lanldlord_tes4.jpg",
+        title: "Investment Sales",
+        url: "/students-faqs",
+    },
+    {
+        img: "images/landlord_tes5.jpg",
+        title: "Our Fees",
+        url: "/knowledge-bank",
+    },
+    {
+        img: "images/landlord_tes6.png",
+        title: "Landlord FAQs",
+        url: "/student-insurance",
+    },
+]
+
+export const rentalValue = [
+    {
+        img: "images/phone_logo.gif",
+        title: "What’s your rental value?        ",
+        info: "If you have a property available to let, complete the Market Appraisal form below to book your free consultation with one of our property experts. We offer virtual and face-to-face appointments for your convenience and will cover the following topics during your appointment: Hints & tips on how to make the most of your investmen Advice on the latest industry requirements & regulation Recommendations on marketing strategie A market valuation and recommended rental valu Complete the form and our valuation experts will get in touch to arrange an appointment.",
+        info_color: "text-white",
+        title_color: "text-white",
+        btn_bg: "bg-white",
+        btn_text: "text-gray-800",
+        button:"Free valuation",
+        url: "/",
+        bg_color : "bg-[#3a1955]"
+
+    }
+]
+
+export const landlordServices = [
+    {
+        img: "images/landlord_3.png",
+        title: "Our Landlord Services        ",
+        info: "No matter what level service you require from us, or the kind of property that you own, there is always no fee to pay until we find you a tenant. We offer a range of services tailored to your individual requirements and depending on the kind of property or properties that you own. Whether you have a professional/family property to let or an HMO/student property in your portfolio, we can provide the level of service that suits you best.",
+        info_color: "text-gray-800",
+        title_color: "text-purple-950",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        button:"Read about our landlord services",
+        url: "/",
+        bg_color : "bg-white"
+
+    }
+]
+// landlord page
