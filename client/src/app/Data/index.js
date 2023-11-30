@@ -66,6 +66,11 @@ export const navbar = [
                         icon: <Icon icon="healthicons:city-worker-outline" />,
                     },
                     {
+                        title: "Let OR Sell",
+                        link: "/let-or-sell",
+                        icon: <Icon icon="pepicons-pencil:key" />,
+                    },
+                    {
                         title: "Refer A Friend",
                         link: "/refer-a-friend",
                         icon: <Icon icon="fluent:chat-32-regular" />,
@@ -659,14 +664,14 @@ export const toggleInfo = [
 
 export const news= [
     {
-        img:"images/student.jpg",
+        img:"images/stu_img3.jpg",
         investment: "Investment",
         news: "Landlord News",
         date: '2017-12-3',
         title: "National Landlord News Summary Show and Description",
     },
     {
-        img:"images/img6.jpg",
+        img:"images/stu_img.png",
         news: "Company News",
         investment: "Investment",
         date: '2017-12-3',
@@ -2451,3 +2456,69 @@ export const landlordServices = [
     }
 ]
 // landlord page
+
+// refer a friend
+export const refer_nav = [
+    {
+        title:"Refer a Friend to danhamz for a thank you treat.",
+        img:"images/refer.gif",
+        title_color:"text-white",
+    }
+]
+
+export const referalScheme = [
+    {
+        img: "images/refer_1.jpg",
+        title: "Landlord Referral Scheme ",
+        info: "We believe it’s important to say “Please” and “Thank You” so we’ve launched a new Refer a Friend Scheme to reward any of our existing Landlords who successfully recommends a new Managed Landlord to us. If you have a friend looking for someone to manage their property, why not refer them to HOP As a thank you, we will send you a £100 John Lewis voucher, once we let their property on one of our Fully Managed Services Simply email us a message with their contact details so we can drop them a line Alternatively, they are welcome to call our Management Team at any time direct on 0113 320 2100.  Just remember to let them know that you have referred them to  ",
+        info_color: "text-gray-800",
+        title_color: "text-purple-950",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        button:"Email us",
+        url: "/",
+        bg_color : "bg-white"
+
+    }
+]
+
+export const terms = [
+    '1. One £100 John Lewis voucher per new Managed Landlord',
+    '2. Scheme starts 4th May 2022    ',
+    '3. Existing HOP Landlords can opt to change for a cash credit on your account of £100    ',
+    '4. The Referrer must be an existing HOP customer    ',
+    '5. For Landlords: Voucher paid 2 weeks after your friend’s property is let on HOP’s Standard Managed or Premium Managed Service, prior to 30th December 2023    ',
+    '6. Any claim for referral vouchers must be made prior to 31st January 2024    ',
+    '7. If your friend has already placed an order through any other sales channel, the Refer a Friend Credit will not be applicable    ',
+    '8. HOP reserves the right to remove or clawback vouchers if fraud or abuse is suspected    ',
+    '9. If you pass your friend’s details to HOP, you confirm that you have your friend’s permission to do so.    ',
+    '10. HOP reserves the right to withdraw this offer at any time.',
+
+]
+// refer a friend
+
+// let or sell
+
+export const let_nav = [
+    {
+        title:"Letting or selling – which is right for you?",
+        img:"images/let_1.jpg",
+        title_color:"text-purple-950",
+        button: "Instant Rental Valuation",
+        url: "/",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+    }
+]
+
+export const start = [
+    {
+        title:"Where Do I Start?        ",
+        img:"images/let_2.png",
+        title_color:"text-purple-950",
+        info: "Being a Landlord doesn’t need to be stressful. If you partner with HOP, we take care of everything for you: from marketing your property and finding the best tenants, to ongoing management and maintenance, right through to the end of the Tenanc It can be hard to know where to begin, but our friendly team is full of advice, expertise and guidance. We’ll ensure that your property is up to scratch and in line with current regulations and work with you to devise a strategy that will make the most of your investment. Call us today on 0113 320 2100 for a friendly chat about your property and your options.",
+        info_color: "text-gray-800",
+        bg_color: 'bg-white',
+    }
+]
+// let or sell

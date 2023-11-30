@@ -25,20 +25,7 @@ import CatagoryCard from '../../Component/CatagoryCard'
 const Students = () => {
   const [showRentSection, setShowRentSection] = useState(true);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4, // Show 4 cards at a time
-    slidesToScroll: 1,
-  };
 
-  function foo(){
-    return {
-      bar: "foo"
-    }
-  }
-  console.log(foo()); //out of foo bar is undefined
   return (
     <div>
       <Layout>

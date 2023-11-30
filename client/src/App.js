@@ -13,6 +13,7 @@ import Professionals from './app/pages/Lettings/Professionals'
 import Students from './app/pages/Lettings/Students'
 import Landlord from './app/pages/Lettings/Landlord'
 import ReferAfriend from './app/pages/Lettings/ReferAfriend'
+import LetOrSell from './app/pages/Lettings/LetOrSell'
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/professionals' element={<Professionals />} />
         <Route path='/students' element={<Students />} />
         <Route path='/landlords' element={<Landlord />} />
+        <Route path='/let-or-sell' element={<LetOrSell />} />
         <Route path='refer-a-friend' element={<ReferAfriend />} />
       </Routes>
     </>
