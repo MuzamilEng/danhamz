@@ -17,7 +17,7 @@ const PageAddress = ({main, category, subCategory, subLink, mainLink}) => {
                 />
               </Link>
               <Link to={subLink}><p className="text-gray-900 text-[0.8vw] hover:text-red-600 cursor-pointer ml-0.3vw">{category}</p></Link>
-                <Icon icon="mdi:keyboard-arrow-right" className="text-gray-900 text-[0.8vw]" />
+               { subCategory && <Icon icon="mdi:keyboard-arrow-right" className="text-gray-900 text-[0.8vw]" />}
                 <p className="text-gray-900 text-[0.8vw] ml-0.3vw">{subCategory}</p>
               </section>
             </div>

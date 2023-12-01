@@ -14,6 +14,7 @@ import Students from './app/pages/Lettings/Students'
 import Landlord from './app/pages/Lettings/Landlord'
 import ReferAfriend from './app/pages/Lettings/ReferAfriend'
 import LetOrSell from './app/pages/Lettings/LetOrSell'
+import SearchProperty from './app/pages/SearchProperty'
 
 const App = () => {
   return (
@@ -32,7 +33,9 @@ const App = () => {
         <Route path='/students' element={<Students />} />
         <Route path='/landlords' element={<Landlord />} />
         <Route path='/let-or-sell' element={<LetOrSell />} />
-        <Route path='refer-a-friend' element={<ReferAfriend />} />
+        <Route path='/refer-a-friend' element={<ReferAfriend />} />
+        <Route path='/search-property' element={<SearchProperty />} />
+
       </Routes>
     </>
   )

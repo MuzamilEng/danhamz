@@ -2522,3 +2522,204 @@ export const start = [
     }
 ]
 // let or sell
+
+// property search page
+
+export const rentContainer1 = [
+    {
+        noOfbeds: 'How many bedrooms do you need?',
+        quantity:[
+            {count: "1", value: "1"},
+            {count: "2", value: "2"},
+            {count: "3", value: "3"},
+            {count: "4", value: "4"},
+            {count: "5", value: "5"},
+            {count: "6", value: "6"},
+            {count: "7", value: "7"},
+            {count: "8", value: "8"},
+            {count: "9", value: "9"},
+            {count: "10", value: "10"},
+        ],
+        container: [
+            {
+                title: "What is your budget?",
+                type: "select",
+                options: [
+                    { title: "No Preferences", value: "no Preferences"}, 
+                    { title: "Less than $1000", value: "Less than $1000"},
+                    { title: "$1000 - $2000", value: "$1000 - $2000"},
+                    { title: "$2000 - $3000", value: "$2000 - $3000" }
+                ]
+            },
+            {
+                title: "Location (tick all that apply)",
+                type: "checkbox",
+                options: [
+                    { title: "No Preferences", value: "no Preferences"}, 
+                    {  title: "Armley", value: "Armley" },
+                    {  title: "Beeston", value: "Beeston" },
+                    {  title: "Bradford", value: "Bradford" },
+                    {  title: "Bramley", value: "Bramley" },
+                    {  title: "City Center", value: "City Center" },
+                    {  title: "East End Park", value: "East End Park" },
+                    {  title: "Farsley", value: "Farsley" },
+                    {  title: "Gildersome", value: "Gildersome" },
+                    {  title: "Horsforth", value: "Horsforth" },
+                    {  title: "Leeds", value: "Leeds" },
+                    {  title: "Meanwood", value: "Meanwood" },
+                    {  title: "Morley", value: "Morley" },
+                    {  title: "Northgate House", value: "Northgate House" },
+                    {  title: "Pudsey", value: "Pudsey" },
+                    {  title: "Stanningley", value: "Stanningley" },
+                    {  title: "Wortley", value: "Wortley" },
+                    {  title: "Wyke", value: "Wyke" },
+                ]
+            },
+            {
+                title: "How many bathrooms do you need?",
+                type: "select",
+                options: [
+                    {title: "No Minimum", value: "No Minimum"}, 
+                    {title: "1", value: "1"},
+                    {title: "2", value: "2"},
+                    {title: "3", value: "3"},
+                    {title: "4", value: "4"},
+                    {title: "5", value: "5"},
+                    {title: "6", value: "6"},
+                ]
+            },
+            {
+                title: "Property Type",
+                type: "select",
+                options: [
+                    {title: "No Preference", value: "No Preference"}, 
+                    {title: "Appartment", value: "Appartment"},
+                    {title: "Detatched", value: "Detatched"},
+                    {title: "Bunglow", value: "Bunglow"},
+                    {title: "Flat", value: "Flat"},
+                    {title: "Shared Flat", value: "Shared Flat"},
+                    {title: "Ground Flat", value: "Ground Flat"},
+                    {title: "House Share", value: "House Share"},
+                    {title: "Semi Detatched", value: "Semi Detatched"},
+                    {title: "Studio", value: "Studio"},
+                    {title: "Tarraced", value: "Tarraced"},
+                    {title: "Town House", value: "Town House"},
+                ]
+            },
+        ],
+        availableOptions:[
+                    { title: "No Preferences", value: "no Preferences"}, 
+                    { title: "From July 2023", value: "From July 2023"},
+                    { title: "From May 2023", value: "From May 2023"},
+                    { title: "From Next 2 Months", value: "From Next 2 Months" }
+                
+        ]
+    }
+]
+
+export const buyContainer1 = [
+    {
+        price: [
+            {
+                type: "select",
+                options: [
+                    {
+                        title: "Min Price",
+                    }, 
+                    {
+                        title: "Less than $1000",
+                    }, {
+                        title: "$1000 - $2000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                ]
+            },
+            {
+                type: "select",
+                options: [
+                    {
+                        title: "Max Price",
+                    }, 
+                    {
+                        title: "Less than $1000",
+                    }, {
+                        title: "$1000 - $2000",
+                    },{
+                        title: "$2000 - $3000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                    {
+                        title: "$2000 - $3000",
+                    },
+                ]
+            }
+        ],
+        beds: [
+            {
+                type: "select",
+                options: [
+                    {count: "Min beds", value: "min"},
+                    {count: "1", value: "1"},
+                    {count: "2", value: "2"},
+                    {count: "3", value: "3"},
+                    {count: "4", value: "4"},
+                    {count: "5", value: "5"},
+                    {count: "6", value: "6"},
+                    {count: "7", value: "7"},
+                    {count: "8", value: "8"},
+                    {count: "9", value: "9"},
+                ]
+            },
+            {
+                type: "select",
+                options: [
+                    {count: "Max beds", value: "Max"},
+                    {count: "1", value: "1"},
+                    {count: "2", value: "2"},
+                    {count: "3", value: "3"},
+                    {count: "4", value: "4"},
+                    {count: "5", value: "5"},
+                    {count: "6", value: "6"},
+                    {count: "7", value: "7"},
+                    {count: "8", value: "8"},
+                    {count: "9", value: "9"},
+                    {count: "10", value: "10"},
+                ]
+            }
+        ],
+        Type: [
+            {
+                type: "select",
+                options: [
+                    {title: "City Center"},
+                    {title: "Organization"},
+                    {title: "Parley"},
+                    {title: "Armley"},
+                ]
+            },
+            {
+                type: "select",
+                options: [
+                    {title: "Home"},
+                    {title: "Appartment"},
+                    {title: "Bungalow"},
+                    {title: "Cater"},
+                    {title: "Combined"},
+                ]
+            }
+        ]
+    }
+]
+
+
+// property search page

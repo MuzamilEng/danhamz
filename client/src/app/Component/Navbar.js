@@ -39,13 +39,17 @@ const Navbar = () => {
                                             </main>
                                         );
                                     })}
+                                    <Link to="/search-property">
                                     <div className="flex justify-center items-center bg-gray-300 cursor-pointer p-vw">
                                         <p className="text-blue-900 text-vw">Property search</p>
                                         <Icon icon="ic:twotone-search" className="text-[1.4vw] ml-0.5vw " />
                                         </div>
+                                    </Link>
+                                            <Link to="/instant-valuation" className="text-white text-vw">
                                         <div className="flex justify-center items-center bg-red-700 cursor-pointer p-vw">
                                         <p className="text-white text-vw">Free valuation</p>
                                         </div>
+                                            </Link>
                                         <Icon icon="ph:list-bold" className="text-2vw" />
                                 </section>
                             </div>

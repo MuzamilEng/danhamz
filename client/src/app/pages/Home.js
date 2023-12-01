@@ -34,13 +34,14 @@ const Home = () => {
             <div className="flex -ml-3vw justify-between items-start">
               {showRentSection ? <RentSection /> : <BuySection />}
               <section className='w-full mt-vw max-w-[35vw] ml-vw'>
-                <Slider {...settings}>
+                {/* <Slider {...settings}>
                   {images.map((image, index) => (
                     <div key={index}>
                     <img src={image} alt={`slide-${index}`} className="w-full" loading="lazy" />
                     </div>
                   ))}
-                </Slider>
+                </Slider> */}
+                <img src="images/landlord_0.jpg" alt="image" className='w-full'/>
               </section>
             </div>
           </article>
