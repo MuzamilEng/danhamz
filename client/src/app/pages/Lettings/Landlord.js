@@ -51,7 +51,7 @@ const Landlord = () => {
               )
             })}
             </div>
-            </article>
+          </article>
             {/* banner */}
             <div className="w-full col-center bg-purple-950 p-8vw">
               <h1 className='text-white text-[2vw] text-center font-medium w-full max-w-[45vw]'>Call <Link to="tel:+44 123 456 789"><span className="text-pink-500 hover:underline">+44 123 456 789</span></Link> for more information or contact us for guidance</h1>

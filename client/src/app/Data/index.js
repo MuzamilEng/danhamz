@@ -83,39 +83,29 @@ export const navbar = [
                 type: "select",
                 options: [
                     {
-                        title: "Sellers",
-                        link: "/",
-                        icon: <Icon icon="uiw:home" />,
-                    },
-                    {
-                        title: "Buyers",
-                        link: "/",
+                        title: "Investment Sales",
+                        link: "/investments-sales",
                         icon: <Icon icon="gis:home" />,
                     },
                     {
-                        title: "Investment Sales",
-                        link: "/",
+                        title: "Buy A BTL",
+                        link: "/buy-a-btl",
                         icon: <Icon icon="gis:home" />,
                     },
                     {
                         title: "Mortgages",
-                        link: "/",
+                        link: "/mortgages",
                         icon: <Icon icon="pepicons-pencil:key" />,
                     },
                     {
                         title: "Auctions",
-                        link: "/",
+                        link: "/auction",
                         icon: <Icon icon="mingcute:auction-line" />,
                     },
                     {
                         title: "Value My Property",
-                        link: "/",
+                        link: "/value-my-property",
                         icon: <Icon icon="teenyicons:search-property-solid" />,
-                    },
-                    {
-                        title: "Refer A Friend",
-                        link: "/",
-                        icon: <Icon icon="fluent:chat-32-regular" />,
                     },
                 ]
             },
@@ -2722,4 +2712,254 @@ export const buyContainer1 = [
 ]
 
 
+
+
 // property search page
+
+// investment sales page
+
+
+export const sellers_nav = [
+    {
+        title: "Investment Sales: Buy or Sell Tenanted Property",
+        url: "/sales-valuation",
+        button: "Free sale valuation",
+        btn_bg : "bg-pink-400",
+        btn_text : "text-white",
+        title_color: "text-purple-950",
+        img:"images/sellers_nav.png",
+    }
+]
+
+export const sellProperty = [
+    {
+        title: "Specialised Service ",
+        info: "With our Rent Guarantee service, you’ll not be out of pocket should the unexpected happen. Our Rent Guarantee service comes with nil excess, rent arrears paid for up to 15 months and up to 100,000 legal expenses cover.        ",
+        para: "Danhamz is an award-winning Letting Agent in Leeds that provides a complete 360° service for Landlords, helping them to maximise their investment. Our long established  Lettings Team manages over 2,000 happy student and professional tenants.",
+        question: "",
+        desc: "Enjoy extra peace of mind with our extensive rent protection and legal expenses cover",
+    },
+    {
+        title: "Communication        ",
+        info: "Our fully managed service aims to maximise your property portfolio.        ",
+        para: "Our fresh, flexible and friendly approach to sales means you get the customer service you deserve, while our top-notch marketing will make your property stand out from the crowd Danhamz’s friendly expert Estate Agents provide a seamless sales service from start to finish",
+        question: "",
+        desc: "Minimise void periods by having new tenants ready to move in at the end of a tenancy.        ",
+    },
+    {
+        title: "Off-Market Sales        ",
+        info: "With over a decade of experience in the Leeds rental market, our team are highly adept in letting and managing all kind of properties.        ",
+        para: "Danhamz Investments provides a turnkey solution for investors looking to take advantage of investing in Buy to Let property in Leeds. We’ll source the right property, spec and handle any works to optimise the investment, and then let and manage it for you, wherever in the world you are based.",
+        // question: "We can market your property to savvy students and professionals in Leeds        ",
+        desc: "Property Sourcing",
+    },
+    {
+        title: "Local Knowledge",
+        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.        ",
+        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+        desc: "Full Property Management",
+    },
+]
+
+
+export const salesStratergy = [
+    {
+      title: "An Investment Sales Strategy that is right for you",
+      img: "images/sellers_1.png",
+      info: "Depending on your objectives, HOP offers a number of different strategies to ensure the smooth sale of your investment properties. Transparent Fixed-Fee Traditional On-Market Sale with exposure on all major property portal No Fee Off-Market Sale via our extensive investor network and Investor Clu Assisted Sale to get your assets in the best possible position for a sal We’ll review your requirements in detail and can offer advice on which is the best route for you, to meet your individual goal. Our aim is to reduce stress,  increase the success, maximise the price and minimise the chances of failur Our specialist sales team will handle the smooth running of the transaction, whether you are looking to sell a single BTL property, a tenanted HMO, a multi-property portfolio or even blocks of flats Since 2009, we have had our fingers on the pulse of the Leeds letting market and have established a vast network of contacts over the years, which makes light work of buying and selling investment propert ",
+      title_color: "text-purple-950",
+      info_color: "text-gray-900",
+    }
+]
+
+export const salesExperience = [
+    {
+      title: "Expertise & Experience",
+      img: "images/sellers_2.png",
+      info: "When it comes to selling an investment property (or portfolio of properties) in Leeds, there are a number of things you need to take into account. Compliance, planning, condition are all elements that affect not only the value, but the chances of a successful completion in a timely manner. As HMO experts we know what potential buyers are looking out for when it comes to a property and we can help with a detailed review as part of the due diligence required to ensure you have everything in place, before the property is brought to market Does it need an HMO licence Is it in an area of C4 Planning What is the rental history like There is currently a lack of stock on in the investment sales market and good properties are in high demand. In particular, the scarcity of HMO’s in Article 4 Direction areas continues to support prices – as there is limited stock on the open market. Planning policy means there are no more likely to be made or converted in these areas.",
+      title_color: "text-purple-950",
+      info_color: "text-gray-900",
+      bg_color: "bg-gray-200",
+    }
+]
+export const onMarket = [
+    {
+      title: "On-Market Investment Sales",
+      img: "images/sellers_3.png",
+      info: "If you want the maximum possible exposure for your property, or portfolio of properties, then our on-market sales service offers everything you will need for a successful sale with HOP. Our transparent fixed-fee service gives you clarity of all costs up-front, while our top notch marketing techniques are proven to get more eyes on your property to result in a faster sale Using the latest tech, we’ll showcase your property in the best possible light across all the major property portals and the HOP website. Detailed property listings include: professionally edited photography, interactive virtual tours, expertly drawn floorplans, maps and EPC details – all designed to capture the attention of potential purchasers.",
+      title_color: "text-purple-950",
+      info_color: "text-gray-900",
+      url: "/",
+      button:"Book valuation",
+      btn_bg: "bg-pink-300",
+      btn_text: "text-white",
+    }
+]
+
+export const offMarket = [
+    {
+      title: "No Fee Off-Market Sale      ",
+      img: "images/sellers_4.png",
+      info: "If convenience & cost effectiveness are your priorities, then our no fee off-market investment sales service could be the right approach for you. At HOP, we’ve been working closely with Landlords with properties in Leeds for well over a decade. Since 2009, we have been meticulously letting and managing what has grown to be one a portfolio of over 2,000 rental homes within Leeds. This close partnership with Landlords has continued to build over time and has perfectly placed us to assist with investment sales between Investors, with minimal hassle and fuss for all involved. As Landlords grow, or reduce, the size of their portfolios our trusted network of contacts provides an invaluable resourc Our off-market sales service uses our network of pre-qualified investors, issuing the opportunity to our highly engaged HOP Investor Club and wider database to secure a sale quickly, and with no fee to pay, without having to go on-market",
+      title_color: "text-purple-950",
+      info_color: "text-gray-900",
+      bg_color: "bg-gray-200",
+     
+    }
+]
+
+export const positioning = [
+    {
+      title: "Positioning Your Investment Property",
+      img: "images/sellers_5.png",
+      info: "When it comes to selling an investment property – or a portfolio of properties –  how it is marketed and positioned is critical. Whether the property is being sold with a traditional on-market approach, or you decide to opt for the convenience of an off-market sale, we identify value-add options and crunch the numbers, so that the full potential and ‘big picture’ of the investment is presented a the potential buyer In many instances, properties are sold to our property sourcing clients – often on an off-market basis – who are pre-qualified investors that are actively looking to purchase in the Leeds market.",
+      title_color: "text-purple-950",
+      info_color: "text-gray-900",
+      bg_color: "bg-white",
+     
+    }
+]
+
+export const assistedSales = [
+    {
+      title: "Assisted Sale      ",
+      img: "images/sellers_6.png",
+      info: "Maximise your property’s sale value and share in the profits with an Assisted Sale. HOP will work in partnership with the owner to identify the potential of their property and then review the costs and strategy required to maximise the sales value against the agreed existing value. The goal is to increase the value to the owner, by optimising the property to maximise the sales price, rather than selling it at a reduced price due to its condition or other facts The owner does not need to funds those works, but would get a share in uplift once it is sold. HOP Investments would fully fund and undertake the works, utilising our expert project team of architects, planning consultants, and contractors, and project manage it from start to finish. Once works are finished, the property can be marketed in the usual way. On successful completion, the sales revenue and any profit is shared, repaying costs to each party This is ideal for investors or landlords with neglected properties, or properties with value- add potential (development, renovation, planning) and can be owner occupied, a BTL, a HMO, blocks of flats, commercial properties and land.",
+      title_color: "text-purple-950",
+      info_color: "text-gray-900",
+      url: "/",
+      button:"Contact us for more details",
+      btn_bg: "bg-pink-300",
+      btn_text: "text-white",
+    }
+]
+
+export const underStandLeedsMarket = [
+    {
+      title: "Understanding The Leeds Market      ",
+      img: "images/sellers_7.png",
+      info: "The Leeds Rental Market is split into two primary segments – Student & Professional  – both of which are very buoyant. Leeds’ huge student population means that there is continuous, year-on-year demand for quality properties. Being aware of the student season is key to choosing the right time to sell your investment. 1st July marks the start of the cycle, when across the entire city the majority of students move in to their new homes. The demand for rental property is not just for students but from professionals too. Leeds’ thriving professional market is down to its popularity as a fantastic place to work, with many large corporations and businesses choosing to locate here It’s also worth mentioning the growing rooms market. As everyone feels the pinch of the cost of living crisis, we are seeing an increase in tenants looking for rooms in a house share from both professionals and students alike – making HMO’s a prime choice for people looking to invest in Leeds property.",
+      title_color: "text-purple-950",
+      info_color: "text-gray-900",
+      bg_color: "bg-gray-200",
+     
+    }
+]
+
+export const bookSalesvaluation = [
+    {
+      title: "Book Your Sales Valuation Today",
+      img: "images/sellers_main.gif",
+      info: "It all starts with a free, no-obligation valuation. Get in touch now to book your consultation with our property experts.  We offer several options including:",
+      lists: ['Instant Online Valuation', 'Desktop valuation – simply call the office and our valuer can discuss your property and draft a desktop valuation for you.', 'Virtual Valuation – Using Facetime or Zoom, we’ll provide a personalised valuation and discuss your marketing options.', 'Face to Face Valuation – Book an appointment to visit your property in person and talk you through the options. If you have tenants in situ we provide the highest discretion and we will call you the same day to discuss and deliver your valuation figure.'],
+      title_color: "text-white",
+      info_color: "text-white",
+      url: "/",
+      button:"Book your sales valuation now",
+      btn_bg: "bg-purple-950",
+      btn_text: "text-white",
+      bg_color : 'bg-[#ea8bb9]'
+    }
+]
+
+// investment sale page
+
+// buy a ltd page
+
+export const Buyer_nav = [
+    {
+        title: "IBuying an investment property in Leeds",
+        title_color: "text-purple-950",
+        img:"images/buy_1.png",
+    }
+]
+
+
+export const insvestmentProperty = [
+    {
+        title: "Experience & Advice",
+        info: "With our Rent Guarantee service, you’ll not be out of pocket should the unexpected happen. Our Rent Guarantee service comes with nil excess, rent arrears paid for up to 15 months and up to 100,000 legal expenses cover.        ",
+        para: "Danhamz is an award-winning Letting Agent in Leeds that provides a complete 360° service for Landlords, helping them to maximise their investment. Our long established  Lettings Team manages over 2,000 happy student and professional tenants.",
+        question: "",
+        desc: "Enjoy extra peace of mind with our extensive rent protection and legal expenses cover",
+    },
+    {
+        title: "Independent Local Agent",
+        info: "Our fully managed service aims to maximise your property portfolio.",
+        para: "Our fresh, flexible and friendly approach to sales means you get the customer service you deserve, while our top-notch marketing will make your property stand out from the crowd Danhamz’s friendly expert Estate Agents provide a seamless sales service from start to finish",
+        question: "",
+        desc: "Minimise void periods by having new tenants ready to move in at the end of a tenancy.",
+    },
+    {
+        title: "A Helping Hand",
+        info: "With over a decade of experience in the Leeds rental market, our team are highly adept in letting and managing all kind of properties.        ",
+        para: "Danhamz Investments provides a turnkey solution for investors looking to take advantage of investing in Buy to Let property in Leeds. We’ll source the right property, spec and handle any works to optimise the investment, and then let and manage it for you, wherever in the world you are based.",
+        desc: "Property Sourcing",
+    },
+    {
+        title: "Property Connections",
+        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+        desc: "Full Property Management",
+    },
+    {
+        title: "Refurbs & Renovations",
+        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+        desc: "Full Property Management",
+    },
+    {
+        title: "Fully Accredited",
+        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+        desc: "Full Property Management",
+    },
+    {
+        title: "Experience & Advice",
+        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+        desc: "Full Property Management",
+    },
+]
+
+
+export const nextInvestment = [
+    {
+        title: "Let us find your next investment",
+        img: "images/buy_2.png",
+        info: "Leeds is an excellent location for buy-to-let investment and we offer a Property Sourcing  service for investors looking to take advantage of the excellent yields available in Leeds. A renowned hotspot for rental property, Leeds enjoys a vibrant professional market as well as a vast student population. With house prices more affordable than other major cities, and robust year-on-year rental demand, it’s a location full of opportunity for the savvy investor At HOP, we deliver a turnkey service for clients all over the globe. We’ll identify the right property for you, optimise it for the rental market, and then let & manage it on your behalf – so you can relax while your investment is hard at work With over 15 years’ experience, we can help you take advantage of all the Leeds property market has to offer.",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        url: "/",
+        button:"Property Sourcing",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const choosingArea = [
+    {
+        title: "Choosing the right area",
+        img: "images/buy_3.png",
+        info: "It’s the age old saying – location location location! But it’s a cliche for a reason. To find the perfect location for your new investment, there are a number of factors to consider Depending on whether you want professional tenants or student tenants, the kind of local amenities and transport routes will really make a difference. From schools and universities, to commuter links, to favourite places to shop and eat – what is important to the kinds of tenants you want to attract will be key to finding the right location for your investment Let us help. We know the Leeds rental market inside out and ca help you find a property that is going to meet your investment ambitions. Even if we’ve not got a property listed right now in your chosen area, we have a substantial network of Landlords that we can work with to locate your next investment.",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        url: "/",
+        button:"View our Leeds Area Guide",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const localOrOnlineAgent = [
+    {
+        title: "Local vs Online Agents – which is right for you?",
+        img: "images/buy_4.png",
+        info: "As a Local Independent Agent, we pride ourselves in delivering a personalised services from your high street. Our main branch is located in Leeds City Centre, which covers all LS & BD postcodes. Our friendly, helpful and knowledgeable teams are on hand to help customers with a range of different property services. Buying through an online agent is increasingly popular but it’s not without risk and extra stress. We’ve been selling and letting properties for over a decade, many online agents didn’t even exist when we were first founded, and many have opened and closed during that time Local agents can offer a more bespoke service, with a branch you can actually visit and have the option of talking to an estate agent in person, not just being put through to a call centre where the person has never seen the property and may have never even been to the area Choosing to buy your property with an independent agent like HOP, delivers you a personalised service right from your high street.",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+    }
+]
+// buy  ltd page

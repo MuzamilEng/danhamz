@@ -42,7 +42,7 @@ const LetOrSell = () => {
                 ))}
               </article>
             </div>
-          </div>
+        </div>
           {/* start */}
       <article className="w-full bg-white">
         {start?.map((item, index) => (

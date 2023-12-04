@@ -15,6 +15,11 @@ import Landlord from './app/pages/Lettings/Landlord'
 import ReferAfriend from './app/pages/Lettings/ReferAfriend'
 import LetOrSell from './app/pages/Lettings/LetOrSell'
 import SearchProperty from './app/pages/SearchProperty'
+import Buyers from './app/pages/Sales/Buyers'
+import Mortgages from './app/pages/Sales/Mortgages'
+import InvestmentSales from './app/pages/Sales/InvestmentSales';
+import Auction from './app/pages/Sales/Auction';
+import PropertyValue from './app/pages/Sales/propertyValue';
 
 const App = () => {
   return (
@@ -35,7 +40,11 @@ const App = () => {
         <Route path='/let-or-sell' element={<LetOrSell />} />
         <Route path='/refer-a-friend' element={<ReferAfriend />} />
         <Route path='/search-property' element={<SearchProperty />} />
-
+        <Route path='/buy-a-btl' element={<Buyers />} />
+        <Route path='/investments-sales' element={<InvestmentSales />} />
+        <Route path='/mortgages' element={<Mortgages />} />
+        <Route path='/auction' element={<Auction />} />
+        <Route path='/value-my-property' element={<PropertyValue />} />
       </Routes>
     </>
   )
