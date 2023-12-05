@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 const Card = ({title, info, para, question, desc, number}) => {
   return (
     <>
-                <section className={`bg-[#fff] m-vw border-t-[3px] border-blue-900 p-vw w-full max-w-[19vw]  h-28vw`}>
+                <section className={`bg-[#fff] m-vw border-t-[3px] border-blue-900 p-vw w-full max-w-[19vw] h-28vw`}>
                 { number &&  <h1 className='w-full row-center max-w-[15vw] h-[10vw] m-vw bg-purple-950 text-center text-pink-400 text-3vw font-bold'>{number}</h1>} 
                    <h1 className="text-blue-900 text-[1.5vw] text-medium">{title}</h1>
                   <p className="text-gray-500 font-medium text-vw w-full mt-vw max-w-[17vw]">{info}</p>

@@ -128,7 +128,6 @@ const InvestmentSales = () => {
           <ListInfoContainer  key={index} lists={item?.lists} btn_bg={item?.btn_bg} button={item?.button} btn_text={item?.btn_text} title={item?.title} bg_color={item?.bg_color} info={item?.info} title_color={item?.title_color} info_color={item?.info_color} img={item?.img} />
         ))}
       </article>
-      {/* news */}
        {/* news */}
        <div className="w-full flex-col bg-white p-3vw flex justify-center items-center">
             <h1 className='text-blue-950 text-[1.8vw]'>Investment News</h1>
@@ -140,7 +139,7 @@ const InvestmentSales = () => {
             <div className="mt-2vw">
               <Link to="/" className="bg-purple-900 p-vw text-white font-medium text-[0.8vw] text-center">View all news</Link>
             </div>
-          </div>
+        </div>
       </Layout>
     </div>
   )

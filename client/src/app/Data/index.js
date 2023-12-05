@@ -2868,7 +2868,7 @@ export const bookSalesvaluation = [
 
 export const Buyer_nav = [
     {
-        title: "IBuying an investment property in Leeds",
+        title: "Buying an investment property in Leeds",
         title_color: "text-purple-950",
         img:"images/buy_1.png",
     }
@@ -2941,7 +2941,7 @@ export const nextInvestment = [
 export const choosingArea = [
     {
         title: "Choosing the right area",
-        img: "images/buy_3.png",
+        img: "images/buy_3.jpg",
         info: "It’s the age old saying – location location location! But it’s a cliche for a reason. To find the perfect location for your new investment, there are a number of factors to consider Depending on whether you want professional tenants or student tenants, the kind of local amenities and transport routes will really make a difference. From schools and universities, to commuter links, to favourite places to shop and eat – what is important to the kinds of tenants you want to attract will be key to finding the right location for your investment Let us help. We know the Leeds rental market inside out and ca help you find a property that is going to meet your investment ambitions. Even if we’ve not got a property listed right now in your chosen area, we have a substantial network of Landlords that we can work with to locate your next investment.",
         title_color: "text-purple-950",
         info_color: "text-gray-900",
@@ -2956,10 +2956,77 @@ export const choosingArea = [
 export const localOrOnlineAgent = [
     {
         title: "Local vs Online Agents – which is right for you?",
-        img: "images/buy_4.png",
+        img: "images/buy_4.jpg",
         info: "As a Local Independent Agent, we pride ourselves in delivering a personalised services from your high street. Our main branch is located in Leeds City Centre, which covers all LS & BD postcodes. Our friendly, helpful and knowledgeable teams are on hand to help customers with a range of different property services. Buying through an online agent is increasingly popular but it’s not without risk and extra stress. We’ve been selling and letting properties for over a decade, many online agents didn’t even exist when we were first founded, and many have opened and closed during that time Local agents can offer a more bespoke service, with a branch you can actually visit and have the option of talking to an estate agent in person, not just being put through to a call centre where the person has never seen the property and may have never even been to the area Choosing to buy your property with an independent agent like HOP, delivers you a personalised service right from your high street.",
         title_color: "text-purple-950",
         info_color: "text-gray-900",
     }
 ]
 // buy  ltd page
+
+// mortgages pages
+
+export const mortgage_nav = [
+    {
+        title: "Mortgage Broker in Leeds",
+        title_color: "text-white",
+        img:"images/mortgages_nav.png",
+        button: "Arrange a mortgage consultation today",
+        url: "/",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+    }
+]
+
+export const mortgageBroker = [
+    {
+        title: "Why use a mortgage broker?",
+        img: "images/mortgages_1.jpg",
+        info: "Buying a property is not cheap, and it’s only natural to want to save on costs – but cutting corners can cost you in the long run. Advice from a reputable mortgage broker can be invaluable and something we would always recommend to all our buyers. First and foremost, using a mortgage broker offers you additional protections as well as the confidence that you are getting the best deals for your personal situation.  An important thing to understand is that when you receive mortgage advice, your mortgage broker has a duty of care to you. That means it is their responsibility to not only recommend a suitable mortgage, but also be able to justify why the mortgage they have chosen is right for you. If their advice is not up to scratch, you can question this and be compensated Having been in the industry for a long time, at HOP, we’ve grown a trusted and established network of property connections to share with our clients.  If you are interested in a no obligation consultation with one of our Mortgage partners, drop us a note be ",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        url: "/",
+        button:"Consult us to arrange consultation",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const consultWithExpert = [
+    {
+        title: "Consult with an expert",
+        img: "images/mortgages_2.jpg",
+        info: "There’s an awful lot to think about when choosing the right mortgage. It’s not as simple as just opting for the cheapest fixed or tracker rate mortgage you can find! Mortgages are a lot more difficult than they first appear. Knowing what rate, term, lender, features, insurance to get are all more time-consuming and complex matter Mortgage brokers are required to be fully qualified to give you mortgage advice, which isn’t necessarily the same for the people you might chat with in a lender’s call centre. So while comparing mortgages on a site like Money Supermarket is a good place to start and get a feel for what’s out there, we would always recommend taking professional advic A mortgage broker takes your whole circumstances into account to recommend a suitable product. It is this thorough, professional look at your finances that makes their advice well worth i Don’t forget, a mortgage brokers advice is free with no obligation, so why not arrange an appointment today – either  over the phone or pop in to our Horsforth branch and discuss things over a cup ",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+    }
+]
+
+export const bestInterest = [
+    {
+        title: "Keeping your best interests at heart",
+        img: "images/mortgages_3.jpg",
+        info: "Mortgage eligibility criteria has changed considerably over the last few years, particularly since the pandemic. The rules are designed to ensure borrowers can prove affordability, even in the event of a rate rise. That’s why it is important to have a broker on your side who understands it all. A broker deals with lenders on a day-to-day basis. They will know what the application process is like for each one and which lender can process things with minimal delays. An independent mortgage broker will look for the best mortgage for you. They aren’t on the lender’s side, they’re on yours. They will give you access to far more products than if you went direct to your bank. You’ll receive unbiased advice and have the flexibility to choose from a range of products Don’t forget, a bank can only offer you their product, a broker can offer you almost every lender’s product. More choice means better deals!",
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+    }
+]
+
+export const healthCheck = [
+    {
+        title: "Free Mortgage Healthcheck",
+        img: "images/mortgages_4.jpg",
+        info: "If you are thinking of remortgaging, then why not book in for a no obligation mortgage review with our in-house Mortgage Advisor.  Appointments can take place over a cuppa in our Horsforth Branch, or we can schedule an appointment virtually too. During the Mortgage Health Check appointment, we will go through: ",
+        lists: ['The details of your current mortgage – including the current lender, outstanding balance, current rate, early payment penalties etc.', 'Your current financial circumstances – employment details, income vs outgoings, current debt circumstances, documentation proof required to back this up (bank statements, payslips etc)', 'Mortgage Requirements – what you are hoping  to achieve as part of this process (e.g. switch to a better rate, raise some capital, debt consolidation)', 'No two mortgage applications are the same, so in order to provide you with advice, it’s really important we get to know you and your circumstances first. Only then can we put together a bespoke mortgage proposition tailored to your needs.'],
+        title_color: "text-white",
+        info_color: "text-white",
+        url: "/",
+        button:"Book your free Mortgage Healthcheck today",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        bg_color : 'bg-purple-950'
+    }
+]
+
+// mortages pages

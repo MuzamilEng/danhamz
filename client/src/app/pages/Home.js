@@ -87,7 +87,7 @@ const Home = () => {
           </div>
           {/* properties */}
           <div className="w-full flex-col bg-gray-200 p-2vw flex justify-center items-center">
-            <h1 className='text-blue-950 text-[1.5vw] text-center capitalize text-medium'>Latest properties for Sale</h1>
+            <h1 className='text-blue-950 text-[1.9vw] text-center capitalize font-medium'>Latest properties for Sale</h1>
             <div className="grid grid-cols-4 gap-3 mt-2vw">
               {properties?.map((item, index) => (
                 <Property key={index} tag={item?.tag} icon={item?.icon} quantity={item?.pics?.[0]?.quantity} price={item?.price} location={item?.location} icon2={item?.pics?.[0]?.icon} bed_rooms={item?.bed_rooms} img={item?.img} />
