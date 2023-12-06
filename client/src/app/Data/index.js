@@ -3030,3 +3030,180 @@ export const healthCheck = [
 ]
 
 // mortages pages
+
+// auction page
+
+export const auction_nav = [
+    {
+        title: "Property Auctions in Leeds",
+        title_color: "text-purple-950",
+        img:"images/auction_nav.png",
+        button: "Enquire about our auction services",
+        url: "/",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+    }
+]
+
+export const propertyAuction = [
+    {
+        title: "Why sell at a property auction?",
+        img: "images/auction_1.jpg",
+        info: "It’s a common misconception that only run-down and distressed properties sell at auction. Auction properties come in all shapes, styles and values – anyone can take advantage of this convenient and cost effective way to sell",
+        lists: ['Speed Typically, it takes just 6 to 10 weeks to complete the sale. So, if you are looking to sell a property quickly, this is a great way of making it happen. Any buyer can purchase an auction property. There is no limit to the type of buyer your property is accessible to, from first time buyers with a mortgage to cash buyers.', 'Cost With 0% fees to pay, selling at auction offers a cost effective way to sell your property, compared to more traditional methods, which may cost anywhere between 1% to 3% of the final sales price.', 'Security While sellers pay no fees at all, the buyer pays upfront costs that ensure they are committed to the sale, thereby reducing the chance of it falling through before completion.'],
+        title_color: "text-purple-950",
+        lists_style: false,
+        info_color: "text-gray-900",
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Sell your property at auction",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+
+export const stressFreeSale = [
+    {
+        title: "A stress-free sale",
+        img: "images/auction_2.jpg",
+        info: "Selling your property via an auction, gives you the opportunity to avoid some of the common pitfalls and stressors that can be associated with selling homes. Selling through conventional methods, such as private treaty,  can frequently involve:",
+        lists: ['A lengthy process', 'No firm commitment from a buyer', 'A higher risk of sale falling through', 'No firm date for completion', 'Re-negotiation of price after sale is agreed'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Message us about auctioning your property",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const auctionBenefits = [
+    {
+        title: "The benefits of a property auction",
+        img: "images/auction_3.png",
+        // info: "Selling your property via an auction, gives you the opportunity to avoid some of the common pitfalls and stressors that can be associated with selling homes. Selling through conventional methods, such as private treaty,  can frequently involve:",
+        lists: ['Sell Your Home for Free: You keep all of your proceeds, there are no upfront costs and absolutely no estate agent fees to pay.', 'Control Over Price: Your property does not sell for less than you allow.', 'Complete Transparency: All bids on your property are visible on an Online Bidding Platform, enabling interested parties to place offers anywhere, anytime. This allows the price to be driven up as buyers bid against one another', 'Committed Buyer: Your buyer is obligated to pay a non-refundable fee once you accept their offer. They are then financially committed to purchasing your house at the agreed price. As a result, only 1% of auction sales fall through, compared with 30% of private treaty sales in the UK.', 'A Timeline to Suit You: Your property sells quickly and your buyer must complete within timescales of 28days or 56days (or lengthier if agreed)'],
+        title_color: "text-purple-950",
+        lists_style: false,
+        info_color: "text-gray-900",
+        lists_color: "text-gray-900",
+        
+    }
+]
+
+export const howItWorks = [
+    {
+        title: "How it works",
+        img: "images/auction_4.jpg",
+        lists: ['Many people think auctions still take place in a dark room with a man and a hammer. However, times have changed and the new method of auction is a much more modern and transparent route to selling your home.', 'Just like traditional methods, we will first come out to your property to carry out a valuation and also collate all marketing material, including professionally edited photography and floorplan.', 'Complete Transparency: All bids on your property are visible on an Online Bidding Platform, enabling interested parties to place offers anywhere, anytime. This allows the price to be driven up as buyers bid against one another', 'Committed Buyer: Your buyer is obligated to pay a non-refundable fee once you accept their offer. They are then financially committed to purchasing your house at the agreed price. As a result, only 1% of auction sales fall through, compared with 30% of private treaty sales in the UK.', 'Once we have agreed on an attractive Starting Bid and an undisclosed Reserve Price, your property will be advertised online on all leading property portals, including Rightmove'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Send us a message to get started",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const auctionProcess = [
+    {
+        title: "The auction process",
+        img: "images/auction_5.jpg",
+        lists: ['Starting Bid: This price is set lower than your reserve, to generate as much interest as possible.', 'Reserve Price: This is the minimum price you hope to achieve. Your property is not sold for any less than this. Only you and the auction department are aware of what this figure is.', 'Auction Date: Your property will sell for the highest bid at auction end (but only if it exceeds your reserve price). Often the highest bid will be even higher. Remember – the buyer is obligated to pay a non-refundable fee to secure your property. You have no fees to pay.', 'Viewings: Viewings will be carried out on agreed dates and only proceedable buyers will be given the opportunity to view, to avoid time-wasting.', 'Legal Pack: Our legal team partner will produce a legal pack at no upfront cost, allowing buyers to carry out their due diligence before placing an offer. This allows all parties to facilitate an exchange of contract as soon as there is an acceptable offer.', 'We recently sold this 3 bedroom detached property in Horsforth at auction, which went for 8% over our original listing price.  Not only was the sale completed quickly, but the sellers received a better price that they had hoped for with a traditional listing.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Send us a message to get started",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+
+
+// value page
+
+export const value_nav = [
+    {
+        title: "How much is your property worth?",
+        title_color: "text-white",
+        img:"images/value_nav.png",
+        button: "Free sales valuation",
+        url: "/",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-[#f78da7]'
+    }
+]
+
+export const getValuation = [
+    {
+        title: "How can I get a valuation?",
+        img: "images/value_1.jpg",
+        lists: ['There are a few different ways that we can offer you a sales valuation of your property so that you can get a good idea of how much you property is worth and what you should list it for.', 'For a topline idea of what your property is worth, you can use our handy online valuation tool. Simply pop in your postcode, select your address and hey presto – after a couple of clicks – you’ll have an instant result, giving you an estimated sales or rental value for your property. It takes less than 60 seconds!', 'If you are serious about making a move, then a face to face consultation with one of our experts is the only way to get a accurate valuation of the property along with tailored insights that will help you to get the most out of selling your home', 'Book an appointment with one of our valuers to visit your property in person and talk you through the options. If you have tenants in situ we provide the highest discretion and we will call you the same day to discuss and deliver your valuation figure.Book an appointment with one of our valuers to visit your property in person and talk you through the options. If you have tenants in situ we provide the highest discretion and we will call you the same day to discuss and deliver your valuation figure.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Instant valuation tool",
+        btn_bg: "bg-pink-400",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const valuationTool = [
+    {
+        title: "The Valuation Process",
+        img: "images/value_2.jpg",
+        lists: ['All of our Sales Valuations are carried out by our highly trained property experts who understand the property market inside out. Not only will they be able to give you an accurate market valuation of your property, but they’ll also get to know you – and your property – to understand what you want to achieve from the sale and how that fits in with your wider plans.', 'The appointment itself is usually between 45 mins to an hour, during which we’ll take a good look round the property to identify its best assets. We’ll discuss the property details and go through with you what the current local market is like so that we can give you a realistic indication of what the property might achieve when it goes to market.', 'Getting an accurate valuation is critical to ensure that when you market your property, you are pitching it at the right price to get the best possible result for you. We’ll also offer you advice on the different options for selling your home and how we can tailor our flexible sales service to suit you.'],
+        title_color: "text-purple-950",
+        lists_style: false,
+        lists_color: "text-gray-900",
+    }
+]
+
+export const salesValuation = [
+    {
+        title: "Sales Valuation in Leeds by Experienced Professionals",
+        title_color: "text-purple-950",
+        info: "As fully qualified professionals with years of experience in the Leeds property market, we are ideally placed to offer an accurate valuation service to local homeowners, property investors and developers. With access to the most recent sold house prices in the area, we always have our finger on the pulse of the residential property market in Leeds, which means you can rely on us to deliver a fair and realistic valuation of your home. Whatever type of house or apartment you wish to sell and whatever reason you have for selling your property, we can prepare a detailed market appraisal that accurately reflects its true value.",
+        img:"images/value_3.jpg",
+        info_color: "text-gray-900",
+    }
+]
+
+export const houseValuation = [
+    {
+        title: "How a House Valuation in Leeds from HOP Can Help You",
+        lists: ['If you would like to sell a house or apartment, the very first thing you need is an accurate valuation of your property. Without a clear idea of what your property is likely to fetch on the open market, it will be impossible for you to market it effectively or to negotiate with prospective buyers.', 'However, armed with an accurate valuation from a reputable estate agent such as HOP, you will able to market your property effectively across multiple channels. You will also be able to negotiate with prospective buyers from a position of strength'],
+        title_color: "text-purple-950",
+        img:"images/value_4.jpg",
+        lists_color: "text-gray-900",
+        lists_style: false,
+    }
+]
+
+export const benefitsFromExperts = [
+    {
+        title: "Benefit From Our Expertise Today",
+        lists: ['Whether you simply want an accurate house valuation in Leeds before putting your home on the market or you would also like to find out more about current and predicted house prices in the area, we can help. In the first instance, you can use our free instant valuation tool, (a house value calculator by postcode). This tool is designed to give you a quick estimate of your property’s value.', 'If you are ready to put your home on the market, we recommend contacting us to arrange a full valuation. Conducted either in person or virtually over the Internet, a full property valuation in Leeds from HOP will help you to determine a fair and honest market price when you list your home with us. Call now to get started'],
+        title_color: "text-purple-950",
+        img:"images/value_5.jpg",
+        lists_color: "text-gray-900",
+        lists_style: false,
+    }
+]
+// value page

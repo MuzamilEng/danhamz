@@ -61,7 +61,7 @@ const Navbar = () => {
                                     </Link>
                                 })}
                             </div>}
-                            {showSales && <div className="bg-gray-300 absolute top-6vw z-50  grid grid-cols-7 justify-center gap-2 p-[1.6vw] items-center w-full">
+                            {showSales && <div className="bg-gray-300 absolute top-6vw z-50 flex justify-evenly p-[1.6vw] items-center w-full">
                                 {item?.lists?.[1]?.options.map((option, index) => (
                                     <Link to={option?.link} className="flex justify-center items-center" key={index}>
                                         <span className="text-blue-950 text-[1.5vw] mr-0.5vw hover:text-red-600">{option?.icon}</span>

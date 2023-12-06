@@ -19,7 +19,7 @@ import Buyers from './app/pages/Sales/Buyers'
 import Mortgages from './app/pages/Sales/Mortgages'
 import InvestmentSales from './app/pages/Sales/InvestmentSales';
 import Auction from './app/pages/Sales/Auction';
-import PropertyValue from './app/pages/Sales/propertyValue';
+import PropertyValue from './app/pages/Sales/PropertyValue';
 
 const App = () => {
   return (
