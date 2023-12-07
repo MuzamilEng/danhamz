@@ -138,7 +138,7 @@ const Home = () => {
           </div>
           {/* letting properties */}
           <div className="flex flex-col justify-center items-center w-full p-3vw">
-            <h1 className='text-blue-950 text-2vw font-medium capitalize'>Lates Properties to Let</h1>
+            <h1 className='text-blue-950 text-2vw font-medium capitalize'>Latest Properties to Let</h1>
             <div className="grid grid-cols-4 gap-2 mt-2vw">
               {lettingProperties?.map((item, index) => (
                 //  const LettingProperty = ({tag, icon, quantity, weekPrice, location, monthPrice, bedRooms, img, bed_icon, available, furnished_icon,furnished,bill_icon, bills, date}) => {          // 

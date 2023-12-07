@@ -19,7 +19,8 @@ import Buyers from './app/pages/Sales/Buyers'
 import Mortgages from './app/pages/Sales/Mortgages'
 import InvestmentSales from './app/pages/Sales/InvestmentSales';
 import Auction from './app/pages/Sales/Auction';
-import PropertyValue from './app/pages/Sales/PropertyValue';
+import PropertyDetails from './app/Component/PropertyDetails'
+import PropertyValue from './app/pages/Sales/PropertyValue'
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
         <Route path='/mortgages' element={<Mortgages />} />
         <Route path='/auction' element={<Auction />} />
         <Route path='/value-my-property' element={<PropertyValue />} />
+        <Route path='/details' element={<PropertyDetails />} />
       </Routes>
     </>
   )
