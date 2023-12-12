@@ -2875,52 +2875,52 @@ export const Buyer_nav = [
 ]
 
 
-export const insvestmentProperty = [
-    {
-        title: "Experience & Advice",
-        info: "With our Rent Guarantee service, you’ll not be out of pocket should the unexpected happen. Our Rent Guarantee service comes with nil excess, rent arrears paid for up to 15 months and up to 100,000 legal expenses cover.        ",
-        para: "Danhamz is an award-winning Letting Agent in Leeds that provides a complete 360° service for Landlords, helping them to maximise their investment. Our long established  Lettings Team manages over 2,000 happy student and professional tenants.",
-        question: "",
-        desc: "Enjoy extra peace of mind with our extensive rent protection and legal expenses cover",
-    },
-    {
-        title: "Independent Local Agent",
-        info: "Our fully managed service aims to maximise your property portfolio.",
-        para: "Our fresh, flexible and friendly approach to sales means you get the customer service you deserve, while our top-notch marketing will make your property stand out from the crowd Danhamz’s friendly expert Estate Agents provide a seamless sales service from start to finish",
-        question: "",
-        desc: "Minimise void periods by having new tenants ready to move in at the end of a tenancy.",
-    },
-    {
-        title: "A Helping Hand",
-        info: "With over a decade of experience in the Leeds rental market, our team are highly adept in letting and managing all kind of properties.        ",
-        para: "Danhamz Investments provides a turnkey solution for investors looking to take advantage of investing in Buy to Let property in Leeds. We’ll source the right property, spec and handle any works to optimise the investment, and then let and manage it for you, wherever in the world you are based.",
-        desc: "Property Sourcing",
-    },
-    {
-        title: "Property Connections",
-        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
-        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
-        desc: "Full Property Management",
-    },
-    {
-        title: "Refurbs & Renovations",
-        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
-        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
-        desc: "Full Property Management",
-    },
-    {
-        title: "Fully Accredited",
-        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
-        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
-        desc: "Full Property Management",
-    },
-    {
-        title: "Experience & Advice",
-        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
-        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
-        desc: "Full Property Management",
-    },
-]
+    export const insvestmentProperty = [
+        {
+            title: "Experience & Advice",
+            info: "With our Rent Guarantee service, you’ll not be out of pocket should the unexpected happen. Our Rent Guarantee service comes with nil excess, rent arrears paid for up to 15 months and up to 100,000 legal expenses cover.        ",
+            para: "Danhamz is an award-winning Letting Agent in Leeds that provides a complete 360° service for Landlords, helping them to maximise their investment. Our long established  Lettings Team manages over 2,000 happy student and professional tenants.",
+            question: "",
+            desc: "Enjoy extra peace of mind with our extensive rent protection and legal expenses cover",
+        },
+        {
+            title: "Independent Local Agent",
+            info: "Our fully managed service aims to maximise your property portfolio.",
+            para: "Our fresh, flexible and friendly approach to sales means you get the customer service you deserve, while our top-notch marketing will make your property stand out from the crowd Danhamz’s friendly expert Estate Agents provide a seamless sales service from start to finish",
+            question: "",
+            desc: "Minimise void periods by having new tenants ready to move in at the end of a tenancy.",
+        },
+        {
+            title: "A Helping Hand",
+            info: "With over a decade of experience in the Leeds rental market, our team are highly adept in letting and managing all kind of properties.        ",
+            para: "Danhamz Investments provides a turnkey solution for investors looking to take advantage of investing in Buy to Let property in Leeds. We’ll source the right property, spec and handle any works to optimise the investment, and then let and manage it for you, wherever in the world you are based.",
+            desc: "Property Sourcing",
+        },
+        {
+            title: "Property Connections",
+            info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+            para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+            desc: "Full Property Management",
+        },
+        {
+            title: "Refurbs & Renovations",
+            info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+            para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+            desc: "Full Property Management",
+        },
+        {
+            title: "Fully Accredited",
+            info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+            para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+            desc: "Full Property Management",
+        },
+        {
+            title: "Experience & Advice",
+            info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+            para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+            desc: "Full Property Management",
+        },
+    ]
 
 
 export const nextInvestment = [
@@ -3207,3 +3207,171 @@ export const benefitsFromExperts = [
     }
 ]
 // value page
+
+// overview page
+export const overview_nav = [
+    {
+        title: "Property Investment Leeds",
+        title_color: "text-purple-950",
+        img:"images/overview_nav.jpg",
+        button: "Get in touch",
+        url: "/",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-[#f78da7]'
+    }
+]
+
+
+export const danhamzInvestment = [
+    {
+        title: "The Total Package",
+        info: "With our Rent Guarantee service, you’ll not be out of pocket should the unexpected happen. Our Rent Guarantee service comes with nil excess, rent arrears paid for up to 15 months and up to 100,000 legal expenses cover.        ",
+        para: "Danhamz is an award-winning Letting Agent in Leeds that provides a complete 360° service for Landlords, helping them to maximise their investment. Our long established  Lettings Team manages over 2,000 happy student and professional tenants.",
+        question: "",
+        desc: "Enjoy extra peace of mind with our extensive rent protection and legal expenses cover",
+    },
+    {
+        title: "Property in Leeds",
+        info: "Our fully managed service aims to maximise your property portfolio.",
+        para: "Our fresh, flexible and friendly approach to sales means you get the customer service you deserve, while our top-notch marketing will make your property stand out from the crowd Danhamz’s friendly expert Estate Agents provide a seamless sales service from start to finish",
+        question: "",
+        desc: "Minimise void periods by having new tenants ready to move in at the end of a tenancy.",
+    },
+    {
+        title: "A Fresh Approach",
+        info: "With over a decade of experience in the Leeds rental market, our team are highly adept in letting and managing all kind of properties.        ",
+        para: "Danhamz Investments provides a turnkey solution for investors looking to take advantage of investing in Buy to Let property in Leeds. We’ll source the right property, spec and handle any works to optimise the investment, and then let and manage it for you, wherever in the world you are based.",
+        desc: "Property Sourcing",
+    },
+    {
+        title: "Peace of Mind",
+        info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+        para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+        desc: "Full Property Management",
+    },
+    // {
+    //     title: "Refurbs & Renovations",
+    //     info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+    //     para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+    //     desc: "Full Property Management",
+    // },
+    // {
+    //     title: "Fully Accredited",
+    //     info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+    //     para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+    //     desc: "Full Property Management",
+    // },
+    // {
+    //     title: "Experience & Advice",
+    //     info: "At HOP,  we offer a full 360° property service to make your life as a Landlord as hassle-free as possible.",
+    //     para: "Our customer-focused approach to block management delivers a transparent, personal and compliant service, tailored to meet the budget and requirements of your block. We handle every aspect of block management, ensuring continuation of service, compliance and peace of mind.",
+    //     desc: "Full Property Management",
+    // },
+]
+export const investInLeeds = [
+    {
+        title: "Why invest in Leeds?",
+        img: "images/overview2.png",
+        lists: ['These are great times for Leeds. The city regularly features on the ‘hottest place to invest’ lists and it’s not hard to see why. Its extensive student and professional population create an incredibly buoyant rental market, and it continues to be a popular choice for big businesses due to its brilliant location, connectivity and talent pool.', 'For investors, there’s an opportunity to get more ‘bang for their buck’ as house prices are more affordable than in many other major cities. Add this to the considerable appetite for rental homes and the generous yields, and it’s no surprise that more and more investors are choosing to tap in to the Leeds market, particularly those based in London or abroad.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Find out more",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+export const merketMirrors = [
+    {
+        title: "The Property Market Mirrors the City",
+        img: "images/overview2.png",
+        list: ['The recent surge in property investment in Leeds is not an aberration driven by speculators. It is a reflection of what is going on in the city as a whole. Leeds has become one of THE places to be in the UK with young professionals and entrepreneurs flocking here to take advantage of the countless local amenities Leeds has to offer, including:', 'Leeds Bradford Airport – Less than half an hour from central Leeds is Leeds Bradford International Airport. In 2019 the airport handled 4 million passengers. After the recent lull, it is expected to return to those numbers over the course of the next year.', 'A bustling financial centre – Greater Leeds has a population of nearly 2 million and an economy of more than £64 billion. By 2030 that economy is projected to grow by another 20% with the high tech services sector leading the way.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-gray-200'
+    }
+]
+
+export const localAmenities = [
+    {
+        title: "Local Amenities in Leeds",
+        img: "images/overview3.jpg",
+        lists:['A network of transport links – Leeds has an extensive public transport system that operates like a well-oiled machine. The entire metro area is crisscrossed by local and regional trains, local and long-distance bus lines, motorways, and bike paths.', 'A friendly, welcoming culture – People go where they feel welcome which is why so many are making their way to Leeds. There is none of the buttoned-down defensiveness you’ll find in London and elsewhere. Instead, what you’ll find here are easy-going people ready to engage one another.', 'Thriving nightlife scene – Unlike some cities that become ghost towns when the sun goes down, people come out at night in Leeds. A plethora of lively restaurants, friendly pubs and bars, relaxing cafes, cinemas, dance clubs and more beckon after dark.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-gray-200'
+    }
+]
+
+export const aboutInvestment = [
+    {
+        title: "About HOP Investments",
+        img: "images/overview4.jpg",
+        lists: ['Ever since we first started to manage properties for Landlords back in 2009, it’s been our standard practice to work closely with our clients to continually assess their portfolios to ensure returns are maximised.', 'By suggesting improvements to our clients portfolios, and managing the works via our talented team of contractors, we routinely increase rental incomes, reduce void periods and transform underperforming lets.', 'Due to clear demand for these services we now offer this model as a stand-alone service for investors under our new division: HOP Investments, headed up by Director, Neil Dawkin.', 'At HOP Investments, not only do we make your existing portfolio work harder for you, but we help source, secure, optimise, let and manage your next investments for you, as a complete turnkey service.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-gray-200'
+    }
+]
+
+export const investwithDanhamz = [
+    {
+        title: "Invest with Danhamz",
+        img: "images/overview4.jpg",
+        lists: ['A complete turnkey service from start to finish','Your own dedicated client account manager to see you through the process', 'Peace of mind: fully compliant, well resourced, award-winning business established in 2009', 'Full end-to-end service in Property Management, Investments, Sales and Lettings', 'Professional and honest advice', 'A personal and tailored partnership to meet your property investment requirement', 'Transparent figures with realistic returns and expert property advice', 'Unparalleled knowledge of the Leeds rental and sales market', 'Ability to identify excellent value investment properties', 'Trusted contractors to complete works in a timely and cost-effective manner'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: true,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-gray-200'
+    }
+]
+
+export const dealPackaging = [
+    {
+        title: "Property Sourcing & Deal Packaging",
+        img: "images/overview5.png",
+        lists: ['Whether you’re from out of town, just starting out, or a busy property professional who needs hands-on support, we can help build your portfolio. Our Property Sourcing service is perfect for “Armchair Investors”, who wish to leverage our time and expertise to grow their wealth and plan for the future.', 'We do all the legwork for you, leveraging our network and knowledge to source your next acquisition. Depending on your risk level, we’ll find you a standard BTL, a ready-made HMO, or present options in need of renovation and refurbishment.', 'HOP will find you a property, analyse the opportunity and present you with a deal packaged to meet your investment goals. A total end-to-end service, we’ll then oversee the purchase progression and any works required to optimise the property for the rental market, before handing it to our award-winning Lettings Team to take care of letting and ongoing management.'] ,
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Property Sourcing",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+export const propertyOtimisation = [
+    {
+        title: "Refurbs & Property Optimisation",
+        img: "images/overview5.png",
+        lists: ['For our Property Sourcing clients and existing Managed Landlords, we help to ensure the property is delivering the best possible returns. Working with a tried and tested team of hand-picked contractors, we offer a professional project management service that covers everything from minor works to full refurbishments, to keep your property in high demand from tenants.', 'To really make the most of your investment, we offer an Optimisation Analysis of your property – or prospective property. After a full consultation with our experts, we’ll make recommendations on how to improve the property, what investment is required, when best to do it, and the expected resulting uplift in rental values. Our extensive experience gives us unique insight into what the discerning tenants of Leeds are looking for in a home, all the while ensuring the works will deliver best value for the investor.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Refubs & Property Optimisation",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+// overview page

@@ -7,7 +7,13 @@ const createLetting = async (req, res) => {
          location, keyFeatures, lettingDetails, description,  } = req.body;
   
       // Assuming you have a 'propertyImages' field in your form for file uploads
-      const propertyImages = req.files.map((file) => file.filename);
+      const propertyImages = req.files.map((file) => {
+        return {
+          filename: file.filename,
+          path: file.path,
+          originalname: file.originalname,
+        };
+      });
   
       const newProperty = new Letting({
         propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
@@ -48,19 +54,29 @@ const getLettingById = async (req, res) => {
 // Update a letting by ID
 const updateLettingById = async (req, res) => {
   try {
+   let body = req.body;
+   let filesPath = path.files;
+   let allFilesPath = [];
+   body.propertyImages = allFilesPath;
+
+   for(let i = 0; i < allFilesPath.length; i++){
+    allFilesPath.push(filesPath[i]);
+   }
     const updatedLetting = await Letting.findByIdAndUpdate(
       req.params.id,
-      req.body,
+      body,
       { new: true }
     );
     if (!updatedLetting) {
       return res.status(404).json({ error: 'Letting not found' });
     }
     res.status(200).json(updatedLetting);
+    
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 };
+
 
 // Delete a letting by ID
 const deleteLettingById = async (req, res) => {
@@ -70,6 +86,7 @@ const deleteLettingById = async (req, res) => {
       return res.status(404).json({ error: 'Letting not found' });
     }
     res.status(200).json(deletedLetting);
+    // console.log("Successfully deleted");
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

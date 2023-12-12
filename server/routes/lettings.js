@@ -19,15 +19,17 @@ const storage = multer.diskStorage({
   const upload = multer({
     storage: storage,
     limits: {
-      fieldSize: 10 * 1024 * 1024,
-    }
+      fieldSize: 10 * 1024 * 1024, // Example limit for field size (in bytes)
+      files: 20, // Maximum number of files
+    },
   });
 
 // Use multer middleware in your route
-router.post('/', upload.array('propertyImages', 5), createLetting);
+router.post('/', upload.array('propertyImages', 20), createLetting);
 router.route('/').get(getAllLettings)
 // router.route('/').post(createLetting);
 // .post(createContent);
-router.route('/:id').get(getLettingById).delete(deleteLettingById).put(updateLettingById)
+router.route('/:id').get(getLettingById).delete(deleteLettingById)
+router.put('/:id', upload.array('propertyImgaes'), updateLettingById)
 
 module.exports = router
