@@ -21,6 +21,13 @@ import InvestmentSales from './app/pages/Sales/InvestmentSales';
 import Auction from './app/pages/Sales/Auction';
 import PropertyDetails from './app/Component/PropertyDetails'
 import PropertyValue from './app/pages/Sales/PropertyValue'
+import Refubs from './app/pages/Invest/Refubs'
+import InvestInLeeds from './app/pages/Invest/InvestInLeeds'
+import InvestorClub from './app/pages/Invest/InvestorClub'
+import Sourcing from './app/pages/Invest/Sourcing'
+import Developments from './app/pages/Invest/Developments'
+import InvestInSales from './app/pages/Invest/InvestInSales'
+import Overview from './app/pages/Invest/Overview'
 
 const App = () => {
   return (
@@ -47,6 +54,13 @@ const App = () => {
         <Route path='/auction' element={<Auction />} />
         <Route path='/value-my-property' element={<PropertyValue />} />
         <Route path='/details' element={<PropertyDetails />} />
+        <Route path='/invest-development' element={<Developments />} />
+        <Route path='/invest-in-leeds' element={<InvestInLeeds />} />
+        <Route path='/invest-investor-club' element={<InvestorClub />} />
+        <Route path='/invest-overview' element={<Overview />} />
+        <Route path='/invest-sourcing' element={<Sourcing />} />
+        <Route path='/invest-refubs' element={<Refubs />} />
+        <Route path='/invest-sales' element={<InvestInSales />} />
       </Routes>
     </>
   )

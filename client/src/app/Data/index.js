@@ -113,40 +113,40 @@ export const navbar = [
                 link: "/",
                 title: "Invest",
                 type: "select",
-                options: [
+                 options: [
                     {
                         title: "Overview",
-                        link: "/",
+                        link: "/invest-overview",
                         icon: <Icon icon="bi:piggy-bank" />,
                     },
                     {
                         title: "Sourcing",
-                        link: "/",
+                        link: "/invest-sourcing",
                         icon: <Icon icon="cil:search" />,
                     },
                     {
                         title: "Refubs",
-                        link: "/",
+                        link: "/invest-refubs",
                         icon: <Icon icon="solar:paint-roller-line-duotone" />,
                     },
                     {
                         title: "Developments",
-                        link: "/",
+                        link: "/invest-development",
                         icon: <Icon icon="et:tools" />,
                     },
                     {
                         title: "Invest In Leeds",
-                        link: "/",
+                        link: "/invest-in-leeds",
                         icon: <Icon icon="lets-icons:dimond-alt-light" />,
                     },
                     {
                         title: "Investment Sales",
-                        link: "/",
+                        link: "/invest-sales",
                         icon: <Icon icon="uiw:home" />,
                     },
                     {
                         title: "Danhamz Investor Club",
-                        link: "/",
+                        link: "/invest-investor-club",
                         icon: <Icon icon="uiw:home" />,
                     }
                 ]
@@ -3209,7 +3209,7 @@ export const benefitsFromExperts = [
 // value page
 
 // overview page
-export const overview_nav = [
+export const overview_nav1 = [
     {
         title: "Property Investment Leeds",
         title_color: "text-purple-950",
@@ -3288,8 +3288,8 @@ export const investInLeeds = [
 export const merketMirrors = [
     {
         title: "The Property Market Mirrors the City",
-        img: "images/overview2.png",
-        list: ['The recent surge in property investment in Leeds is not an aberration driven by speculators. It is a reflection of what is going on in the city as a whole. Leeds has become one of THE places to be in the UK with young professionals and entrepreneurs flocking here to take advantage of the countless local amenities Leeds has to offer, including:', 'Leeds Bradford Airport – Less than half an hour from central Leeds is Leeds Bradford International Airport. In 2019 the airport handled 4 million passengers. After the recent lull, it is expected to return to those numbers over the course of the next year.', 'A bustling financial centre – Greater Leeds has a population of nearly 2 million and an economy of more than £64 billion. By 2030 that economy is projected to grow by another 20% with the high tech services sector leading the way.'],
+        img: "images/overview3.jpg",
+        lists: ['The recent surge in property investment in Leeds is not an aberration driven by speculators. It is a reflection of what is going on in the city as a whole. Leeds has become one of THE places to be in the UK with young professionals and entrepreneurs flocking here to take advantage of the countless local amenities Leeds has to offer, including:', 'Leeds Bradford Airport – Less than half an hour from central Leeds is Leeds Bradford International Airport. In 2019 the airport handled 4 million passengers. After the recent lull, it is expected to return to those numbers over the course of the next year.', 'A bustling financial centre – Greater Leeds has a population of nearly 2 million and an economy of more than £64 billion. By 2030 that economy is projected to grow by another 20% with the high tech services sector leading the way.'],
         title_color: "text-purple-950",
         info_color: "text-gray-900",
         lists_style: false,
@@ -3302,7 +3302,7 @@ export const merketMirrors = [
 export const localAmenities = [
     {
         title: "Local Amenities in Leeds",
-        img: "images/overview3.jpg",
+        img: "images/overview4.jpg",
         lists:['A network of transport links – Leeds has an extensive public transport system that operates like a well-oiled machine. The entire metro area is crisscrossed by local and regional trains, local and long-distance bus lines, motorways, and bike paths.', 'A friendly, welcoming culture – People go where they feel welcome which is why so many are making their way to Leeds. There is none of the buttoned-down defensiveness you’ll find in London and elsewhere. Instead, what you’ll find here are easy-going people ready to engage one another.', 'Thriving nightlife scene – Unlike some cities that become ghost towns when the sun goes down, people come out at night in Leeds. A plethora of lively restaurants, friendly pubs and bars, relaxing cafes, cinemas, dance clubs and more beckon after dark.'],
         title_color: "text-purple-950",
         info_color: "text-gray-900",
@@ -3316,7 +3316,7 @@ export const localAmenities = [
 export const aboutInvestment = [
     {
         title: "About HOP Investments",
-        img: "images/overview4.jpg",
+        img: "images/overview5.png",
         lists: ['Ever since we first started to manage properties for Landlords back in 2009, it’s been our standard practice to work closely with our clients to continually assess their portfolios to ensure returns are maximised.', 'By suggesting improvements to our clients portfolios, and managing the works via our talented team of contractors, we routinely increase rental incomes, reduce void periods and transform underperforming lets.', 'Due to clear demand for these services we now offer this model as a stand-alone service for investors under our new division: HOP Investments, headed up by Director, Neil Dawkin.', 'At HOP Investments, not only do we make your existing portfolio work harder for you, but we help source, secure, optimise, let and manage your next investments for you, as a complete turnkey service.'],
         title_color: "text-purple-950",
         info_color: "text-gray-900",
@@ -3344,7 +3344,7 @@ export const investwithDanhamz = [
 export const dealPackaging = [
     {
         title: "Property Sourcing & Deal Packaging",
-        img: "images/overview5.png",
+        img: "images/overview6.png",
         lists: ['Whether you’re from out of town, just starting out, or a busy property professional who needs hands-on support, we can help build your portfolio. Our Property Sourcing service is perfect for “Armchair Investors”, who wish to leverage our time and expertise to grow their wealth and plan for the future.', 'We do all the legwork for you, leveraging our network and knowledge to source your next acquisition. Depending on your risk level, we’ll find you a standard BTL, a ready-made HMO, or present options in need of renovation and refurbishment.', 'HOP will find you a property, analyse the opportunity and present you with a deal packaged to meet your investment goals. A total end-to-end service, we’ll then oversee the purchase progression and any works required to optimise the property for the rental market, before handing it to our award-winning Lettings Team to take care of letting and ongoing management.'] ,
         title_color: "text-purple-950",
         info_color: "text-gray-900",
@@ -3360,7 +3360,7 @@ export const dealPackaging = [
 export const propertyOtimisation = [
     {
         title: "Refurbs & Property Optimisation",
-        img: "images/overview5.png",
+        img: "images/overview7.png",
         lists: ['For our Property Sourcing clients and existing Managed Landlords, we help to ensure the property is delivering the best possible returns. Working with a tried and tested team of hand-picked contractors, we offer a professional project management service that covers everything from minor works to full refurbishments, to keep your property in high demand from tenants.', 'To really make the most of your investment, we offer an Optimisation Analysis of your property – or prospective property. After a full consultation with our experts, we’ll make recommendations on how to improve the property, what investment is required, when best to do it, and the expected resulting uplift in rental values. Our extensive experience gives us unique insight into what the discerning tenants of Leeds are looking for in a home, all the while ensuring the works will deliver best value for the investor.'],
         title_color: "text-purple-950",
         info_color: "text-gray-900",
@@ -3373,5 +3373,245 @@ export const propertyOtimisation = [
         bg_color : 'bg-white'
     }
 ]
+export const propertyDevelopment = [
+    {
+        title: "Property Development in Leeds",
+        img: "images/overview8.png",
+        lists: ['We are always on the lookout for new residential property development opportunities throughout Leeds, and the surrounding area.', 'If you have residential property in need of extensive renovation, a plot of land, or even commercial/industrial units ripe for conversion, we’re keen to explore purchase and joint venture options.', 'We pride ourselves on building long term relationships with those we work with. HOP Investments has not only the experience, but also the right team of consultants and contractors, to maximise your property or land value.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Property Development",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
 
+export const fixedReturns = [
+    {
+        title: "Become an Investor with Fixed Returns",
+        img: "images/overview9.png",
+        lists: ['We have a pipeline of exciting projects and opportunities for clients that would like to invest in property, without the responsibilities of owning property outright', 'HOP will utilise funds between £50,000 and £250,000 for property development projects on your behalf – offering you a fixed return over 12 months of between 8% and 10%. These returns certainly beat the bank interest rates', 'Becoming an investor with fixed returns is a great way to capitalise on the benefits of the Leeds property market, with a reputable company, without the hassle and risk usually attached to developing property yourself.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Contact Us",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const ivestorsClub = [
+    {
+        title: "Join the HOP Investor Club",
+        img: "images/overview10.png",
+        lists: ['If don’t require our Property Sourcing service right now, or you are not actively looking for a particular investment, then why not join the HOP Investor Club?', 'At HOP, we offer a specialised HMO Sales Service that is designed to make buying and selling investment property as straightforward as possible, keeping the tenants in situ and continuing to generate rental income throughout the process.', 'For a first look at off-market opportunities, or to receive an Investor Alert when a new property goes on-market, register your details and and we’ll keep you abreast of the latest BTL opportunities that we have for sale.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Join our investors club",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const overview_testimonials = [
+    {
+        img: "images/overview6.png",
+        title: "Property Sourcing",
+        url: "/report-a-repair",
+    },
+    {
+        img: "images/overview7.png",
+        title: "Property Refubs",
+        url: "/tenant-book-2023",
+    },
+    {
+        img: "images/overview8.png",
+        title: "Property Development",
+        url: "/tenant-book-2022",
+    },
+
+]
 // overview page
+
+// property sourcing
+export const sourcce_nav = [
+    {
+        title: "Property Sourcing Leeds",
+        title_color: "text-purple-950",
+        img:"images/source_nav.jpg",
+        button: "Get in touch",
+        url: "/",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-[#f78da7]'
+    }
+]
+
+export const sourceDealPkg = [
+    {
+        title: "Property Sourcing & Deal Packaging",
+        img: "images/overview6.png",
+        lists: ['Whether you’re from out of town, just starting out, or a busy property professional who needs hands-on support, we can help build your portfolio. Our Property Sourcing service is perfect for “Armchair Investors”, who wish to leverage our time and expertise to grow their wealth and plan for the future.', 'We do all the legwork for you, leveraging our network and knowledge to source your next acquisition. Depending on your risk level, we’ll find you a standard BTL, a ready-made HMO, or present options in need of renovation and refurbishment.', 'HOP will find you a property, analyse the opportunity and present you with a deal packaged to meet your investment goals. A total end-to-end service, we’ll then oversee the purchase progression and any works required to optimise the property for the rental market, before handing it to our award-winning Lettings Team to take care of letting and ongoing management.'] ,
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        button:"Call us on 01113 647 56890",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-white'
+    }
+]
+
+export const simple_proc = [
+    {
+        title :" Step 1: Consultation & Strategic Plannig",
+        info: [
+           { 
+            img: "images/source2.png",
+            para: 'You will have a dedicated contact who will be your personal expert, and will liaise with you on potential properties. They will undertake viewings on your behalf and report back – sending photos and videos for your review. If we think it’s a suitable match, we’ll put together a Deal Analysis for the property, a handy overview sheet detailing the figures for investment, improvement and returns. Once we’ve agreed on ‘the one’, our team will then seek to agree a optimal purchase price and close the deal.'
+        },
+        ],
+    },
+    {
+        title :"Step 2: Sourcing",
+        info: [
+            {
+        img: "images/source3.jpg",
+        para: 'Our experienced team will arrange to visit the property, and undertake an indepth analysis of the property and identifying any cosmetic and remedial works required. We’ll undertake a full Optimisation Analysis that includes a specific works lists, contractor estimates and a breakdown of the best ways to improve the property and prepare it for let, utilising materials and finishes carefully chosen to look great and last well.'
+    },
+],
+    },
+    {
+        title: "Step 3: Optimisation Review",
+        info: [
+            { 
+        img: "images/source4.jpg",
+        para: 'Once the offer is accepted, we’ll oversee the purchase progression step by step, liaising with the your appointed Conveyancers and Mortgage Broker as required. We’ll book a survey to check for remedial works and then review the report with an aim to renegotiate the purchase price if required. If you have any questions throughout, we are there to answer them. The aim is to streamline the purchase process to reach completion in a timely and stress-free manner, before collecting the keys when the completion date arrives.'
+    },
+],
+    },
+    {
+        title: "Step 4: Purchase Progression",
+        info: [
+            { 
+        img: "images/source5.jpg",
+        para: 'Works will be scheduled in as soon as practically possible to minimise lost income. On completion, we’ll collect the keys, take meter readings and photos of the property. Our team of contractors will then undertake the scheduled works to the property under our watchful project management, ensuring it’s compliant and has appeal for tenants. We’ll quality check and handle final snagging, keeping you up-to-date with videos, photos and schedules. As the project is nearing completion, the HOP Lettings Team will be notified to prep the marketing.'
+    },
+],
+    },
+    {
+        title: "Step 5: Refurbishment",
+        info: [
+            { 
+        img: "images/source6.jpg",
+        para: 'As one of our Property Sourcing clients, the property will automatically receive our Premium Marketing Package, complete with professionally edited photos, a full Matterport Virtual Tour and floorplans. The Lettings Team will qualify all leads and book in viewings. Once we find you the right tenant, in-depth referencing confirms employment status, earnings, credit score, rental history and right to rent checks. After which, the Tenancy documents are signed and issued along with prescribed information. You will be notified of the successful completion of the application and the move in date.'
+    },
+],
+},
+{
+    title: "Step 6: Merketing % Letting",
+    info: [
+        { 
+    img: "images/source7.jpg",
+    para: 'You will be assigned a dedicated Property Manager, who will be your point of contact for everything relating to your property such as maintenance, inspections and Tenancy renewals. Their aim is to ensure your property is well maintained and your income secure. Annual Rent Reviews will take place, inspection reports provided and, when required, the property will be marketed well in advance to minimise void periods (often no more than a week and in Student HMO’s none at all).'
+},
+],
+},
+{
+    title: "Step 7: Property Management",
+    info: [
+        { 
+    img: "images/source8.jpg",
+    para: 'Often, the first property is just the start of the journey and at the end of the process, we find ourselves back together at the Strategic Planning stage of the cycle, reviewing the outcomes achieved and looking at the next steps. It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.'
+},
+],
+},
+{
+    title: "Step 8: Annual Review",
+    info: [
+        { 
+    img: "images/source9.jpg",
+    para: ''
+},
+],
+},
+]
+
+export const turnKey = [
+    {
+        title: "What is a turnkey service?Property Sourcing & Deal Packaging",
+        img: "images/source10.png",
+        lists: ['A turnkey service literally means “all you need to do is turn the key”– but in this instance, we even do that for you!', 'Many of our clients never even visit the property themselves, making it the perfect partnership for armchair or overseas investors who are happy to sit back while we put their investment to work.', 'In terms of the service HOP offers, it means we offer the total package. As well as finding you the right property and packaging the right deal, our team will take care of the progression, obtain estimates and project manage any works, prepare and let the property and then move the tenants in', 'All without you ever having to leave your home.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+
+export const detailCards = [
+    {
+        option:'OPTION 1: LOWER RISK "LET AND FORGET"',
+        title: "2-3 Bedroom Family BTL",
+        img: "images/source11.png",
+        propertyTitle: "Typical Property Profile",
+        bedInfo:"2-3 Bedroom Buy to Let Family Home",
+        bedInfoList: ['Often semi-detached, mid terraced or back to back property', '2 to 3 storey (or 3 storey with basement)', 'Freehold houses', 'Standard construction, post 1900 to new build', 'Garden, where possible', 'Double glazed and gas central heating', 'Generally in good state of condition', 'Prices from £100,000 to £190,000', 'Renting unfurnished or part furnished', 'Rent from £600 to £1,100 pcm'],
+        location:"Location and Demographics",
+        locInfoList: ['Within a 15-20 minute drive of Leeds City Centre', 'Close to shops, amenities and transport links', 'In catchment area for good schools', 'Good rental demand from young professionals and families',]
+    },
+    {
+        option:'OPTION 2: HIGHER CASHFLOW',
+        title: "3-7 Bed HMO properties",
+        img: "images/source12.png",
+        propertyTitle: "Typical Property Profile",
+        bedInfo:"3 to 6 Bedroom HMO’s",
+        bedInfoList: ['Often semi-detached, mid terraced or back to back property', '2 to 3 storey (or 3 storey with basement)', 'Freehold houses', 'Standard construction, post 1900 to new build', 'Garden, where possible', 'Double glazed and gas central heating', 'Generally in good state of condition', 'Prices from £100,000 to £190,000', 'Renting unfurnished or part furnished', 'Rent from £600 to £1,100 pcm'],
+        location:"Location and Demographics",
+        locInfoList: ['Within a 15-20 minute drive of Leeds City Centre', 'Close to shops, amenities and transport links', 'In catchment area for good schools', 'Good rental demand from young professionals and families',]
+    },
+]
+
+export const propertySourcing = [
+    {
+        title: "Why use HOP for Property Sourcing?",
+        img: "images/source13.png",
+        para: "Our clients come from near and far. As near as Leeds and as far as Harrogate, London, Australia, Hong Kong and even Singapore. Each client has a different reason for choosing to engage HOP for Property Sourcing, but typically it’s down to:",
+        lists: ['A turnkey service literally means “all you need to do is turn the key”– but in this instance, we even do that for you!', 'Many of our clients never even visit the property themselves, making it the perfect partnership for armchair or overseas investors who are happy to sit back while we put their investment to work.', 'In terms of the service HOP offers, it means we offer the total package. As well as finding you the right property and packaging the right deal, our team will take care of the progression, obtain estimates and project manage any works, prepare and let the property and then move the tenants in', 'All without you ever having to leave your home.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: true,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+export const startedWithDanhamz = [
+    {
+        title: "Getting started with Danhamz",
+        img: "images/source14.png",
+        lists: ['If, after an initial chat, you are interested in proceeding with HOP, we’ll arrange to meet in person (or virtually) so we can go through the different options we offer, what the anticipated outcomes would be, what is involved and how we operate.', 'Our goal is to really understand your needs: what is it that you want to achieve, how quickly you want to achieve it and the risk level you are comfortable at. Once we are agreed, we then move to the next stage.', 'You will complete the required paperwork and we’ll go through due diligence such as AML and proof of funding. Once this is all done, the deposit is payable, which is 60% of the sourcing cost.', 'More often than not, we may already have properties that meet your criteria. If not, we will utilise our market knowledge, contacts and database to track down the right opportunity for you.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: true,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+// property sourcing
