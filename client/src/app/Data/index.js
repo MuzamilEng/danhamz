@@ -3461,7 +3461,7 @@ export const sourcce_nav = [
 export const sourceDealPkg = [
     {
         title: "Property Sourcing & Deal Packaging",
-        img: "images/overview6.png",
+        img: "images/source1.png",
         lists: ['Whether you’re from out of town, just starting out, or a busy property professional who needs hands-on support, we can help build your portfolio. Our Property Sourcing service is perfect for “Armchair Investors”, who wish to leverage our time and expertise to grow their wealth and plan for the future.', 'We do all the legwork for you, leveraging our network and knowledge to source your next acquisition. Depending on your risk level, we’ll find you a standard BTL, a ready-made HMO, or present options in need of renovation and refurbishment.', 'HOP will find you a property, analyse the opportunity and present you with a deal packaged to meet your investment goals. A total end-to-end service, we’ll then oversee the purchase progression and any works required to optimise the property for the rental market, before handing it to our award-winning Lettings Team to take care of letting and ongoing management.'] ,
         title_color: "text-purple-950",
         info_color: "text-gray-900",
@@ -3480,9 +3480,10 @@ export const simple_proc = [
         title :" Step 1: Consultation & Strategic Plannig",
         info: [
            { 
-            img: "images/source2.png",
-            para: 'You will have a dedicated contact who will be your personal expert, and will liaise with you on potential properties. They will undertake viewings on your behalf and report back – sending photos and videos for your review. If we think it’s a suitable match, we’ll put together a Deal Analysis for the property, a handy overview sheet detailing the figures for investment, improvement and returns. Once we’ve agreed on ‘the one’, our team will then seek to agree a optimal purchase price and close the deal.'
-        },
+            img: "images/source2.jpg",
+            para: 'we reviewing the outcomes achieved and looking at the next steps. It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.',
+            // para2: "Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor."
+                },
         ],
     },
     {
@@ -3490,8 +3491,9 @@ export const simple_proc = [
         info: [
             {
         img: "images/source3.jpg",
-        para: 'Our experienced team will arrange to visit the property, and undertake an indepth analysis of the property and identifying any cosmetic and remedial works required. We’ll undertake a full Optimisation Analysis that includes a specific works lists, contractor estimates and a breakdown of the best ways to improve the property and prepare it for let, utilising materials and finishes carefully chosen to look great and last well.'
-    },
+        para: 'we reviewing the outcomes achieved and looking at the next steps. It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.',
+        para2: "Or through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor."
+        },
 ],
     },
     {
@@ -3499,8 +3501,9 @@ export const simple_proc = [
         info: [
             { 
         img: "images/source4.jpg",
-        para: 'Once the offer is accepted, we’ll oversee the purchase progression step by step, liaising with the your appointed Conveyancers and Mortgage Broker as required. We’ll book a survey to check for remedial works and then review the report with an aim to renegotiate the purchase price if required. If you have any questions throughout, we are there to answer them. The aim is to streamline the purchase process to reach completion in a timely and stress-free manner, before collecting the keys when the completion date arrives.'
-    },
+        para: ' It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.',
+        para2: "Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor."
+        },
 ],
     },
     {
@@ -3508,8 +3511,9 @@ export const simple_proc = [
         info: [
             { 
         img: "images/source5.jpg",
-        para: 'Works will be scheduled in as soon as practically possible to minimise lost income. On completion, we’ll collect the keys, take meter readings and photos of the property. Our team of contractors will then undertake the scheduled works to the property under our watchful project management, ensuring it’s compliant and has appeal for tenants. We’ll quality check and handle final snagging, keeping you up-to-date with videos, photos and schedules. As the project is nearing completion, the HOP Lettings Team will be notified to prep the marketing.'
-    },
+        para: 'we reviewing or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.',
+        para2: "Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor."
+        },
 ],
     },
     {
@@ -3517,8 +3521,9 @@ export const simple_proc = [
         info: [
             { 
         img: "images/source6.jpg",
-        para: 'As one of our Property Sourcing clients, the property will automatically receive our Premium Marketing Package, complete with professionally edited photos, a full Matterport Virtual Tour and floorplans. The Lettings Team will qualify all leads and book in viewings. Once we find you the right tenant, in-depth referencing confirms employment status, earnings, credit score, rental history and right to rent checks. After which, the Tenancy documents are signed and issued along with prescribed information. You will be notified of the successful completion of the application and the move in date.'
-    },
+        para: 'we reviewing the outcomes achieved and looking at the next steps. It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.',
+        para2: "Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor."
+        },
 ],
 },
 {
@@ -3526,7 +3531,8 @@ export const simple_proc = [
     info: [
         { 
     img: "images/source7.jpg",
-    para: 'You will be assigned a dedicated Property Manager, who will be your point of contact for everything relating to your property such as maintenance, inspections and Tenancy renewals. Their aim is to ensure your property is well maintained and your income secure. Annual Rent Reviews will take place, inspection reports provided and, when required, the property will be marketed well in advance to minimise void periods (often no more than a week and in Student HMO’s none at all).'
+    para: 'we reviewing the outcomes achieved and looking at the next steps. It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.',
+    para2: "Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor."
 },
 ],
 },
@@ -3535,7 +3541,9 @@ export const simple_proc = [
     info: [
         { 
     img: "images/source8.jpg",
-    para: 'Often, the first property is just the start of the journey and at the end of the process, we find ourselves back together at the Strategic Planning stage of the cycle, reviewing the outcomes achieved and looking at the next steps. It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.'
+    para: 'we reviewing the outcomes achieved and looking at the next steps. It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties. Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor.',
+    para2: "Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor."
+
 },
 ],
 },
@@ -3544,7 +3552,8 @@ export const simple_proc = [
     info: [
         { 
     img: "images/source9.jpg",
-    para: ''
+    para: 'Often, the first property is just the start of the journey and at the end of the process, we find ourselves back together at the Strategic Planning stage of the cycle, reviewing the outcomes achieved and looking at the next steps. It might be that you choose to purchase another property, or multiple properties, all without having to leave home. You may decide to refinance, to release funds to purchase further properties.',
+    para2: "Or it might be time to plan your exit, in which case we can also handle the sales process for you through our specialist HMO Sales Service, helping you to maximise the sale value of your property, or re-sell to a new investor."
 },
 ],
 },
@@ -3552,7 +3561,7 @@ export const simple_proc = [
 
 export const turnKey = [
     {
-        title: "What is a turnkey service?Property Sourcing & Deal Packaging",
+        title: "What is a turnkey service?",
         img: "images/source10.png",
         lists: ['A turnkey service literally means “all you need to do is turn the key”– but in this instance, we even do that for you!', 'Many of our clients never even visit the property themselves, making it the perfect partnership for armchair or overseas investors who are happy to sit back while we put their investment to work.', 'In terms of the service HOP offers, it means we offer the total package. As well as finding you the right property and packaging the right deal, our team will take care of the progression, obtain estimates and project manage any works, prepare and let the property and then move the tenants in', 'All without you ever having to leave your home.'],
         title_color: "text-purple-950",
@@ -3608,10 +3617,163 @@ export const startedWithDanhamz = [
         lists: ['If, after an initial chat, you are interested in proceeding with HOP, we’ll arrange to meet in person (or virtually) so we can go through the different options we offer, what the anticipated outcomes would be, what is involved and how we operate.', 'Our goal is to really understand your needs: what is it that you want to achieve, how quickly you want to achieve it and the risk level you are comfortable at. Once we are agreed, we then move to the next stage.', 'You will complete the required paperwork and we’ll go through due diligence such as AML and proof of funding. Once this is all done, the deposit is payable, which is 60% of the sourcing cost.', 'More often than not, we may already have properties that meet your criteria. If not, we will utilise our market knowledge, contacts and database to track down the right opportunity for you.'],
         title_color: "text-purple-950",
         info_color: "text-gray-900",
-        lists_style: true,
+        lists_style: false,
         url: "/",
         lists_color: "text-gray-900",
         bg_color : 'bg-white'
     }
 ]
 // property sourcing
+
+// property refubs
+export const refub_nav = [
+    {
+        title: "Property Refurbishments Leeds",
+        title_color: "text-white",
+        img:"images/refub_nav.jpg",
+        button: "Get in touch",
+        url: "/",
+        btn_bg: "bg-purple-950",
+        btn_text: "text-white",
+        bg_color : 'bg-[#f78da7]'
+    }
+]
+
+export const propOtimisation = [
+    {
+        title: "What is Property Optimisation?",
+        img: "images/source14.png",
+        lists: ['Property Optimisation is the process of ensuring that your rental property is performing at its best and delivering optimum returns.', 'When it comes to rental property in Leeds, we are experts. And that means we know what it takes to create a popular and profitable investment property. From minor works to full scale project management, our clever team can ensure your asset is generating the best rents.', 'Our Property Optimisation service includes a full analysis of your rental property and recommendations on how to maximise your return and minimise void periods', 'Once we have fully scoped out what improvements will make the biggest difference to your property, we plan and deliver the works with our expert contractors – transforming your property into a high performing let.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+
+export const responseRefurbish = [
+    {
+        title: "Clear Reasons to Refurbish",
+        img: "images/refub0.jpg",
+        lists: ['Regardless of whether you’re planning a full-scale property refurbishment, or a simple lick of paint ready for a new tenant, there are so many reasons to refurbish your Leeds property. Here’s just a few:', 'Adding value: Whether you need a new tenant, are looking to sell, or quite simply just like the idea of adding value to your property – you might be surprised at how effective a small refurbishment project can be. In some cases, a bit of fresh paint, new light fittings and a new shower could be all you need to put some value on your property and make it more attractive to buyers and tenants.', 'Cost-effective: Finding and buying a brand-new property can be an expensive and time-consuming business. On the other hand, a refurbishment project can meet any need and take less time. This is particularly the case if you’re already happy with the overall structure of your property.', 'Easier life: Refurbishment isn’t just about adding value to a property or making it look better. Think about anything in your property that causes you a constant headache or stress, perhaps in the kitchen or bathroom; a refurbishment project can take that irritating burden off your shoulders once and for all.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+
+export const howITWorks = [
+    {
+        title: "How does it work?",
+        img: "images/refub1.png",
+        lists: ['The Property Optimisation process begins with a full analysis to review and assess what changes will make the biggest impact when it comes to making your investment attractive to contemporary tenants and, ultimately, more profitable.', 'This could be as simple as new carpets, décor and furnishings, or perhaps a new bathroom or kitchen.', 'It can even extend to altering the layout, adding rooms, converting a basement, adding an extension or a change of use. All of which – and more –  can be handled by our talented team.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+
+export const strategicApproach = [
+    {
+        title: "A strategic approach",
+        img: "images/refub2.png",
+        lists: ['It is not only the quality of the property that impacts the income, the rental strategy is equally as important.', 'We can offer guidance on: whether to rent as a HMO or on a room by room basis; which tenant types would be best to market to; the prime time to do the works; or even organising a pre-let of the property to minimise risk and loss of income.', 'We pride ourselves on building long-standing relationships with Landlords and will work with them to optimise their property on an ongoing, cyclical basis. It’s also a key part of our Property Sourcing service, as well as being a fundamental part of any HOP Development.', 'The outcome of the Property Optimisation analysis is a robust plan for works and rental strategy, designed to generate the maximum return.'], 
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+
+export const hassleFreeRefub = [
+    {
+        title: "Hassle-free refurbishment",
+        img: "images/refub3.png",
+        lists: ['Each asset generally has a lifecycle: starting at freshly refurbished and ending at complete renovation required', 'However, it’s not just wear and tear that you need to be mindful of – keeping things modernised is important too.', 'Rental demand, decor trends and tenant expectations change over time, which can all have an impact on occupancy, rent levels, and the property’s overall value.', 'As well as advising and specifying recommended changes, we’ll also implement them for you, using our team of carefully selected contractors.'], 
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+
+export const trustedTeam = [
+    {
+        title: "A trusted team",
+        img: "images/refub4.png",
+        lists: ['Once a decision is made to proceed, HOP will get full quotations for the work from our hand-picked team of retained contractors, many of whom have worked with us since we started. Tried and tested, they appreciate the exacting standards and competitive cost that we expect.', 'We will review and discuss the estimates with you and, once agreed, we will engage the contractors to start work. Your HOP Project Manager will then personally oversee the works from start to finish, in line with the best possible timing strategy for the market.', 'HOP has refurbished countless properties since 2009, enabling us to hone the specification, service, quality and pricing – to deliver marked improvements time and time again.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+export const lettingYouProperty = [
+    {
+        title: "Letting your property",
+        img: "images/refub5.png",
+        lists: ['As the works on your buy to let property come to an end, we will add the finishing touches and details to complete the transformation.', 'Soft furnishings and decor can make all the difference, and we can fully dress and furnish your property ready for tenants to move straight in to.', 'It’s at this point that our award-winning Lettings Team will also swing into action and quickly let the property at the uplifted rental level. They will capture new marketing photos and 360-degree virtual tours, showcasing the newly refurbished property and ensuring your property stands out from the crowd.', 'Our proven marketing techniques will ensure tenants are secured at the new rental levels as soon as possible, in order to maximise your returns.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+
+export const transformProperty = [
+    {
+        title: "Why Choose Us to Transform Your Property",
+        img: "images/refub6.jpg",
+        lists: ['We have been serving the Leeds population for years and are proud to offer support with property refurbishment in Leeds and its surrounding suburbs.', 'The Leeds rental market is a competitive place full of discerning tenants. Not only do we have rich experience as property developers working on a range of property maintenance and refurbishment projects, but we also have lots of experience and knowledge about the local area as well as what local tenants are looking for.', 'All of this, plus our commitment to delivering the best possible service to you and our long line of happy customers, makes us an excellent choice for your refurbishment needs, from minor works to full scale projects.', 'Let us take the hassle out of your refurbishment project and get your property ready for renting with our tailored Property Optimisation service.'],
+        title_color: "text-purple-950",
+        info_color: "text-gray-900",
+        lists_style: false,
+        url: "/",
+        lists_color: "text-gray-900",
+        bg_color : 'bg-white'
+    }
+]
+
+export const redubStudies = [
+    {
+        img: "images/refub7.jpg",
+        title: "3 Bed HMO in Headingley",
+        para: "Works: The key objective was to make room by expanding the communal areas and adding an en-suite, as well as fully upgrading the spec throughout. We chose materials and finishes that would not only be hardwearing but also very attractive to prospective tenants.",
+        info: "All our HOP student properties can be all-inclusive, which means you don’t have to worry about bills. We take care of it all for you so you can enjoy a stress-free student renting experience.",
+    },
+    {
+        img: "images/refub8.jpg",
+        para: "Works: The key objective was to make room by expanding the communal areas and adding an en-suite, as well as fully upgrading the spec throughout. We chose materials and finishes that would not only be hardwearing but also very attractive to prospective tenants.",
+        title: "4 Bed HMO in Hyde Park",
+        info: "We’ve got you covered. with 3-bedrooms or more, then our ESSENTIALS Bills Package is included as standard. That’s Gas, Electric, Water & Broadband – all sorted with your rent!",
+    },
+    {
+        img: "images/refub9.jpg",
+        para: "Works: The key objective was to make room by expanding the communal areas and adding an en-suite, as well as fully upgrading the spec throughout. We chose materials and finishes that would not only be hardwearing but also very attractive to prospective tenants.",
+        title: "4 Bed HMO in Woodhouse",
+        info: "There are no signing fees to pay when you rent with us.",
+    },
+    {
+        img: "images/refub10.jpg",
+        para: "Works: The key objective was to make room by expanding the communal areas and adding an en-suite, as well as fully upgrading the spec throughout. We chose materials and finishes that would not only be hardwearing but also very attractive to prospective tenants.",
+        title: "4 Bed Through-Terrace In Hyde Park",
+        info: "We know the student market inside out and have been doing this for well over a decade, so you know you are in safe hands. Plus we are Unipol Code Accredited too!",
+    },
+]
+// property refubs
