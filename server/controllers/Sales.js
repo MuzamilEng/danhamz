@@ -1,10 +1,10 @@
-const Letting = require('../models/Lettings');
+const salesSchema = require('../models/Sales');
 const cloudinary = require('../cloudinary.config')
 
-const createLettings = async (req, res) => {
+const createSalesProperty = async (req, res) => {
   const {
     propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
-    location, keyFeatures, lettingDetails, description, propertyFor, propertyType,
+    location, keyFeatures, lettingDetails, description,  propertyFor, propertyType,
   } = req.body;
 
   const imageUrls = [];
@@ -23,7 +23,7 @@ const createLettings = async (req, res) => {
       })
     );
 
-    const newContent = new Letting({
+    const newContent = new salesSchema({
       propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
       location, keyFeatures, lettingDetails, description, propertyFor, propertyType, ...Object.assign({}, ...imageUrls),
     });
@@ -44,10 +44,10 @@ const createLettings = async (req, res) => {
 
 
 // Function to update an existing letting
-const updateLettings = async (req, res, next) => {
+const updateSalesProperty = async (req, res) => {
   const {
     propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
-    location, keyFeatures, lettingDetails, description, propertyFor
+    location, keyFeatures, lettingDetails, description,
   } = req.body;
 
   const updateFields = {
@@ -56,7 +56,7 @@ const updateLettings = async (req, res, next) => {
   };
 
   try {
-    const existingContent = await Letting.findById(req.params.id);
+    const existingContent = await salesSchema.findById(req.params.id);
 
     if (!existingContent) {
       return res.status(404).json({ message: 'Content not found' });
@@ -88,7 +88,7 @@ const updateLettings = async (req, res, next) => {
       await cloudinary.uploader.destroy(publicId.replace(cloudinary.config().cloud_name + '/', ''));
     }
 
-    const updatedContent = await Letting.findByIdAndUpdate(
+    const updatedContent = await salesSchema.findByIdAndUpdate(
       req.params.id,
       { $set: updateFields },
       { new: true }
@@ -106,18 +106,18 @@ const updateLettings = async (req, res, next) => {
 };
 
 // Get all lettings
-const getAllLettings = async (req, res) => {
+const getAllSalesProperties = async (req, res) => {
   try {
-    const lettings = await Letting.find();
+    const lettings = await salesSchema.find();
     res.status(200).json(lettings);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 };
 // Get a single letting by ID
-const getLettingById = async (req, res) => {
+const getSalesPropertyById = async (req, res) => {
   try {
-    const letting = await Letting.findById(req.params.id);
+    const letting = await salesSchema.findById(req.params.id);
     if (!letting) {
       return res.status(404).json({ error: 'Letting not found' });
     }
@@ -127,9 +127,9 @@ const getLettingById = async (req, res) => {
   }
 };
 // Delete a letting by ID
-const deleteLettingById = async (req, res) => {
+const deleteSalesPropertyById = async (req, res) => {
   try {
-    const deletedLetting = await Letting.findByIdAndRemove(req.params.id);
+    const deletedLetting = await salesSchema.findByIdAndRemove(req.params.id);
     if (!deletedLetting) {
       return res.status(404).json({ error: 'Letting not found' });
     }
@@ -140,64 +140,10 @@ const deleteLettingById = async (req, res) => {
   }
 };
 
-const advancedSearch = async (req, res) => {
-  const { minPrice, maxPrice, bedrooms, propertyType } = req.query;
-
-  // Define an array to store the conditions for the $and operator
-  const andConditions = [];
-  
-  // Check and add conditions based on the provided query parameters
-  if (minPrice && maxPrice) {
-    andConditions.push({
-      pricePerMonth: { $gte: parseInt(minPrice), $lte: parseInt(maxPrice) },
-    });
-  }
-  
-  if (bedrooms) {
-    andConditions.push({ bedrooms: parseInt(bedrooms) });
-  }
-  
-  if (propertyType) {
-    andConditions.push({ propertyType: propertyType });
-  }
-  
-  // Build the final search query
-  const searchQuery = {
-    $or: andConditions,
-  };
-  
-  try {
-    const searchResults = await Letting.find(searchQuery);
-  
-    // Check if at least three conditions match
-    const matchingConditions =
-      (minPrice && maxPrice ? 1 : 0) +
-      (bedrooms ? 1 : 0) +
-      (propertyType ? 1 : 0);
-  
-    if (matchingConditions >= 3) {
-      // Send the relevant response containing the filtered items
-      res.status(200).json(searchResults);
-    } else {
-      res.status(400).json({
-        error: 'Not enough conditions matched.',
-      });
-    }
-  } catch (error) {
-    console.error('Error during search:', error);
-    res.status(500).json({
-      error: 'Internal server error',
-    });
-  }
-};
-
-
-
 module.exports = {
-createLettings,
-  getAllLettings,
-  getLettingById,
-  deleteLettingById,
-  updateLettings,
-  advancedSearch
+  createSalesProperty,
+  updateSalesProperty,
+  getAllSalesProperties,
+  getSalesPropertyById,
+  deleteSalesPropertyById,
 };

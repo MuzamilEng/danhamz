@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const lettingsSchema = new mongoose.Schema({
+const salesSchema = new mongoose.Schema({
   propertyFor: String,
   propertyType: String,
     propertyName: String,
@@ -10,8 +10,8 @@ const lettingsSchema = new mongoose.Schema({
     availableDate: String,
     furnished: String,
     bills: String,
-    bedrooms: Number,
-    bathrooms: Number,
+    bedrooms: String,
+    bathrooms: String,
     reception: String,
     location: String,
     image1: {
@@ -84,4 +84,4 @@ const lettingsSchema = new mongoose.Schema({
     ]
 })
 
-module.exports = mongoose.model('Letting', lettingsSchema)
+module.exports = mongoose.model('Sale', salesSchema)

@@ -5,29 +5,29 @@ export const storeApi = createApi({
     reducerPath: 'storeApi',
     baseQuery: fetchBaseQuery({ baseUrl: ' http://localhost:5000/api/v1' }),
     endpoints: (builder) => ({
-        getHomeContent: builder.query({
-            query: () => `/home`,
+        getAllLettings: builder.query({
+            query: () => `/lettings`,
         }),
-        getPostsById: builder.query({
-            query: (id) => `/products/${id}`,
+        getLettingsById: builder.query({
+            query: (id) => `/lettings/${id}`,
           }),
-        addHomeContent: builder.mutation({
+        addLettingProperty: builder.mutation({
             query: (data) => ({
-                url: '/home',
+                url: '/lettings',
                 method: 'POST',
                 body: data,
             }),
         }),
-        updateHomeContent: builder.mutation({
+        updateLettingProperty: builder.mutation({
             query: ({ id, data }) => ({
-              url: `/edit-home/${id}`,
+              url: `/lettings/${id}`,
               method: 'PUT',
               body: data,
             }),
         }),
-        deletePost: builder.mutation({
+        deleteLettingProperty: builder.mutation({
             query: (id) => ({
-              url: `/products/${id}`,
+              url: `/lettings/${id}`,
               method: 'DELETE',
             }),
           }),
@@ -62,14 +62,11 @@ export const storeApi = createApi({
 })
 
 export const {
-    useGetHomeContentQuery,
-    useAddHomeContentMutation,
-    useUpdateHomeContentMutation,
-    useAddPostMutation,
-    useGetPostsQuery,
-    useGetPostsByIdQuery,
-    useDeletePostMutation,
-    useUpdatePostMutation,
+    useGetAllLettingsQuery,
+    useGetLettingsByIdQuery,
+    useAddLettingPropertyMutation,
+    useUpdateLettingPropertyMutation,
+    useDeleteLettingPropertyMutation,
     useAddUserMutation,
     useEditUserMutation,
     useDeleteUserMutation,

@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const path = require('path');
-const {createLettings, getAllLettings, getLettingById, updateLettings, deleteLettingById, advancedSearch } = require('../controllers/Lettings');
+const { createSalesProperty, updateSalesProperty, getAllSalesProperties,  getSalesPropertyById, deleteSalesPropertyById, } = require('../controllers/Sales');
 
 const storage = multer.diskStorage({
   // destination: ('./public/uploads/'),
@@ -23,18 +23,15 @@ const uploadFiles = upload.fields([{ name: 'image1', maxCount: 1 }, { name: 'ima
 
 
 // Get all lettings
-router.route('/').get(getAllLettings)
+router.route('/').get(getAllSalesProperties);
 
 // Create a new letting
-router.route('/').post(uploadFiles, createLettings);
+router.route('/').post(uploadFiles, createSalesProperty);
 
 // Update an existing letting by ID
-router.route('/:id').put(uploadFiles, updateLettings);
+router.route('/:id').put(uploadFiles, updateSalesProperty);
 
 // Get a letting by ID and Delete a letting by ID
-router.route('/:id').get(getLettingById).delete(deleteLettingById);
-
-// Advanced search
-router.route('/advanced-search').get(advancedSearch);
+router.route('/:id').get(getSalesPropertyById).delete(deleteSalesPropertyById);
 
 module.exports = router;
