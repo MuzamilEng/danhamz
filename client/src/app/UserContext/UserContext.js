@@ -1,24 +1,30 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { useGetAllLettingsQuery } from '../store/storeApi';
+import { useGetAllLettingsQuery, useGetAllSalesQuery } from '../store/storeApi';
 
 const UserContext = createContext();
 
 export const useGlobalContext = () => useContext(UserContext);
 
 export const UserProvider = ({ children }) => {
-  const { data } = useGetAllLettingsQuery()
-  const [content, setContent] = useState([]);
+  const { data: lettings } = useGetAllLettingsQuery()
+  const { data: sales } = useGetAllSalesQuery()
+  const [lettingProperties, setLettingProperties] = useState([]);
+  const [salesProperties, setSalesProperties] = useState([]);
 
   useEffect(() => {
-    if (data) {
-      setContent(data);
+    if (lettings) {
+      setLettingProperties(lettings);
     }
-  }, [data]);
+    if(sales) {
+      setSalesProperties(sales);
+    }
+  }, [lettings, sales]);
  
-  console.log(content);
+  console.log(lettings,"Lettings");
+  console.log(sales,"Sales");
   
   return (
-    <UserContext.Provider value={{ content, setContent }}>
+    <UserContext.Provider value={{ lettingProperties, setLettingProperties, salesProperties, setSalesProperties }}>
       {children}
     </UserContext.Provider>
   );

@@ -15,33 +15,36 @@ import BuySection from '../Component/BuySection';
 import Layout from '../Layout/Layout';
 import LeftImageContainer from '../Component/LeftImageContainer';
 import RatingsContainer from '../Component/RatingsContainer';
+import { useGlobalContext } from '../UserContext/UserContext';
 
 const Home = () => {
+  const {salesProperties, setSalesProperties} = useGlobalContext();
     const [showRentSection, setShowRentSection] = useState(true);
-  const images = ["images/home.jpg", "images/main.jpg", "images/home.jpg"];
+  const images = ["images/slider_1.png", "images/landlord_0.jpg", "images/slider_2.jpg"];
 
   const settings = { dots: true, arrows: false, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
   return (
     <div>
       <Layout>
           <section className='relative'>
-          <div className="absolute flex left-[11.5vw] top-0">
+          <div className="absolute flex left-[10vw] top-0">
             <p className={`${showRentSection ? 'bg-white' : 'bg-gray-300'} text-vw w-7vw cursor-pointer hover:bg-gray-300 p-vw text-center`} onClick={() => setShowRentSection(true)} > Rent</p>
             <p className={`${showRentSection ? 'bg-gray-300' : 'bg-white'} text-vw ml-0.3vw w-7vw hover:bg-white cursor-pointer p-vw text-center`} onClick={() => setShowRentSection(false)} >Buy </p>
           </div>
           </section>
           <article className='flex mt-[0.5vw] flex-col justify-center items-center w-full p-2vw'>
             <div className="flex -ml-3vw justify-between items-start">
-              {showRentSection ? <RentSection /> : <BuySection />}
-              <section className='w-full mt-vw max-w-[35vw] ml-vw'>
-                {/* <Slider {...settings}>
+              <div className="w-full">
+                {showRentSection ? <RentSection /> : <BuySection />}
+              </div>
+              <section className='w-[37vw] mt-vw ml-2vw'>
+                <Slider {...settings}>
                   {images.map((image, index) => (
                     <div key={index}>
-                    <img src={image} alt={`slide-${index}`} className="w-full" loading="lazy" />
+                    <img src={image} alt={`slide-${index}`} className="w-full h-[25vw]" loading="lazy" />
                     </div>
                   ))}
-                </Slider> */}
-                <img src="images/landlord_0.jpg" alt="image" className='w-full'/>
+                </Slider>
               </section>
             </div>
           </article>
@@ -89,9 +92,12 @@ const Home = () => {
           <div className="w-full flex-col bg-gray-200 p-2vw flex justify-center items-center">
             <h1 className='text-blue-950 text-[1.9vw] text-center capitalize font-medium'>Latest properties for Sale</h1>
             <div className="grid grid-cols-4 gap-3 mt-2vw">
-              {properties?.map((item, index) => (
-                <Property key={index} tag={item?.tag} icon={item?.icon} quantity={item?.pics?.[0]?.quantity} price={item?.price} location={item?.location} icon2={item?.pics?.[0]?.icon} bed_rooms={item?.bed_rooms} img={item?.img} />
+              {salesProperties?.map((item, index) => (
+                <Property key={index} tag={item?.tag} icon={item?.icon} quantity={item?.bedrooms} price={item?.price} location={item?.location} icon2={item?.pics?.[0]?.icon} bed_rooms={item?.bedrooms} img={item?.image1?.url} img2={item?.image2?.url} img3={item?.image3?.url} img4={item?.image4?.url} img5={item?.image5?.url} />
               ))}
+              {/* {properties?.map((item, index) => (
+                <Property key={index} tag={item?.tag} icon={item?.icon} quantity={item?.pics?.[0]?.quantity} price={item?.price} location={item?.location} icon2={item?.pics?.[0]?.icon} bed_rooms={item?.bed_rooms} img={item?.img} />
+              ))} */}
             </div>
             <Link to="/" className="bg-pink-400 mt-2vw block p-vw m-vw text-white font-medium text-[0.8vw] text-center">Start your search</Link>
           </div>

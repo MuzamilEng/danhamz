@@ -4,8 +4,7 @@ const salesSchema = new mongoose.Schema({
   propertyFor: String,
   propertyType: String,
     propertyName: String,
-    pricePerWeek: String,
-    pricePerMonth: String,
+    price: String,
     info: String,
     availableDate: String,
     furnished: String,
@@ -78,8 +77,8 @@ const salesSchema = new mongoose.Schema({
     lettingDetails: [],
     description: [
         {
-            title: "",
-            info: ""
+            title: String,
+            info: String
         }
     ]
 })

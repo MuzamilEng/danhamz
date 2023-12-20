@@ -1,23 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { rentContainer } from '../Data'
 import { Icon } from '@iconify/react';
 
 
 const RentSection = () => {
-  return (
+    const [activeCategory, setActiveCategory] = useState('Student');
+    return (
     <div className='bg-white w-full max-w-[38vw] m-vw'>
         <div className="flex flex-col justify-center items-center p-vw w-full">
-            <section className='flex justify-between items-centers w-full p-0.5vw'>
-                <p className='bg-purple-800 hover:bg-purple-800 cursor-pointer border-[1px] font-medium border-gray-400 text-center text-vw text-white p-vw w-17vw '>Student</p>
-                <p className='hover:bg-purple-800 border-[1px] hover:text-white cursor-pointer text-vw border-gray-400 font-medium text-center text-blue-900 p-vw w-17vw '>Professional</p>
-            </section>
+        <section className='flex justify-between items-centers w-full p-0.5vw'>
+      <p className={`${ activeCategory === 'Student' ? 'bg-purple-950 text-white font-medium' : 'bg-white'} hover:bg-purple-800 hover:text-white cursor-pointer border-[1px] font-medium border-gray-400 text-center text-vw text-purple-950 p-vw w-17vw `}
+        onClick={() => setActiveCategory('Student')} > Student</p>
+      <p className={`${ activeCategory === 'Professional' ? 'bg-purple-950 text-white font-medium' : 'bg-white' } hover:bg-purple-800 border-[1px] hover:text-white cursor-pointer text-vw border-gray-400 font-medium text-center text-purple-950 p-vw w-17vw `}
+        onClick={() => setActiveCategory('Professional')}> Professional </p>
+    </section>
             <section className='mt-0.5vw p-vw w-full'>
                 <p className='text-black text-[0.9vw]'>How many bedrooms do you need?</p>
                 <div className="grid grid-cols-9 mt-vw items-center gap-2 w-full max-w-[30vw]">
                             <p className='flex justify-center items-center bg-purple-800 text-[0.9vw] p-vw text-center w-[2.5vw] h-[2.5vw] text-white'>Any</p>
+                            {activeCategory === 'Student' ? <>
                             {rentContainer?.[0]?.quantity.map((item, index) => (
                                 <p key={index} className='flex justify-center hover:text-white items-center border-[1px] border-gray-400 hover:bg-purple-600 text-[0.9vw] p-vw text-center w-[2.5vw] h-[2.5vw] text-blue-900'>{item?.count}</p>
                             ))}
+                            </>: <>
+                            {rentContainer?.[0]?.quantity?.slice(0, 5).map((item, index) => (
+                                <p key={index} className='flex justify-center hover:text-white items-center border-[1px] border-gray-400 hover:bg-purple-600 text-[0.9vw] p-vw text-center w-[2.5vw] h-[2.5vw] text-blue-900'>{item?.count}</p>
+                            ))}</>}
                 </div>
                 <div className="mt-vw -ml-vw flex items-center">
                     {rentContainer?.[0]?.container?.map((item, index) =>(

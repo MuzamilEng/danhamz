@@ -6,6 +6,7 @@ const errorHandler = require('./middleware/error-handler')
 const notFound = require('./middleware/not-found')
 const cors = require('cors')
 const lettingRoute = require('./routes/lettings');
+const salesRoute = require('./routes/Sales');
 
 const port = 5000;
 // middleware
@@ -15,6 +16,7 @@ app.use(express.json())
 
 // routes
 app.use('/api/v1/lettings', lettingRoute);
+app.use('/api/v1/sales', salesRoute);
 
 app.use(errorHandler)
 app.use(notFound)

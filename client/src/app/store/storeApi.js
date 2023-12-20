@@ -31,6 +31,32 @@ export const storeApi = createApi({
               method: 'DELETE',
             }),
           }),
+          getAllSales: builder.query({
+            query: () => `/sales`,
+        }),
+        getSalesById: builder.query({
+            query: (id) => `/sales/${id}`,
+          }),
+        addSaleProperty: builder.mutation({
+            query: (data) => ({
+                url: '/sales',
+                method: 'POST',
+                body: data,
+            }),
+        }),
+        updateSaleProperty: builder.mutation({
+            query: ({ id, data }) => ({
+              url: `/sales/${id}`,
+              method: 'PUT',
+              body: data,
+            }),
+        }),
+        deleteSaleProperty: builder.mutation({
+            query: (id) => ({
+              url: `/sales/${id}`,
+              method: 'DELETE',
+            }),
+          }),
         addUser: builder.mutation({
             query: (data) => ({
                 url: '/auth/register',
@@ -67,6 +93,11 @@ export const {
     useAddLettingPropertyMutation,
     useUpdateLettingPropertyMutation,
     useDeleteLettingPropertyMutation,
+    useGetAllSalesQuery,
+    useGetSalesByIdQuery,
+    useAddSalePropertyMutation,
+    useUpdateSalePropertyMutation,
+    useDeleteSalePropertyMutation,
     useAddUserMutation,
     useEditUserMutation,
     useDeleteUserMutation,

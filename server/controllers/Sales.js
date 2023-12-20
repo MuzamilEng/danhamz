@@ -3,7 +3,7 @@ const cloudinary = require('../cloudinary.config')
 
 const createSalesProperty = async (req, res) => {
   const {
-    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
+    propertyName, price, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
     location, keyFeatures, lettingDetails, description,  propertyFor, propertyType,
   } = req.body;
 
@@ -24,7 +24,7 @@ const createSalesProperty = async (req, res) => {
     );
 
     const newContent = new salesSchema({
-      propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
+      propertyName, price, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
       location, keyFeatures, lettingDetails, description, propertyFor, propertyType, ...Object.assign({}, ...imageUrls),
     });
 
@@ -46,12 +46,12 @@ const createSalesProperty = async (req, res) => {
 // Function to update an existing letting
 const updateSalesProperty = async (req, res) => {
   const {
-    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
+    propertyName, price, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
     location, keyFeatures, lettingDetails, description,
   } = req.body;
 
   const updateFields = {
-    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
+    propertyName, price, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
     location, keyFeatures, lettingDetails, description, propertyFor, propertyType,
   };
 
