@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../Layout/Layout'
 import PageAddress from './PageAddress'
 import Slider from "react-slick";
@@ -9,85 +9,114 @@ import LettingProperty from './LettingProperty';
 import { Icon } from '@iconify/react';
 import Map from './Map';
 import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { useGetSalesByIdQuery } from '../store/storeApi';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, WhatsappShareButton, WhatsappIcon} from 'react-share'
+
+
 
 const PropertyDetails = (tag, icon, quantity, weekPrice, location, monthPrice, bedRooms, img, bed_icon, available, furnished_icon,furnished,bill_icon, bills, date
     ) => {
+        const { id } = useParams();
+        const { data: propertyDetails, isLoading, isError } = useGetSalesByIdQuery(id);
+        // console.log(propertyDetails, "propertyDetails");
+        const [share, setShare] = useState(false);
+        const CustomPrevArrow = (props) => (
+            <span {...props} className="text-vw text-black absolute cursor-pointer bottom-0 left-1 z-50">
+            <FontAwesomeIcon icon={faArrowLeft} className='text-vw text-black  rounded-md hover:bg-gray-100 bg-white p-[0.7vw] text-center' />
+          </span>);
+          const CustomNextArrow = (props) => (
+              <span {...props} className="text-vw text-black absolute cursor-pointer  bottom-0 left-[3.1vw]">
+            <FontAwesomeIcon icon={faArrowRight} className='text-vw text-red-800 rounded-md hover:bg-gray-100 bg-white p-[0.7vw] text-center' />
+          </span> );
 
+    const settings = { dots: false, prevArrow: <CustomPrevArrow />, nextArrow: <CustomNextArrow />, arrows: true, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
 
-    const images = ["images/carousel-1.jpg", "images/carousel-2.jpg", "images/carousel-3.jpg"];
-    const settings = { dots: false, arrows: false, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
+    if (isLoading) {
+        return <div></div>;
+    }
+
+    if (isError) {
+        return <div className='text-center text-2vw text-blue-950'>Error fetching property details</div>;
+    }
  
   return (
     <div>
         <Layout>
-            <PageAddress main='Home' category='Properties' subCategory='Headlingly' />
+            <PageAddress main='Home' category='Properties' subCategory={propertyDetails?.info} />
             <article className="flex justify-center items-start p-4vw">
             <section className='w-full max-w-[43vw]'>
                 <Slider {...settings}>
-                  {images.map((image, index) => (
-                    <div key={index}>
-                    <img src={image} alt={`slide-${index}`} className="w-full rounded-lg h-[30vw] max-w-[43vw]" loading="lazy" />
-                    </div>
-                  ))}
+                <img src={propertyDetails?.image1?.url} alt={'slide'} className="w-full rounded-sm h-[26.5vw] max-w-[43vw]" loading="lazy" />
+                <img src={propertyDetails?.image2?.url} alt={'slide'} className="w-full rounded-sm h-[26.5vw] max-w-[43vw]" loading="lazy" />
+                <img src={propertyDetails?.image3?.url} alt={'slide'} className="w-full rounded-sm h-[26.5vw] max-w-[43vw]" loading="lazy" />
+                <img src={propertyDetails?.image4?.url} alt={'slide'} className="w-full rounded-sm h-[26.5vw] max-w-[43vw]" loading="lazy" />
                 </Slider>
               </section>
-              <section className='p-0.5vw bg-white w-full max-w-[35vw] ml-vw'>
+              <section className='p-0.5vw pb-2vw bg-white w-full max-w-[35vw] ml-vw'>
                 <div className="flex p-0.5vw ml-vw items-center">
+                    {propertyDetails?.price ? <>
+                        <p className='text-blue-900 text-[1.9vw] italic mt-2vw font-bold'>{propertyDetails?.price}</p>
+                    </>: <>
                     <section className='p-2vw border-r-[1px] border-gray-700'>
-                    {/* <p className='text-blue-900 text-[1.6vw] font-bold'>{weekPrice}</p> */}
                     <p className='text-blue-900 text-[1.6vw] font-bold'>$2000</p>
                     <p className='text-gray-400 text-vw'>per week</p>
                     </section>
                     <section className='ml-5vw'>
-                    {/* <p className='text-blue-900 text-[1.6vw] font-bold'>{monthPrice}</p> */}
                     <p className='text-blue-900 text-[1.6vw] font-bold'>$5000</p>
                     <p className='text-gray-400 text-vw'>per month</p>
                     </section>
+                    </>}
                 </div>
-                {/* <p className='text-black ml-vw text-vw'>{location}</p> */}
-                <p className='text-black ml-vw font-medium text-[1.2vw]'>BILLS INCLUDED – Newport Mount, Headingley, Leeds, LS6</p>
+                <p className='text-black ml-vw font-medium text-[1.2vw]'>{propertyDetails?.info}</p>
                <span className="col-center">
                <div className="grid grid-cols-3 w-full max-w-[29vw] items-start gap-2 -ml-vw">
                 <div className="flex w-[8vw] h-3vw m-vw items-center p-vw bg-blue-600">
-                    {/* <span className='text-white text-[0.8vw]'>{date}</span> */}
                     <span className='text-white text-[0.8vw]'>01 Feb 2022</span>
                     <span className='text-white ml-0.5vw text-[0.7vw]'>{available}</span>
                 </div>
                 <div className="flex w-[8vw] m-vw h-3vw items-center p-vw bg-blue-600">
-                    {/* <span className='text-white ml-0.5vw text-[0.7vw]'>{furnished}</span> */}
                     <span className='text-white text-vw'><Icon icon="cil:sofa" /></span>
-                    {/* <span className='text-white text-[0.8vw]'>{furnished_icon}</span> */}
-                    <span className='text-white ml-0.5vw text-[0.8vw]'>Furnished</span>
+                    <span className='text-white ml-0.5vw text-[0.8vw]'>{propertyDetails?.furnished}</span>
                 </div>
                 <div className="flex w-[8vw] h-[3vw] m-vw items-center p-vw bg-pink-700">
-                    {/* <span className='text-white text-[0.8vw]'>{bill_icon}</span> */}
                     <span className='text-white ml-0.5vw text-vw'><Icon icon="ion:bulb-outline" /></span>
-                    {/* <span className='text-white ml-0.5vw text-[0.6vw]'>{bills}</span> */}
-                    <span className='text-white ml-0.5vw text-[0.6vw]'>Bills Included</span>
+                    <span className='text-white ml-0.5vw text-[0.6vw]'>{propertyDetails?.bills}</span>
                 </div>
                 <div className="flex w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
-                    {/* <span className='text-gary-500 text-[1.2vw]'>{bed_icon}</span> */}
                     <span className='text-gray-600 text-vw'><Icon icon="tabler:bed" /></span>
-                    {/* <span className='text-gray-500 ml-0.5vw text-[0.6vw]'>{bedRooms}</span> */}
-                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>6 Bedrooms</span>
+                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>{propertyDetails?.bedrooms} Bedrooms</span>
                 </div>
                 <div className="flex w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
-                    {/* <span className='text-gary-500 text-[1.2vw]'>{bed_icon}</span> */}
                     <span className='text-gray-600 text-vw'><Icon icon="majesticons:bath-shower-line" /></span>
-                    {/* <span className='text-gray-500 ml-0.5vw text-[0.6vw]'>{bedRooms}</span> */}
-                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>2 Bathrooms</span>
+                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>{propertyDetails?.bathrooms} Bathrooms</span>
                 </div>
                 <div className="flex w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
-                    {/* <span className='text-gary-500 text-[1.2vw]'>{bed_icon}</span> */}
                     <span className='text-gray-600 text-vw'><Icon icon="cil:sofa" /></span>
-                    {/* <span className='text-gray-500 ml-0.5vw text-[0.6vw]'>{bedRooms}</span> */}
-                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>1 Reception</span>
+                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>{propertyDetails?.reception} Reception</span>
                 </div>
                 </div>
                </span>
-                <div className="flex justify-center mt-3vw w-full max-w-[12vw] items-center p-vw m-vw bg-purple-950">
+                <div className="mt-3vw">
+                {!share ?
+                <div className="flex justify-center w-full max-w-[12vw] items-center p-vw m-vw cursor-pointer bg-purple-950" onClick={() => setShare(!share)}>
                     <span className='text-white text-[0.8vw]'>Share this property</span>
                     <Icon icon="uil:share" className='text-white ml-0.5vw text-[0.8vw]' />
+                </div>
+                : <div className='flex border-[1px] bg-purple-950 p-[0.7vw] ml-vw justify-evenly rounded-md w-full max-w-[13vw] items-center' onClick={() => setShare(!share)}>
+                    <FacebookShareButton className='text-vw' url='https://www.facebook.com'>
+                        <FacebookIcon size={32} round={true} logoFillColor='white' ></FacebookIcon>
+                    </FacebookShareButton>
+                    <TwitterShareButton className='text-vw' url='https://www.twitter.com'>
+                        <TwitterIcon size={32} round={true} logoFillColor='white' ></TwitterIcon>
+                    </TwitterShareButton>
+                    <WhatsappShareButton className='text-vw' url='https://www.whatsapp.com'>
+                        <WhatsappIcon size={32} round={true} logoFillColor='white' ></WhatsappIcon>
+                    </WhatsappShareButton>
+                    </div>}
                 </div>
             </section>
             </article>
@@ -96,23 +125,17 @@ const PropertyDetails = (tag, icon, quantity, weekPrice, location, monthPrice, b
                     <div className="">
                         <p className='text-purple-950 font-medium text-[1.9vw]'>Key Feartures</p>
                         <section className="grid grid-cols-2 gap-4 mt-vw">
-                            <li className="text-vw text-gray-800">£119 PP/PW</li>
-                            <li className="text-vw text-gray-800">Six Double Bedrooms</li>
-                            <li className="text-vw text-gray-800">Bills Included</li>
-                            <li className="text-vw text-gray-800">Two Bathrooms</li>
-                            <li className="text-vw text-gray-800">Six Bedroom Terraced House</li>
-                            <li className="text-vw text-gray-800">Great Location</li>
-                            <li className="text-vw text-gray-800">Walking Distance to Train Station</li>
-                            <li className="text-vw text-gray-800">Close to Local Amenities</li>
+                            {propertyDetails?.keyFeatures?.map((feature, i) =>(
+                                <li className="text-vw text-gray-800" key={i}>{feature}</li>
+                            ))}
                         </section>
                     </div>
                     <div className="">
                         <p className='text-purple-950 mt-vw font-medium text-[1.9vw]'>Letting details</p>
                         <section className="grid mt-vw grid-cols-2 gap-4">
-                            <li className="text-vw text-gray-800">£119 PP/PW</li>
-                            <li className="text-vw text-gray-800">Six Double Bedrooms</li>
-                            <li className="text-vw text-gray-800">Bills Included</li>
-                            <li className="text-vw text-gray-800">Two Bathrooms</li>
+                            {propertyDetails?.lettingDetails?.map((feature, i) =>(
+                                <li className="text-vw text-gray-800" key={i}>{feature}</li>
+                            ))}
                         </section>
                     </div>
                 </section>

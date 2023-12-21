@@ -53,7 +53,7 @@ const App = () => {
         <Route path='/mortgages' element={<Mortgages />} />
         <Route path='/auction' element={<Auction />} />
         <Route path='/value-my-property' element={<PropertyValue />} />
-        <Route path='/details' element={<PropertyDetails />} />
+        <Route path='/details/:id' element={<PropertyDetails />} />
         <Route path='/invest-development' element={<Developments />} />
         <Route path='/invest-in-leeds' element={<InvestInLeeds />} />
         <Route path='/invest-investor-club' element={<InvestorClub />} />
