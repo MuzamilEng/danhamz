@@ -24,6 +24,9 @@ const uploadFiles = upload.fields([{ name: 'image1', maxCount: 1 }, { name: 'ima
 
 // Get all lettings
 router.route('/').get(getAllLettings)
+// Advanced search
+router.route('/advancedSearch').get(advancedSearch);
+
 
 // Create a new letting
 router.route('/').post(uploadFiles, createLettings);
@@ -33,8 +36,5 @@ router.route('/:id').put(uploadFiles, updateLettings);
 
 // Get a letting by ID and Delete a letting by ID
 router.route('/:id').get(getLettingById).delete(deleteLettingById);
-
-// Advanced search
-router.route('/advanced-search').get(advancedSearch);
 
 module.exports = router;

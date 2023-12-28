@@ -10,7 +10,7 @@ const createLettings = async (req, res) => {
   const imageUrls = [];
 
   try {
-    // Upload images to Cloudinary in parallel
+    // Upload /images to Cloudinary in parallel
     await Promise.all(
       Array.from({ length: 15 }, (_, index) => `image${index + 1}`).map(async (fieldName) => {
         if (req.files[fieldName]) {
@@ -83,7 +83,7 @@ const updateLettings = async (req, res, next) => {
       }
     }
 
-    // Delete previous images in Cloudinary
+    // Delete previous /images in Cloudinary
     for (const publicId of existingPublicIds) {
       await cloudinary.uploader.destroy(publicId.replace(cloudinary.config().cloud_name + '/', ''));
     }
@@ -116,6 +116,7 @@ const getAllLettings = async (req, res) => {
 };
 // Get a single letting by ID
 const getLettingById = async (req, res) => {
+  // console.log('Getting lettings by id', req.params.id);
   try {
     const letting = await Letting.findById(req.params.id);
     if (!letting) {
@@ -141,48 +142,42 @@ const deleteLettingById = async (req, res) => {
 };
 
 const advancedSearch = async (req, res) => {
-  const { minPrice, maxPrice, bedrooms, propertyType } = req.query;
+  const { minPrice, maxPrice, bedrooms, propertyType, location, bathrooms } = req.query;
+  const parseMinPrice = parseInt(minPrice);
+  const parseMaxPrice = parseInt(maxPrice);
+  const parseBedrooms = parseInt(bedrooms);
+  const parseBathrooms = parseInt(bathrooms);
+  console.log(req.query, 'query');
 
   // Define an array to store the conditions for the $and operator
   const andConditions = [];
-  
+
   // Check and add conditions based on the provided query parameters
-  if (minPrice && maxPrice) {
-    andConditions.push({
-      pricePerMonth: { $gte: parseInt(minPrice), $lte: parseInt(maxPrice) },
-    });
+  if (minPrice) {
+    andConditions.push({ pricePerWeek: { $gte: parseMinPrice } });
   }
-  
+  if (maxPrice) {
+    andConditions.push({ pricePerMonth: { $lte: parseMaxPrice } });
+  }
   if (bedrooms) {
-    andConditions.push({ bedrooms: parseInt(bedrooms) });
+    andConditions.push({ bedrooms: parseBedrooms });
   }
-  
+  if (bathrooms) {
+    andConditions.push({ bathrooms: parseBathrooms });
+  }
   if (propertyType) {
-    andConditions.push({ propertyType: propertyType });
+    andConditions.push({ propertyType });
   }
-  
+  if (location) {
+    andConditions.push({ location });
+  }
+
   // Build the final search query
-  const searchQuery = {
-    $or: andConditions,
-  };
-  
+  const searchQuery = andConditions.length > 0 ? { $and: andConditions } : {};
+
   try {
     const searchResults = await Letting.find(searchQuery);
-  
-    // Check if at least three conditions match
-    const matchingConditions =
-      (minPrice && maxPrice ? 1 : 0) +
-      (bedrooms ? 1 : 0) +
-      (propertyType ? 1 : 0);
-  
-    if (matchingConditions >= 3) {
-      // Send the relevant response containing the filtered items
-      res.status(200).json(searchResults);
-    } else {
-      res.status(400).json({
-        error: 'Not enough conditions matched.',
-      });
-    }
+    res.status(200).json(searchResults);
   } catch (error) {
     console.error('Error during search:', error);
     res.status(500).json({
@@ -192,6 +187,20 @@ const advancedSearch = async (req, res) => {
 };
 
 
+//  Check if at least three conditions match
+//     const matchingConditions =
+//       (minPrice && maxPrice ? 1 : 0) +
+//       (bedrooms ? 1 : 0) +
+//       (propertyType ? 1 : 0);
+  
+//     if (matchingConditions >= 3) {
+//       // Send the relevant response containing the filtered items
+//       res.status(200).json(searchResults);
+//     } else {
+//       res.status(400).json({
+//         error: 'Not enough conditions matched.',
+//       });
+//     }
 
 module.exports = {
 createLettings,

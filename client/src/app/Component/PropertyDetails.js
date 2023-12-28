@@ -1,44 +1,24 @@
 import React, { useState } from 'react'
 import Layout from '../Layout/Layout'
 import PageAddress from './PageAddress'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { lettingProperties } from '../Data';
 import LettingProperty from './LettingProperty';
-import { Icon } from '@iconify/react';
 import Map from './Map';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { useGetSalesByIdQuery } from '../store/storeApi';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import {FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, WhatsappShareButton, WhatsappIcon} from 'react-share'
+import PropertyRoomsInfo from './PropertyRoomsInfo';
+import PropertyImagesDetails from './PropertyImagesDetails';
 
 
 
-const PropertyDetails = (tag, icon, quantity, weekPrice, location, monthPrice, bedRooms, img, bed_icon, available, furnished_icon,furnished,bill_icon, bills, date
-    ) => {
+const PropertyDetails = ( ) => {
         const { id } = useParams();
         const { data: propertyDetails, isLoading, isError } = useGetSalesByIdQuery(id);
-        // console.log(propertyDetails, "propertyDetails");
-        const [share, setShare] = useState(false);
-        const CustomPrevArrow = (props) => (
-            <span {...props} className="text-vw text-black absolute cursor-pointer bottom-0 left-1 z-50">
-            <FontAwesomeIcon icon={faArrowLeft} className='text-vw text-black  rounded-md hover:bg-gray-100 bg-white p-[0.7vw] text-center' />
-          </span>);
-          const CustomNextArrow = (props) => (
-              <span {...props} className="text-vw text-black absolute cursor-pointer  bottom-0 left-[3.1vw]">
-            <FontAwesomeIcon icon={faArrowRight} className='text-vw text-red-800 rounded-md hover:bg-gray-100 bg-white p-[0.7vw] text-center' />
-          </span> );
-
-    const settings = { dots: false, prevArrow: <CustomPrevArrow />, nextArrow: <CustomNextArrow />, arrows: true, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
-
+   
     if (isLoading) {
         return <div></div>;
     }
-
     if (isError) {
         return <div className='text-center text-2vw text-blue-950'>Error fetching property details</div>;
     }
@@ -47,78 +27,9 @@ const PropertyDetails = (tag, icon, quantity, weekPrice, location, monthPrice, b
     <div>
         <Layout>
             <PageAddress main='Home' category='Properties' subCategory={propertyDetails?.info} />
-            <article className="flex justify-center items-start p-4vw">
-            <section className='w-full max-w-[43vw]'>
-                <Slider {...settings}>
-                <img src={propertyDetails?.image1?.url} alt={'slide'} className="w-full rounded-sm h-[26.5vw] max-w-[43vw]" loading="lazy" />
-                <img src={propertyDetails?.image2?.url} alt={'slide'} className="w-full rounded-sm h-[26.5vw] max-w-[43vw]" loading="lazy" />
-                <img src={propertyDetails?.image3?.url} alt={'slide'} className="w-full rounded-sm h-[26.5vw] max-w-[43vw]" loading="lazy" />
-                <img src={propertyDetails?.image4?.url} alt={'slide'} className="w-full rounded-sm h-[26.5vw] max-w-[43vw]" loading="lazy" />
-                </Slider>
-              </section>
-              <section className='p-0.5vw pb-2vw bg-white w-full max-w-[35vw] ml-vw'>
-                <div className="flex p-0.5vw ml-vw items-center">
-                    {propertyDetails?.price ? <>
-                        <p className='text-blue-900 text-[1.9vw] italic mt-2vw font-bold'>{propertyDetails?.price}</p>
-                    </>: <>
-                    <section className='p-2vw border-r-[1px] border-gray-700'>
-                    <p className='text-blue-900 text-[1.6vw] font-bold'>$2000</p>
-                    <p className='text-gray-400 text-vw'>per week</p>
-                    </section>
-                    <section className='ml-5vw'>
-                    <p className='text-blue-900 text-[1.6vw] font-bold'>$5000</p>
-                    <p className='text-gray-400 text-vw'>per month</p>
-                    </section>
-                    </>}
-                </div>
-                <p className='text-black ml-vw font-medium text-[1.2vw]'>{propertyDetails?.info}</p>
-               <span className="col-center">
-               <div className="grid grid-cols-3 w-full max-w-[29vw] items-start gap-2 -ml-vw">
-                <div className="flex w-[8vw] h-3vw m-vw items-center p-vw bg-blue-600">
-                    <span className='text-white text-[0.8vw]'>01 Feb 2022</span>
-                    <span className='text-white ml-0.5vw text-[0.7vw]'>{available}</span>
-                </div>
-                <div className="flex w-[8vw] m-vw h-3vw items-center p-vw bg-blue-600">
-                    <span className='text-white text-vw'><Icon icon="cil:sofa" /></span>
-                    <span className='text-white ml-0.5vw text-[0.8vw]'>{propertyDetails?.furnished}</span>
-                </div>
-                <div className="flex w-[8vw] h-[3vw] m-vw items-center p-vw bg-pink-700">
-                    <span className='text-white ml-0.5vw text-vw'><Icon icon="ion:bulb-outline" /></span>
-                    <span className='text-white ml-0.5vw text-[0.6vw]'>{propertyDetails?.bills}</span>
-                </div>
-                <div className="flex w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
-                    <span className='text-gray-600 text-vw'><Icon icon="tabler:bed" /></span>
-                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>{propertyDetails?.bedrooms} Bedrooms</span>
-                </div>
-                <div className="flex w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
-                    <span className='text-gray-600 text-vw'><Icon icon="majesticons:bath-shower-line" /></span>
-                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>{propertyDetails?.bathrooms} Bathrooms</span>
-                </div>
-                <div className="flex w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
-                    <span className='text-gray-600 text-vw'><Icon icon="cil:sofa" /></span>
-                    <span className='text-gray-600 ml-0.5vw text-[0.7vw]'>{propertyDetails?.reception} Reception</span>
-                </div>
-                </div>
-               </span>
-                <div className="mt-3vw">
-                {!share ?
-                <div className="flex justify-center w-full max-w-[12vw] items-center p-vw m-vw cursor-pointer bg-purple-950" onClick={() => setShare(!share)}>
-                    <span className='text-white text-[0.8vw]'>Share this property</span>
-                    <Icon icon="uil:share" className='text-white ml-0.5vw text-[0.8vw]' />
-                </div>
-                : <div className='flex border-[1px] bg-purple-950 p-[0.7vw] ml-vw justify-evenly rounded-md w-full max-w-[13vw] items-center' onClick={() => setShare(!share)}>
-                    <FacebookShareButton className='text-vw' url='https://www.facebook.com'>
-                        <FacebookIcon size={32} round={true} logoFillColor='white' ></FacebookIcon>
-                    </FacebookShareButton>
-                    <TwitterShareButton className='text-vw' url='https://www.twitter.com'>
-                        <TwitterIcon size={32} round={true} logoFillColor='white' ></TwitterIcon>
-                    </TwitterShareButton>
-                    <WhatsappShareButton className='text-vw' url='https://www.whatsapp.com'>
-                        <WhatsappIcon size={32} round={true} logoFillColor='white' ></WhatsappIcon>
-                    </WhatsappShareButton>
-                    </div>}
-                </div>
-            </section>
+            <article className="flex justify-center items- bg-gray-200 p-4vw">
+                <PropertyImagesDetails img1={propertyDetails?.image1?.url} img2={propertyDetails?.image2?.url} img3={propertyDetails?.image3?.url} img4={propertyDetails?.image4?.url} img5={propertyDetails?.image5?.url} img6={propertyDetails?.image6?.url} img7={propertyDetails?.image7?.url} img8={propertyDetails?.image8?.url} img9={propertyDetails?.image9?.url} img10={propertyDetails?.image10?.url} img11={propertyDetails?.image11?.url} img12={propertyDetails?.image12?.url} img13={propertyDetails?.image13?.url} img14={propertyDetails?.image14?.url} img15={propertyDetails?.image15?.url} />
+              <PropertyRoomsInfo price={propertyDetails?.price} info={propertyDetails?.info} available={propertyDetails?.available} furnished={propertyDetails?.furnished} bills={propertyDetails?.bills} bedrooms={propertyDetails?.bedrooms} bathrooms={propertyDetails?.bathrooms} reception={propertyDetails?.reception} weekPrice={propertyDetails?.weekPrice} monthPrice={propertyDetails?.monthPrice} />
             </article>
             <article className="w-full bg-white p-3vw flex justify-center items-start">
                 <section className="w-full max-w-[45vw]">
@@ -180,13 +91,11 @@ const PropertyDetails = (tag, icon, quantity, weekPrice, location, monthPrice, b
                     </div>
                 </span>
             </article>
-
              {/* letting properties */}
           <div className="flex flex-col justify-center items-center w-full p-3vw bg-gray-200">
             <h1 className='text-purple-950 text-2vw font-medium italic'>You may also like this</h1>
             <div className="grid grid-cols-4 gap-2 mt-2vw">
               {lettingProperties?.map((item, index) => (
-                //  const LettingProperty = ({tag, icon, quantity, weekPrice, location, monthPrice, bedRooms, img, bed_icon, available, furnished_icon,furnished,bill_icon, bills, date}) => {          // 
                 <LettingProperty key={index} bedRooms={item?.bedRooms} available={item?.available} icon={item?.icon} img={item?.img} quantity={item?.quantity} weekPrice={item?.weekPrice} monthPrice={item?.monthPrice} bed_icon={item?.bed_icon} location={item?.location} furnished={item?.furnished} furnished_icon={item?.furnished_icon} bill_icon={item?.bill_icon} bills={item?.bills} date={item?.date} />
               ))}
             </div>

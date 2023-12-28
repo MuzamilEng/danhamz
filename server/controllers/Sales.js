@@ -10,7 +10,7 @@ const createSalesProperty = async (req, res) => {
   const imageUrls = [];
 
   try {
-    // Upload images to Cloudinary in parallel
+    // Upload /images to Cloudinary in parallel
     await Promise.all(
       Array.from({ length: 15 }, (_, index) => `image${index + 1}`).map(async (fieldName) => {
         if (req.files[fieldName]) {
@@ -83,7 +83,7 @@ const updateSalesProperty = async (req, res) => {
       }
     }
 
-    // Delete previous images in Cloudinary
+    // Delete previous /images in Cloudinary
     for (const publicId of existingPublicIds) {
       await cloudinary.uploader.destroy(publicId.replace(cloudinary.config().cloud_name + '/', ''));
     }

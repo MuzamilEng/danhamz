@@ -57,10 +57,10 @@ const ReferAfriend = () => {
        {/* useful links */}
        <section className="w-full row-center p-3vw bg-white">
         <div className='-ml-2vw'>
-        <Testimonial title="Landlord" img={"images/landlord_0.jpg"} />
+        <Testimonial title="Landlord" img={"/images/landlord_0.jpg"} />
         </div>
         <div className="ml-2vw">
-        <Testimonial title="Free Instant Valuation" img={"images/sold_logo.png"} />
+        <Testimonial title="Free Instant Valuation" img={"/images/sold_logo.png"} />
         </div>
        </section>
       </Layout>

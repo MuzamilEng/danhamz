@@ -23,13 +23,13 @@ const SearchProperty = () => {
               {showRentSection ? <RentProperty /> : <BuySection />}
               <section className='w-full mt-vw max-w-[35vw] ml-vw'>
                 {/* <Slider {...settings}>
-                  {images.map((image, index) => (
+                  {/images.map((image, index) => (
                     <div key={index}>
                     <img src={image} alt={`slide-${index}`} className="w-full" loading="lazy" />
                     </div>
                   ))}
                 </Slider> */}
-                <img src="images/landlord_0.jpg" alt="image" className='w-full'/>
+                <img src="/images/landlord_0.jpg" alt="image" className='w-full'/>
               </section>
             </div>
           </article>

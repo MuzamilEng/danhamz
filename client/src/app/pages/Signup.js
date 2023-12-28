@@ -10,7 +10,7 @@ import { Icon } from '@iconify/react';
 
 const Signup = () => {
   const [loginContainer, setLoginContainer] = useState(false)
-    const images = ["images/carousel-1.jpg", "images/carousel-2.jpg", "images/carousel-3.jpg"];
+    const images = ["/images/carousel-1.jpg", "/images/carousel-2.jpg", "/images/carousel-3.jpg"];
 
     const settings = { dots: false, arrows: true, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
  
@@ -20,14 +20,14 @@ const Signup = () => {
      <Link to='/' className='absolute top-2vw left-2vw cursor-pointer'>
      <Icon icon="majesticons:arrow-left-line"className='relative text-4vw text-white cursor-pointer'/>
      </Link>
-        <img src="images/bg-valu.jpg" alt="signin" className='w-full' />
+        <img src="/images/bg-valu.jpg" alt="signin" className='w-full' />
         <article className='w-full absolute top-2vw col-center'>
           <section className='col-center w-full p-2vw'>
             <h1 className='text-purple-950 italic text-3vw font-bold'>Keeping <span className=''>landlords</span> connected with their properties</h1>
             <p className='text-white font-medium text-[1.3vw] text-center w-full max-w-[60vw]'>PropertyFile is an online platform designed to keep you informed & updated on your properties whether you’re selling, letting or renting.</p>
             <button className='text-white text-vw font-semibold bg-purple-950 hover:bg-pink-400 text-center p-0.3vw mt-vw rounded-md w-full max-w-[10vw]' onClick={() => setLoginContainer(true)}>Sign In</button>
           <div className="relative cursor-pointer">
-          <img src="images/macbook.png" alt="signin" className='w-full max-w-[50vw] mt-2vw' />
+          <img src="/images/macbook.png" alt="signin" className='w-full max-w-[50vw] mt-2vw' />
             <section className='w-full absolute top-2vw left-[6.5vw] mt-vw max-w-[35vw] ml-vw'>
                 <Slider {...settings}>
                   {images.map((image, index) => (
@@ -77,7 +77,7 @@ const Signup = () => {
         {/* instant access */}
         <section className='relative w-full bg-purple-500'>
                     <div className="relative w-full">
-                        <img src="images/pc-1.jpg" alt="about" className="w-full h-20vw" />
+                        <img src="/images/pc-1.jpg" alt="about" className="w-full h-20vw" />
                         <div className="absolute top-3vw p-vw left-10vw w-full max-w-[35vw]">
                             <h1 style={{lineHeight: "2.7vw"}} className='text-white text-[2.2vw] font-medium w-full max-w-[30vw]'>Instant access from any location on any device</h1>
                             <p className='text-white text-vw mt-[1.2vw] font-medium w-full max-w-[30vw]'>PropertyFile is designed and built so that you can securely log into the system and access your vital information whenever and where ever you may need it.</p>
@@ -96,8 +96,8 @@ const Signup = () => {
                     <p className='text-blue-950 text-[2.1vw] font-semibold'>{item?.title}</p>
                     <p className='text-gray-700 text-vw w-full max-w-[35vw]'>{item?.info}</p>
                     <div className="mt-2vw flex items-center">
-                    <img src="images/appstore.png" alt="playstore" className='w-full max-w-[14vw] cursor-pointer h-4vw' />
-                    <img src="images/playstore.png" alt="playstore" className='max-w-[14vw] h-4vw cursor-pointer ml-2vw' />
+                    <img src="/images/appstore.png" alt="playstore" className='w-full max-w-[14vw] cursor-pointer h-4vw' />
+                    <img src="/images/playstore.png" alt="playstore" className='max-w-[14vw] h-4vw cursor-pointer ml-2vw' />
                     </div>
                   </section>
                 </div>
@@ -110,7 +110,7 @@ const Signup = () => {
         </div>
           {/* footer ---  */}
           <footer className="banner flex w-full justify-between items-center bg-purple-950 p-2vw">
-            <img src="images/pr_file.png" alt="property" className='w-full max-w-[15vw]' />
+            <img src="/images/pr_file.png" alt="property" className='w-full max-w-[15vw]' />
             <Link to="#">
             <h1 className="text-right text-white text-vw cursor-pointer font-medium">Terms Of Use • Privacy Policy • Cookie Policy <br /> Proudly part of the Property Software Group • Copyright © 2023</h1>
             </Link>

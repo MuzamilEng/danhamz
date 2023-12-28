@@ -125,7 +125,7 @@ const Sourcing = () => {
         <h1 className="text-purple-950 text-[1.8vw] text-center font-medium">Meet the team</h1>
         <p className="text-vw text-gray-800 mt-vw w-full text-center max-w-[57vw]">At HOP, we offer a holistic property service that encompasses Sales, Lettings, Investors and Block Management.</p>
         <p className="text-vw text-gray-800 mt-vw w-full text-center max-w-[57vw]">For our investors, it means each team works seamlessly together to find, purchase, let, manage or sell your property.</p>
-        <img src="/images/source15.jpg" alt="team" className='w-full max-w-[18vw] h-[18vw] mt-2vw' />
+        <img src="//images/source15.jpg" alt="team" className='w-full max-w-[18vw] h-[18vw] mt-2vw' />
         <section className="mt-vw col-center p-vw">
           <h1 className="text-purple-950 text-[1.8vw] text-center font-medium">Niel</h1>
           <p className="text-vw text-gray-800 mt-vw w-full text-center">Co-Founder & Manager</p>

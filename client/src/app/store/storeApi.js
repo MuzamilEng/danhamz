@@ -11,6 +11,17 @@ export const storeApi = createApi({
         getLettingsById: builder.query({
             query: (id) => `/lettings/${id}`,
           }),
+          getLettingsAdvancedSearch: builder.query({
+            query: (params) => {
+              const { minPrice, maxPrice, bedrooms, propertyType, location, bathrooms } = params;
+              // Use the object syntax for query parameters
+              return {
+                url: `/lettings/advancedSearch`,
+                method: 'GET',
+                params: { minPrice, maxPrice, bedrooms, propertyType, location, bathrooms },
+              };
+            },
+          }),
         addLettingProperty: builder.mutation({
             query: (data) => ({
                 url: '/lettings',
@@ -90,6 +101,7 @@ export const storeApi = createApi({
 export const {
     useGetAllLettingsQuery,
     useGetLettingsByIdQuery,
+    useGetLettingsAdvancedSearchQuery,
     useAddLettingPropertyMutation,
     useUpdateLettingPropertyMutation,
     useDeleteLettingPropertyMutation,

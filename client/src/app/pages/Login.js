@@ -9,7 +9,7 @@ const Login = ({onCancel}) => {
     <div>
         <main className='w-full max-w-[50vw] shadow-lg'>
             <nav className="w-full bg-gray-800 flex justify-between items-center p-vw">
-                <img src="images/pr_file.png" alt="property_login" className='w-full max-w-[7vw]' />
+                <img src="/images/pr_file.png" alt="property_login" className='w-full max-w-[7vw]' />
                 <Icon icon="mdi:cancel-bold" className='text-white text-2vw cursor-pointer' onClick={onCancel} />
             </nav>
             <article className='w-full bg-gray-200 col-center p-3vw'>

@@ -25,7 +25,7 @@ const Contact = () => {
           </nav>
           <section className="relative w-full">
             <img
-              src="images/bg-val3.jpg"
+              src="/images/bg-val3.jpg"
               alt="contact us"
               className="w-full h-20vw"
             />

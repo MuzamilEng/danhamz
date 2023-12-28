@@ -79,7 +79,7 @@ const Report = () => {
         <article className='col-center bg-white p-3vw'>
               <div className="flex">
               <section className="w-full max-w-[40vw]">
-                  <img src="images/phone1.jpg" alt="emergency" className='w-full max-w-[35vw]'/>
+                  <img src="/images/phone1.jpg" alt="emergency" className='w-full max-w-[35vw]'/>
                 </section>
               <section className="w-full max-w-[40vw]">
                     <h1 className='text-purple-950 text-[2.1vw] w-full max-w-[30vw] font-medium'>What to do in an emergency.</h1>

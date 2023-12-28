@@ -24,7 +24,7 @@ const Professionals = () => {
         <Layout>
             <PageAddress main="Home" mainLink="/" subLink="/professionals" category="Lettings" subCategory="Professionals" />
             <section className='w-full'>
-                <ContentImage title={"Professional Letting Agents Leeds"} info={"Let’s find a home for you to love."} title_color={"text-purple-950"} info_color={"text-purple-950"} img={"images/pr_hero.jpg"}/>
+                <ContentImage title={"Professional Letting Agents Leeds"} info={"Let’s find a home for you to love."} title_color={"text-purple-950"} info_color={"text-purple-950"} img={"/images/pr_hero.jpg"}/>
             </section>
             <section className='relative'>
           <div className="absolute flex left-[11.5vw] top-0">

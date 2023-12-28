@@ -20,7 +20,7 @@ import { useGlobalContext } from '../UserContext/UserContext';
 const Home = () => {
   const {salesProperties, setSalesProperties} = useGlobalContext();
     const [showRentSection, setShowRentSection] = useState(true);
-  const images = ["images/slider_1.png", "images/landlord_0.jpg", "images/slider_2.jpg"];
+  const images = ["/images/slider_1.png", "/images/landlord_0.jpg", "/images/slider_2.jpg"];
 
   const settings = { dots: true, arrows: false, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
   return (
