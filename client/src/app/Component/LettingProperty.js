@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
 
-const LettingProperty = ({tag, icon, quantity, weekPrice, location, monthPrice, bedRooms, img, bed_icon, available, furnished_icon,furnished,bill_icon, bills, date}) => {
+const LettingProperty = ({tag, icon, quantity, weekPrice, location, monthPrice, bedRooms, img, available,furnished, bills, date}) => {
   return (
     <div>
         <main className='w-full max-w-[20vw] m-vw'>
@@ -31,16 +31,16 @@ const LettingProperty = ({tag, icon, quantity, weekPrice, location, monthPrice, 
                     <span className='text-white ml-0.5vw text-[0.7vw]'>{available}</span>
                 </div>
                 <div className="flex w-[8vw] m-vw h-3vw items-center p-vw bg-blue-600">
-                    <span className='text-white text-[0.8vw]'>{furnished_icon}</span>
+                <Icon icon="mdi:sofa-single-outline" className='text-white text-[1.2vw]' />
                     <span className='text-white ml-0.5vw text-[0.7vw]'>{furnished}</span>
                 </div>
                 {bills && <div className="flex w-[8vw] h-[3vw] m-vw items-center p-vw bg-blue-600">
-                    <span className='text-white text-[0.8vw]'>{bill_icon}</span>
+                <Icon icon="game-icons:light-bulb" className='text-white text-[1.2vw]' />
                     <span className='text-white ml-0.5vw text-[0.6vw]'>{bills}</span>
                 </div>}
-                <div className="flex w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
-                    <span className='text-gary-500 text-[1.2vw]'>{bed_icon}</span>
-                    <span className='text-gray-500 ml-0.5vw text-[0.6vw]'>{bedRooms}</span>
+                <div className="flex items-center w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
+                    <Icon icon="uil:bed" className='text-gary-500 text-[1.2vw]' />
+                    <span className='text-gray-800 ml-0.5vw text-[0.6vw]'>{bedRooms}</span>
                 </div>
                 </div>
             </section>

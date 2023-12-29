@@ -28,6 +28,7 @@ import Sourcing from './app/pages/Invest/Sourcing'
 import Developments from './app/pages/Invest/Developments'
 import InvestInSales from './app/pages/Invest/InvestInSales'
 import Overview from './app/pages/Invest/Overview'
+import PropertySearch from './app/pages/PropertySearch'
 
 const App = () => {
   return (
@@ -61,6 +62,7 @@ const App = () => {
         <Route path='/invest-sourcing' element={<Sourcing />} />
         <Route path='/invest-refubs' element={<Refubs />} />
         <Route path='/invest-sales' element={<InvestInSales />} />
+        <Route path='/propertySearch' element={<PropertySearch />} />
       </Routes>
     </>
   )

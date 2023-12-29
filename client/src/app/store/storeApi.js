@@ -13,12 +13,12 @@ export const storeApi = createApi({
           }),
           getLettingsAdvancedSearch: builder.query({
             query: (params) => {
-              const { minPrice, maxPrice, bedrooms, propertyType, location, bathrooms } = params;
+              const { maxPrice, bedrooms, } = params;
               // Use the object syntax for query parameters
               return {
                 url: `/lettings/advancedSearch`,
                 method: 'GET',
-                params: { minPrice, maxPrice, bedrooms, propertyType, location, bathrooms },
+                params: { maxPrice, bedrooms, },
               };
             },
           }),

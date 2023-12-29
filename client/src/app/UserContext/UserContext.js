@@ -10,6 +10,7 @@ export const UserProvider = ({ children }) => {
   const { data: sales } = useGetAllSalesQuery()
   const [lettingProperties, setLettingProperties] = useState([]);
   const [salesProperties, setSalesProperties] = useState([]);
+  const [searchedLettingsProperties, setSearchedLettingsProperties] = useState([]);
 
   useEffect(() => {
     if (lettings) {
@@ -20,11 +21,11 @@ export const UserProvider = ({ children }) => {
     }
   }, [lettings, sales]);
  
-  console.log(lettings,"Lettings");
-  console.log(sales,"Sales");
+  // console.log(lettings,"Lettings");
+  // console.log(sales,"Sales");
   
   return (
-    <UserContext.Provider value={{ lettingProperties, setLettingProperties, salesProperties, setSalesProperties }}>
+    <UserContext.Provider value={{ lettingProperties, setLettingProperties, salesProperties, setSalesProperties, searchedLettingsProperties, setSearchedLettingsProperties }}>
       {children}
     </UserContext.Provider>
   );

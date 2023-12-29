@@ -211,7 +211,7 @@ export const rentContainer = [
                     {
                         title: "Less than $1000", value: 1000
                     }, {
-                        title: "$1000 - $2000", value: 2000
+                        title: "$1000 - $2000", value: 2500
                     },{
                         title: "$2000 - $3000", value: 3000
                     }

@@ -127,7 +127,7 @@ const Home = () => {
             <h1 className='text-blue-950 text-2vw font-semibold'>Merketing partners</h1>
             <div className="flex mt-2vw justify-evenly items-center">
             {partnerBanner?.map((item, index) => (
-                <img src={item?.img} alt={index} className='w-full ml-4vw max-w-[10vw]'/>
+                <img key={index} src={item?.img} alt={index} className='w-full ml-4vw max-w-[10vw]'/>
             ))}
             </div>
         </section>

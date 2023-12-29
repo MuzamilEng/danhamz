@@ -1,18 +1,21 @@
 import React, { useState } from 'react'
 import { rentContainer } from '../Data'
 import { Icon } from '@iconify/react';
-import { useGetLettingsAdvancedSearchQuery } from '../store/storeApi';
 import { useForm, Controller } from 'react-hook-form';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import CustomDropdown from './CustomDropdown';
+import axios from 'axios';
+import { useGetAllLettingsQuery } from '../store/storeApi';
+import { useGlobalContext } from '../UserContext/UserContext';
 
 
 
 
 const RentSection = () => {
+  const {setSearchedLettingsProperties} = useGlobalContext()
     const [activeCategory, setActiveCategory] = useState('Student');
     const [selectedBedrooms, setSelectedBedrooms] = useState(null);
-    const { data:searchProperty, error, refetch } = useGetLettingsAdvancedSearchQuery({minPrice: null, maxPrice: null, propertyType: '', location: '', bedrooms: null, bathrooms: null});
+    const {data: lettings} = useGetAllLettingsQuery()
     const navigate = useNavigate()
     const { handleSubmit, setValue, control } = useForm({
         defaultValues: {
@@ -21,7 +24,7 @@ const RentSection = () => {
             bedrooms: null,
             propertyType: '',
             location: '',
-            bathrooms: null,
+            // bathrooms: null,
         },
     });
 
@@ -29,7 +32,7 @@ const RentSection = () => {
     const handleBedroomClick = (value) => {
         setSelectedBedrooms(value);
         setValue('bedrooms', value);
-        console.log(value, "value")
+        // console.log(value, "value")
         // You can perform additional actions with the selected value if needed
       };
 
@@ -39,25 +42,48 @@ const RentSection = () => {
         setValue('location', selectedValues?.[0]?.value)
         // Do something with the selected values
       };
-    
 
       const onSubmit = async (data, e) => {
-        console.log(data, 'data');
         e.preventDefault();
-        // try {
-        //   // Trigger a manual refetch with the new form data
-        //   refetch({
-        //     // minPrice: data?.minPrice,
-        //     maxPrice: Number(data?.maxPrice),
-        //     bedrooms: Number(data?.bedrooms),
-        //     // propertyType: data?.propertyType,
-        //     location: data?.location,
-        //     bathrooms: Number(data?.bathrooms),
-        //   });
-        // } catch (error) {
-        //   console.error('Error during search:', error);
-        // }
+      
+        try {
+          let queryString = '';
+      
+          // Conditionally build the query string
+          if (data?.maxPrice !== null) {
+            queryString += `&maxPrice=${data?.maxPrice}`;
+          }
+          if (data?.bedrooms !== null) {
+            queryString += `&bedrooms=${data?.bedrooms}`;
+          }
+          if (data?.location !== '') {
+            queryString += `&location=${data?.location}`;
+          }
+          if (data?.propertyType !== '') {
+            queryString += `&propertyType=${data?.propertyType}`;
+          }
+      
+          // Remove the leading '&' if there is a query string
+          queryString = queryString ? queryString.slice(1) : '';
+      
+          // Make the request only if there is a valid query string
+          if (queryString) {
+            const fetchData = await axios.get(`http://localhost:5000/api/v1/lettings/advancedSearch?${queryString}`);
+            const result = await fetchData.data
+            setSearchedLettingsProperties(result);
+            navigate('/propertySearch')
+          } else {
+            setSearchedLettingsProperties(lettings);
+            navigate('/propertySearch')
+          }
+        } catch (error) {
+          console.error('Error during search:', error);
+        }
       };
+      
+      // console.log(searchedProperties, "properties");
+      
+      
       
     return (
     <form onSubmit={handleSubmit(onSubmit)} className='bg-white w-full max-w-[38vw] m-vw'>
@@ -122,7 +148,7 @@ const RentSection = () => {
                             )}
                             />
                         ) : (
-                            <CustomDropdown options={item?.options} onChange={handleDropdownChange} />
+                          <div className='mt-vw'><CustomDropdown options={item?.options} onChange={handleDropdownChange} /></div>
                         )}
                         </div>
                     ))}
@@ -137,10 +163,10 @@ const RentSection = () => {
                             <Icon icon="solar:settings-linear" className='text-[1.3vw] text-white' />
                             <span className='text-white text-vw font-medium pl-[0.3vw] cursor-pointer'>Advanced search</span>
                         </section>
-                        <section className='flex justify-center items-center bg-pink-400 p-vw'>
-                            <Icon icon="solar:settings-linear" className='text-[1.3vw] text-white' />
-                            <button type='submit' className='text-white text-vw font-medium pl-[0.3vw] cursor-pointer'>Search</button>
-                        </section>
+                        
+                        <button type='submit' className='flex justify-center text-white items-center bg-pink-400 p-vw'>
+                            <Icon icon="solar:settings-linear" className='text-[1.3vw] text-white' /> <span className='text-vw'>Search</span>
+                        </button>
                 </div>
             </section>
         </div>
