@@ -3791,3 +3791,153 @@ export const redubStudies = [
     },
 ]
 // property refubs
+
+
+// propert-update form
+export const propertyUpdateForm = [
+    {
+        label: "Property Name",
+        name: "propertyName",
+        type: "text",
+        placeholder: "Property Name"
+    },
+    {
+        label: "Property Type",
+        name: "PropertyType",
+        type: 'select',
+        placeholder: "Property Type",
+        options: [
+            {label: "Appartment", value: "Appartment"},
+            {label: "House", value: "House"},
+            {label: "Bunglow", value: "Bunglow"},
+            {label: "Flat", value: "Flat"},
+            {label: "Shared Room", value: "Shared Room"},
+        ]
+    },
+    {
+        label: "Monthly Price",
+        name: "pricePerMonth",
+        type: 'number',
+        placeholder: "Monthly Price"
+    },
+    {
+        label: "Weekly Price",
+        name: "pricePerWeek",
+        type: 'number',
+        placeholder: "Weekly Price"
+    },
+    {
+        label: "Furnished/Unfurnished",
+        name: "furnished",
+        type: 'select',
+        placeholder: "Choose a category",
+        options: [
+            {label: "Furnished", value: "Furnished"},
+            {label: "Unfurnished", value: "Unfurnished"},
+        ]
+    },
+    {
+        label: "Bedrooms",
+        name: "bedrooms",
+        type: 'select',
+        placeholder: "Choose number of rooms",
+        options: [
+            {label: "1", value: 1},
+            {label: "2", value: 2},
+            {label: "3", value: 3},
+            {label: "4", value: 4},
+            {label: "5", value: 5},
+            {label: "6", value: 6},
+            {label: "7", value: 7},
+            {label: "8", value: 8},
+        ]
+    },
+    {
+        label: "Bathrooms",
+        name: "bathrooms",
+        type: 'select',
+        placeholder: "Choose number of bathrooms",
+        options: [
+            {label: "1", value: 1},
+            {label: "2", value: 2},
+            {label: "3", value: 3},
+            {label: "4", value: 4},
+        ]
+    },
+    {
+        label: "Bills",
+        name: "bills",
+        type: 'select',
+        placeholder: "Select a category",
+        options: [
+            {label: "Bills Included", value: 'Bills Included' },
+            {label: "Bills Not Included", value: 'Bills Not Included' },
+        ]
+    },
+    {
+        label: "Reception",
+        name: "reception",
+        type: 'select',
+        options:[
+            {label: "1", value: '1'},
+            {label: "2", value: '2'},
+            {label: "3", value: '3'},
+            {label: "4", value: '4'},
+        ]
+    },
+    {
+        label: 'Features',
+        name: "keyFeatures",
+        type: 'textarea',
+        placeholder: "Key Features"
+    },
+    {
+        label: 'Details',
+        name: "lettingDetails",
+        type: 'textarea',
+        placeholder: "Enter Details"
+    },
+    {
+        label: 'Area Guide',
+        name: "areaGuide",
+        type: 'textarea',
+        placeholder: "Enter Area Guide"
+    },
+    {
+        label: 'Living Room Guide',
+        name: "livingRoomGuide",
+        type: 'textarea',
+        placeholder: "Enter the details"
+    },
+    {
+        label: 'Kitchen Guide',
+        name: "kitchenGuide",
+        type: 'textarea',
+        placeholder: "Enter the details",
+    },
+    {
+        label: 'Room Guide',
+        name: "bedroomsGuide",
+        type: 'textarea',
+        placeholder: "Enter the details",
+    },
+    {
+        label: 'Bathrooms Guide',
+        name: "bathroomsGuide",
+        type: 'textarea',
+        placeholder: "Enter the details",
+    },
+    {
+        label: 'External Guide',
+        name: "externalsGuide",
+        type: 'textarea',
+        placeholder: "Enter the details",
+    },
+    {
+        label: 'Additional Guide',
+        name: "aditionalGuide",
+        type: 'textarea',
+        placeholder: "Enter the details",
+    }
+]
+// propert-update form

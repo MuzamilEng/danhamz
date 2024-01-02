@@ -29,6 +29,8 @@ import Developments from './app/pages/Invest/Developments'
 import InvestInSales from './app/pages/Invest/InvestInSales'
 import Overview from './app/pages/Invest/Overview'
 import PropertySearch from './app/pages/PropertySearch'
+import ShowProperties from './app/pages/CMS/ShowProperties'
+import UpdateProperty from './app/pages/CMS/UpdateProperty'
 
 const App = () => {
   return (
@@ -63,6 +65,8 @@ const App = () => {
         <Route path='/invest-refubs' element={<Refubs />} />
         <Route path='/invest-sales' element={<InvestInSales />} />
         <Route path='/propertySearch' element={<PropertySearch />} />
+        <Route path='/cms' element={<ShowProperties />} />
+        <Route path='/edit-property/:id' element={<UpdateProperty />} />
       </Routes>
     </>
   )

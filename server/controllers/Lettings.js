@@ -4,7 +4,7 @@ const cloudinary = require('../cloudinary.config')
 const createLettings = async (req, res) => {
   const {
     propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
-    location, keyFeatures, lettingDetails, description, propertyFor, propertyType,
+    location, keyFeatures, lettingDetails, propertyFor, propertyType, areaGuide, livingRoomGuide, kitchenGuide, bedroomsGuide, bathroomsGuide, externalsGuide, aditionalGuide,
   } = req.body;
 
   const imageUrls = [];
@@ -25,7 +25,7 @@ const createLettings = async (req, res) => {
 
     const newContent = new Letting({
       propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
-      location, keyFeatures, lettingDetails, description, propertyFor, propertyType, ...Object.assign({}, ...imageUrls),
+      location, keyFeatures, lettingDetails, propertyFor, propertyType, areaGuide, livingRoomGuide, kitchenGuide, bedroomsGuide, bathroomsGuide, externalsGuide, aditionalGuide, ...Object.assign({}, ...imageUrls),
     });
 
     const savedContent = await newContent.save();
@@ -47,12 +47,12 @@ const createLettings = async (req, res) => {
 const updateLettings = async (req, res, next) => {
   const {
     propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
-    location, keyFeatures, lettingDetails, description, propertyFor
+    location, keyFeatures, lettingDetails, propertyFor, propertyType, areaGuide, livingRoomGuide, kitchenGuide, bedroomsGuide, bathroomsGuide, externalsGuide, aditionalGuide,
   } = req.body;
 
   const updateFields = {
     propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
-    location, keyFeatures, lettingDetails, description, propertyFor, propertyType,
+    location, keyFeatures, lettingDetails, propertyFor, propertyType,areaGuide, livingRoomGuide, kitchenGuide, bedroomsGuide, bathroomsGuide, externalsGuide, aditionalGuide,
   };
 
   try {
@@ -185,22 +185,6 @@ const advancedSearch = async (req, res) => {
     });
   }
 };
-
-
-//  Check if at least three conditions match
-//     const matchingConditions =
-//       (minPrice && maxPrice ? 1 : 0) +
-//       (bedrooms ? 1 : 0) +
-//       (propertyType ? 1 : 0);
-  
-//     if (matchingConditions >= 3) {
-//       // Send the relevant response containing the filtered items
-//       res.status(200).json(searchResults);
-//     } else {
-//       res.status(400).json({
-//         error: 'Not enough conditions matched.',
-//       });
-//     }
 
 module.exports = {
 createLettings,

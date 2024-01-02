@@ -76,12 +76,13 @@ const lettingsSchema = new mongoose.Schema({
     },
     keyFeatures: [],
     lettingDetails: [],
-    description: [
-        {
-            title: "",
-            info: ""
-        }
-    ]
+  areaGuide: '',
+  livingRoomGuide: '',
+  kitchenGuide: '',
+  bedroomsGuide: '',
+  bathroomsGuide: '',
+  externalsGuide: '',
+  aditionalGuide: "",
 })
 
 module.exports = mongoose.model('Letting', lettingsSchema)
