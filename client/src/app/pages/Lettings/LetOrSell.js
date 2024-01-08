@@ -1,10 +1,10 @@
 import React from 'react'
-import PageAddress from '../../Component/PageAddress'
-import ContentImage from '../../Component/ContentImage'
+import PageAddress from '../../Component/Common/PageAddress'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
 import { let_nav, start, stu_nav, toggleInfo } from '../../Data'
 import Layout from '../../Layout/Layout'
-import Services from '../../Component/Services'
-import LeftImageContainer from '../../Component/LeftImageContainer'
+import Services from '../../Component/Common/Services'
+import LeftImageContainer from '../../Component/TextAndImageContainer/LeftImageContainer'
 
 const LetOrSell = () => {
   return (

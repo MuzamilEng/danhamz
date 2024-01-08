@@ -1,14 +1,14 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
-import ContentImage from '../../Component/ContentImage'
+import PageAddress from '../../Component/Common/PageAddress'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
 import { aboutInvestment, dealPackaging, fixedReturns, investInLeeds, investwithDanhamz, ivestorsClub, localAmenities, merketMirrors, news, overview_nav1, overview_testimonials, partnerBanner, propertyDevelopment, propertyOtimisation, sellProperty, testimonial } from '../../Data'
-import Card from '../../Component/Card'
+import Card from '../../Component/Cards/Card'
 import { Link } from 'react-router-dom'
-import ListInfoContainer from '../../Component/ListInfoContainer'
-import ListInfoContainer2 from '../../Component/ListInfoContainer2'
-import Testimonial from '../../Component/Testimonial'
-import News from '../../Component/News'
+import ListInfoContainer from '../../Component/TextAndImageContainer/ListInfoContainer'
+import ListInfoContainer2 from '../../Component/TextAndImageContainer/ListInfoContainer2'
+import Testimonial from '../../Component/Common/Testimonial'
+import News from '../../Component/Common/News'
 
 
 const Overview = () => {

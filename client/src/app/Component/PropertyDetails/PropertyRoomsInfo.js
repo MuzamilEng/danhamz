@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SocialShare from './SocialShare'
+import SocialShare from '../SocialShare'
 import { Icon } from '@iconify/react';
 
 const PropertyRoomsInfo = ({price, info, available, furnished, bills, bedrooms, bathrooms, reception, weekPrice, monthPrice}) => {

@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { catagories, catagoryCard } from "../Data";
-import CatagoryCard from "../Component/CatagoryCard";
+import CatagoryCard from "../Component/Cards/CatagoryCard";
 
 const KnowledgeBank = () => {
   return (

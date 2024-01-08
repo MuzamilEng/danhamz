@@ -1,15 +1,15 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
+import PageAddress from '../../Component/Common/PageAddress'
 import { assistedSales, bookSalesvaluation, news, offMarket, onMarket, positioning, salesExperience, salesStratergy, sellProperty, sellers_nav, underStandLeedsMarket } from '../../Data'
-import ContentImage from '../../Component/ContentImage'
-import Card from '../../Component/Card'
-import LeftImageContainer from '../../Component/LeftImageContainer'
-import RightImageContainer from '../../Component/RightImageContainer'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
+import Card from '../../Component/Cards/Card'
+import LeftImageContainer from '../../Component/TextAndImageContainer/LeftImageContainer'
+import RightImageContainer from '../../Component/TextAndImageContainer/RightImageContainer'
 import { Link } from 'react-router-dom'
 import RatingsContainer from '../../Component/RatingsContainer'
-import ListInfoContainer from '../../Component/ListInfoContainer'
-import News from '../../Component/News'
+import ListInfoContainer from '../../Component/TextAndImageContainer/ListInfoContainer'
+import News from '../../Component/Common/News'
 
 const InvestmentSales = () => {
   return (

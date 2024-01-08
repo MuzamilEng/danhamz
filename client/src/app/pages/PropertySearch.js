@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import Layout from '../Layout/Layout'
 import { useGlobalContext } from '../UserContext/UserContext'
-import PageAddress from '../Component/PageAddress';
-import PropertyImagesDetails from '../Component/PropertyImagesDetails';
-import PropertyRoomsInfo from '../Component/PropertyRoomsInfo';
+import PageAddress from '../Component/Common/PageAddress';
+import PropertyImagesDetails from '../Component/PropertyDetails/PropertyImagesDetails';
+import PropertyRoomsInfo from '../Component/PropertyDetails/PropertyRoomsInfo';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
-import Property from '../Component/Property';
-import LettingProperty from '../Component/LettingProperty';
+import Property from '../Component/PropertyDetails/Property';
+import LettingProperty from '../Component/PropertyDetails/LettingProperty';
+
 
 const PropertySearch = () => {
     const {searchedLettingsProperties} = useGlobalContext();
@@ -33,13 +34,15 @@ const PropertySearch = () => {
                     <article className="w-full p-3vw col-center">
                     <div className="">
                         {searchedLettingsProperties?.map((item, index) => {
-                            return <main className='w-full m-vw flex items-center'key={index}>
+                            return <main className='w-full m-vw flex items-center' key={index}>
+                              <Link to={`/details/${item?._id}`} className='w-full m-vw flex items-center'>
                                 <PropertyImagesDetails img1={item?.image1?.url} img2={item?.image2?.url} img3={item?.image3?.url} img4={item?.image4?.url} img5={item?.image5?.url} img6={item?.image6?.url} img7={item?.image7?.url} img8={item?.image8?.url} img9={item?.image9?.url} img10={item?.image10?.url} img11={item?.image11?.url} img12={item?.image12?.url} img13={item?.image13?.url} img14={item?.image14?.url} img15={item?.image15?.url} />
                                 <PropertyRoomsInfo weekPrice={item?.pricePerWeek}
                                  monthPrice={item?.pricePerMonth} bills={item?.bills}
                                   furnished={item?.furnished} info={item?.info} available={item?.available} 
                                  price={item?.price} location={item?.location}
                                  bedrooms={item?.bedrooms} bathrooms={item?.bathrooms} reception={item?.reception} />
+                                 </Link>
                             </main>
                         })}
                     </div>

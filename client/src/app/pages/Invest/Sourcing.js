@@ -1,14 +1,14 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
+import PageAddress from '../../Component/Common/PageAddress'
 import { detailCards, news, propertySourcing, sourcce_nav, sourceDealPkg, startedWithDanhamz, toggleInfo, turnKey } from '../../Data'
-import ContentImage from '../../Component/ContentImage'
-import ListInfoContainer2 from '../../Component/ListInfoContainer2'
-import ListInfoContainer from '../../Component/ListInfoContainer'
-import PropertySourcingProcess from '../../Component/PropertySourcingProcess'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
+import ListInfoContainer2 from '../../Component/TextAndImageContainer/ListInfoContainer2'
+import ListInfoContainer from '../../Component/TextAndImageContainer/ListInfoContainer'
+import PropertySourcingProcess from '../../Component/PropertyDetails/PropertySourcingProcess'
 import { Link } from 'react-router-dom'
-import Services from '../../Component/Services'
-import News from '../../Component/News'
+import Services from '../../Component/Common/Services'
+import News from '../../Component/Common/News'
 
 
 const Sourcing = () => {

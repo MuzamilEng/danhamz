@@ -1,5 +1,5 @@
 import React from 'react'
-import { footer } from '../Data'
+import { footer } from '../../Data'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {

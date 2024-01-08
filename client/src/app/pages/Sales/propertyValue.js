@@ -1,14 +1,14 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
+import PageAddress from '../../Component/Common/PageAddress'
 import { benefitsFromExperts, getValuation, houseValuation, news, properties, salesValuation, valuationTool, value_nav } from '../../Data'
-import ContentImage from '../../Component/ContentImage'
-import ListInfoContainer from '../../Component/ListInfoContainer'
-import ListInfoContainer2 from '../../Component/ListInfoContainer2'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
+import ListInfoContainer from '../../Component/TextAndImageContainer/ListInfoContainer'
+import ListInfoContainer2 from '../../Component/TextAndImageContainer/ListInfoContainer2'
 import { Link } from 'react-router-dom'
-import Property from '../../Component/Property'
+import Property from '../../Component/PropertyDetails/Property'
 import RatingsContainer from '../../Component/RatingsContainer'
-import News from '../../Component/News'
+import News from '../../Component/Common/News'
 
 const PropertyValue = () => {
   return (

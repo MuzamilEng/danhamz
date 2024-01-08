@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { rentContainer } from '../Data'
+import { rentContainer } from '../../Data'
 import { Icon } from '@iconify/react';
 import { useForm, Controller } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import CustomDropdown from './CustomDropdown';
+import CustomDropdown from '../CustomDropdown';
 import axios from 'axios';
-import { useGetAllLettingsQuery } from '../store/storeApi';
-import { useGlobalContext } from '../UserContext/UserContext';
+import { useGetAllLettingsQuery } from '../../store/storeApi';
+import { useGlobalContext } from '../../UserContext/UserContext';
 
 
 
@@ -86,7 +86,7 @@ const RentSection = () => {
       
       
     return (
-    <form onSubmit={handleSubmit(onSubmit)} className='bg-white w-full max-w-[38vw] m-vw'>
+    <form onSubmit={handleSubmit(onSubmit)} className='bg-white w-full max-w-[38vw]'>
         <div className="flex flex-col justify-center items-center p-vw w-full">
         <section className='flex justify-between items-centers w-full p-0.5vw'>
       <p className={`${ activeCategory === 'Student' ? 'bg-purple-950 text-white font-medium' : 'bg-white'} hover:bg-purple-800 hover:text-white cursor-pointer border-[1px] font-medium border-gray-400 text-center text-vw text-purple-950 p-vw w-17vw `}

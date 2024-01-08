@@ -3,10 +3,10 @@ import Layout from '../Layout/Layout'
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { about_award, about_story, doings, letting_awards, ourTeam, partnerBanner, ratings, studentHomes } from '../Data';
-import Card from '../Component/Card';
-import Reviews from '../Component/Reviews';
-import ContentImage from '../Component/ContentImage';
-import RightImageContainer from '../Component/RightImageContainer';
+import Card from '../Component/Cards/Card';
+import Reviews from '../Component/Common/Reviews';
+import ContentImage from '../Component/TextAndImageContainer/ContentImage';
+import RightImageContainer from '../Component/TextAndImageContainer/RightImageContainer';
 
 const About = () => {
     const lists = ["Student Lets", "Professional Lets", "Property Management", "Residential Sales", "Investment Sales", "Refurbishments", "Property Sourcing", "Block Management"];

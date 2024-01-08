@@ -28,7 +28,7 @@ const LettingProperty = ({tag, icon, quantity, weekPrice, location, monthPrice, 
                 <div className="grid grid-cols-2 items-start gap-2 -ml-vw">
                 <div className="flex w-[8vw] h-3vw m-vw items-center p-vw bg-blue-600">
                     <span className='text-white text-[0.8vw]'>{date}</span>
-                    <span className='text-white ml-0.5vw text-[0.7vw]'>{available}</span>
+                    <span className='text-white ml-0.5vw text-[0.7vw]'>{available? 'Available' : 'Not Available'}</span>
                 </div>
                 <div className="flex w-[8vw] m-vw h-3vw items-center p-vw bg-blue-600">
                 <Icon icon="mdi:sofa-single-outline" className='text-white text-[1.2vw]' />
@@ -40,7 +40,7 @@ const LettingProperty = ({tag, icon, quantity, weekPrice, location, monthPrice, 
                 </div>}
                 <div className="flex items-center w-[8vw] p-vw m-vw h-[3vw] bg-gray-300">
                     <Icon icon="uil:bed" className='text-gary-500 text-[1.2vw]' />
-                    <span className='text-gray-800 ml-0.5vw text-[0.6vw]'>{bedRooms}</span>
+                    <span className='text-gray-800 ml-0.5vw text-[0.6vw]'>{bedRooms} bedrooms</span>
                 </div>
                 </div>
             </section>

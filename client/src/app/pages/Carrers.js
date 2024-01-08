@@ -3,11 +3,11 @@ import Layout from "../Layout/Layout";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { benefits, carrerBanner, doings, history, interested, investInPeople, news, ourTeam, roles, scope, staff, teams, vacancies, workAtDanhamz} from "../Data";
-import Card from "../Component/Card";
+import Card from "../Component/Cards/Card";
 import RecruitmentRule from "../Component/RecruitmentRule";
-import News from "../Component/News";
-import RightImageContainer from "../Component/RightImageContainer";
-import LeftImageContainer from "../Component/LeftImageContainer";
+import News from "../Component/Common/News";
+import RightImageContainer from "../Component/TextAndImageContainer/RightImageContainer";
+import LeftImageContainer from "../Component/TextAndImageContainer/LeftImageContainer";
 import Teams from "../Component/Teams";
 
 const Carrers = () => {

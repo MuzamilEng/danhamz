@@ -14,6 +14,8 @@ const lettingsSchema = new mongoose.Schema({
     bathrooms: Number,
     reception: String,
     location: String,
+    lat: Number,
+    lng: Number,
     image1: {
          public_id: {type: String,},
        url: {type: String,}

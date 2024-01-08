@@ -1,17 +1,17 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
+import PageAddress from '../../Component/Common/PageAddress'
 import { hassleFreeRefub, howITWorks, insvestmentProperty, lettingYouProperty, overview_testimonials, propOtimisation, reasons, redubStudies, refub_nav, responseRefurbish, strategicApproach, toggleInfo, transformProperty, trustedTeam } from '../../Data'
-import ContentImage from '../../Component/ContentImage'
-import ListInfoContainer from '../../Component/ListInfoContainer'
-import ListInfoContainer2 from '../../Component/ListInfoContainer2'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
+import ListInfoContainer from '../../Component/TextAndImageContainer/ListInfoContainer'
+import ListInfoContainer2 from '../../Component/TextAndImageContainer/ListInfoContainer2'
 import { Link } from 'react-router-dom'
-import Card from '../../Component/Card'
+import Card from '../../Component/Cards/Card'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Services from '../../Component/Services'
-import Testimonial from '../../Component/Testimonial'
+import Services from '../../Component/Common/Services'
+import Testimonial from '../../Component/Common/Testimonial'
 
 const Refubs = () => {
   const settings = { arrows: true, slidesToShow: 4, slidesToScroll: 1, };

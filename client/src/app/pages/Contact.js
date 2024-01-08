@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../Layout/Layout";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import Map from "../Component/Map";
+import Map from "../Component/Map/Map";
 import { getInTouch, timings, timings2, timings3, timings4 } from "../Data";
 
 const Contact = () => {

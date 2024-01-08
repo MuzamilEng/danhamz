@@ -1,20 +1,21 @@
 import React, { useState } from 'react'
-import Layout from '../Layout/Layout'
-import PageAddress from './PageAddress'
-import { lettingProperties } from '../Data';
+import Layout from '../../Layout/Layout'
+import PageAddress from '../Common/PageAddress'
+import { lettingProperties } from '../../Data';
 import LettingProperty from './LettingProperty';
-import Map from './Map';
+import Map from '../Map/Map';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-import { useGetSalesByIdQuery } from '../store/storeApi';
+import { useGetLettingsByIdQuery, useGetSalesByIdQuery } from '../../store/storeApi';
 import PropertyRoomsInfo from './PropertyRoomsInfo';
 import PropertyImagesDetails from './PropertyImagesDetails';
+import PinLocation from '../Map/PinLocation';
 
 
 
 const PropertyDetails = ( ) => {
         const { id } = useParams();
-        const { data: propertyDetails, isLoading, isError } = useGetSalesByIdQuery(id);
+        const { data: propertyDetails, isLoading, isError } = useGetLettingsByIdQuery(id);
    
     if (isLoading) {
         return <div></div>;
@@ -29,7 +30,7 @@ const PropertyDetails = ( ) => {
             <PageAddress main='Home' category='Properties' subCategory={propertyDetails?.info} />
             <article className="flex justify-center items- bg-gray-200 p-4vw">
                 <PropertyImagesDetails img1={propertyDetails?.image1?.url} img2={propertyDetails?.image2?.url} img3={propertyDetails?.image3?.url} img4={propertyDetails?.image4?.url} img5={propertyDetails?.image5?.url} img6={propertyDetails?.image6?.url} img7={propertyDetails?.image7?.url} img8={propertyDetails?.image8?.url} img9={propertyDetails?.image9?.url} img10={propertyDetails?.image10?.url} img11={propertyDetails?.image11?.url} img12={propertyDetails?.image12?.url} img13={propertyDetails?.image13?.url} img14={propertyDetails?.image14?.url} img15={propertyDetails?.image15?.url} />
-              <PropertyRoomsInfo price={propertyDetails?.price} info={propertyDetails?.info} available={propertyDetails?.available} furnished={propertyDetails?.furnished} bills={propertyDetails?.bills} bedrooms={propertyDetails?.bedrooms} bathrooms={propertyDetails?.bathrooms} reception={propertyDetails?.reception} weekPrice={propertyDetails?.weekPrice} monthPrice={propertyDetails?.monthPrice} />
+              <PropertyRoomsInfo price={propertyDetails?.pricePerMonth}  info={propertyDetails?.info} available={propertyDetails?.available} furnished={propertyDetails?.furnished} bills={propertyDetails?.bills} bedrooms={propertyDetails?.bedrooms} bathrooms={propertyDetails?.bathrooms} reception={propertyDetails?.reception} weekPrice={propertyDetails?.weekPrice} monthPrice={propertyDetails?.monthPrice} />
             </article>
             <article className="w-full bg-white p-3vw flex justify-center items-start">
                 <section className="w-full max-w-[45vw]">
@@ -50,8 +51,8 @@ const PropertyDetails = ( ) => {
                         </section>
                     </div>
                 </section>
-                <section className="w-full max-w-[30vw] ml-2vw">
-                    <Map />
+                <section className="w-full ml-2vw">
+                    <PinLocation lat={propertyDetails?.lat} lng={propertyDetails?.lng}/>
                 </section>
             </article>
             <article className="w-full flex justify-center items-start p-4vw bg-white">

@@ -1,14 +1,14 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
-import ContentImage from '../../Component/ContentImage'
+import PageAddress from '../../Component/Common/PageAddress'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
 import { bestInterest, consultWithExpert, healthCheck, mortgageBroker, mortgage_nav, news } from '../../Data'
-import RightImageContainer from '../../Component/RightImageContainer'
-import LeftImageContainer from '../../Component/LeftImageContainer'
+import RightImageContainer from '../../Component/TextAndImageContainer/RightImageContainer'
+import LeftImageContainer from '../../Component/TextAndImageContainer/LeftImageContainer'
 import { Link } from 'react-router-dom'
-import ListInfoContainer from '../../Component/ListInfoContainer'
+import ListInfoContainer from '../../Component/TextAndImageContainer/ListInfoContainer'
 import RatingsContainer from '../../Component/RatingsContainer'
-import News from '../../Component/News'
+import News from '../../Component/Common/News'
 
 const Mortgages = () => {
   return (

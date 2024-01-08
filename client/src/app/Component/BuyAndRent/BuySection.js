@@ -1,11 +1,11 @@
 import React from 'react'
-import { buyContainer, rentContainer } from '../Data'
+import { buyContainer, rentContainer } from '../../Data'
 import { Icon } from '@iconify/react';
 
 
 const BuySection = () => {
     return (
-        <div className='bg-white w-full max-w-[38vw] m-vw'>
+        <div className='bg-white w-full max-w-[38vw]'>
             <div className="flex flex-col -ml-vw justify-center items-center p-vw w-full">
                 <section className='mt-0.5vw p-vw w-full'>
                     <div className="">

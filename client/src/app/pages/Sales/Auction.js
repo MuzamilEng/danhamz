@@ -1,14 +1,14 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
-import ContentImage from '../../Component/ContentImage'
+import PageAddress from '../../Component/Common/PageAddress'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
 import { auctionBenefits, auctionProcess, auction_nav, howItWorks, news, propertyAuction, stressFreeSale } from '../../Data'
-import RightImageContainer from '../../Component/RightImageContainer'
-import ListInfoContainer from '../../Component/ListInfoContainer'
-import ListInfoContainer2 from '../../Component/ListInfoContainer2'
+import RightImageContainer from '../../Component/TextAndImageContainer/RightImageContainer'
+import ListInfoContainer from '../../Component/TextAndImageContainer/ListInfoContainer'
+import ListInfoContainer2 from '../../Component/TextAndImageContainer/ListInfoContainer2'
 import { Link } from 'react-router-dom'
 import RatingsContainer from '../../Component/RatingsContainer'
-import News from '../../Component/News'
+import News from '../../Component/Common/News'
 
 const Auction = () => {
   return (

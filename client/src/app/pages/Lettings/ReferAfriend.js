@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
-import ContentImage from '../../Component/ContentImage'
+import PageAddress from '../../Component/Common/PageAddress'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
 import { refer_nav, referalScheme, stu_nav, terms } from '../../Data'
-import LeftImageContainer from '../../Component/LeftImageContainer'
-import RightImageContainer from '../../Component/RightImageContainer'
+import LeftImageContainer from '../../Component/TextAndImageContainer/LeftImageContainer'
+import RightImageContainer from '../../Component/TextAndImageContainer/RightImageContainer'
 import { Link } from 'react-router-dom'
 import RatingsContainer from '../../Component/RatingsContainer'
-import Testimonial from '../../Component/Testimonial'
+import Testimonial from '../../Component/Common/Testimonial'
 
 const ReferAfriend = () => {
   return (

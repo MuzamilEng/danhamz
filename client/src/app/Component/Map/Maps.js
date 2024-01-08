@@ -112,7 +112,6 @@ const Maps = ({setSearchedLocation}) => {
           />
           <Icon className='text-[1.3vw] cursor-pointer mr-[0.5vw]' icon="bi:search" color="black" onClick={handleSearchLocation} />
     </div>
-      {/* <ul className={`w-full absolute top-[3.4vw] left-0 z-50 ${!suggestions && !hideSuggestions ? 'bg-transparent border-none' : 'bg-white border-[1px] border-gray-300'} p-0.5vw max-w-[20vw]`}> */}
       <ul className={`w-full absolute top-[3.4vw] left-0 z-50 ${suggestions && 'bg-white'} max-w-[20vw]`}>
         {selectedSuggestion ? (
           <li className='text-vw p-0.3vw' onClick={() => handleSuggestionClick(selectedSuggestion)}>

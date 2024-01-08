@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import Layout from '../../Layout/Layout'
 import { Icon } from "@iconify/react";
-import PageAddress from '../../Component/PageAddress'
-import ContentImage from '../../Component/ContentImage'
-import RentSection from '../../Component/RentSection'
-import BuySection from '../../Component/BuySection'
+import PageAddress from '../../Component/Common/PageAddress'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
+import RentSection from '../../Component/BuyAndRent/RentSection'
+import BuySection from '../../Component/BuyAndRent/BuySection'
 import { aBit, area_guide, families, lettingProperties, news, ourTeam, pr_banner, professionalCard, ratings, repair_report, teams, tenantNews, young_pr } from '../../Data'
-import Banner from '../../Component/Banner'
-import LettingProperty from '../../Component/LettingProperty'
+import Banner from '../../Component/Common/Banner'
+import LettingProperty from '../../Component/PropertyDetails/LettingProperty'
 import { Link } from 'react-router-dom'
-import LeftImageContainer from '../../Component/LeftImageContainer'
-import Reviews from '../../Component/Reviews'
-import RightImageContainer from '../../Component/RightImageContainer'
+import LeftImageContainer from '../../Component/TextAndImageContainer/LeftImageContainer'
+import Reviews from '../../Component/Common/Reviews'
+import RightImageContainer from '../../Component/TextAndImageContainer/RightImageContainer'
 import Process from '../../Component/Process';
-import CatagoryCard from '../../Component/CatagoryCard';
-import News from '../../Component/News';
+import CatagoryCard from '../../Component/Cards/CatagoryCard';
+import News from '../../Component/Common/News';
 
 const Professionals = () => {
     const [showRentSection, setShowRentSection] = useState(true);

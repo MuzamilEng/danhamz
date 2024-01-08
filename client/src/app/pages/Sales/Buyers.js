@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
+import PageAddress from '../../Component/Common/PageAddress'
 import { Buyer_nav, choosingArea, insvestmentProperty, localOrOnlineAgent, news, nextInvestment, properties } from '../../Data'
-import ContentImage from '../../Component/ContentImage'
-import RentSection from '../../Component/RentSection'
-import BuySection from '../../Component/BuySection'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
+import RentSection from '../../Component/BuyAndRent/RentSection'
+import BuySection from '../../Component/BuyAndRent/BuySection'
 import { Link } from 'react-router-dom'
-import Card from '../../Component/Card'
+import Card from '../../Component/Cards/Card'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Property from '../../Component/Property'
-import LeftImageContainer from '../../Component/LeftImageContainer'
-import RightImageContainer from '../../Component/RightImageContainer'
-import Reviews from '../../Component/Reviews'
+import Property from '../../Component/PropertyDetails/Property'
+import LeftImageContainer from '../../Component/TextAndImageContainer/LeftImageContainer'
+import RightImageContainer from '../../Component/TextAndImageContainer/RightImageContainer'
+import Reviews from '../../Component/Common/Reviews'
 import RatingsContainer from '../../Component/RatingsContainer'
-import News from '../../Component/News'
+import News from '../../Component/Common/News'
 
 const Buyers = () => {
   const [showRentSection, setShowRentSection] = useState(true);

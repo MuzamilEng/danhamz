@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { allNews, newsCategory } from "../Data";
-import News from "../Component/News";
+import News from "../Component/Common/News";
 
 const NewsComponent = () => {
   return (

@@ -1,26 +1,26 @@
 import React, { useState } from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
+import PageAddress from '../../Component/Common/PageAddress'
 import { Remembering, abit_about, catagories, catagoryCard, danhamzList, downloadBook, leedsGuide, lettingProperties, news, propertyClean, property_loc, quick_search, reasons, rep_report, smart_rent, stu_accommodation, stu_nav, student_search, testimonial, thingsToremember, toggleInfo } from '../../Data'
-import ContentImage from '../../Component/ContentImage'
-import RentSection from '../../Component/RentSection'
-import BuySection from '../../Component/BuySection'
-import RightImageContainer from '../../Component/RightImageContainer';
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
+import RentSection from '../../Component/BuyAndRent/RentSection'
+import BuySection from '../../Component/BuyAndRent/BuySection'
+import RightImageContainer from '../../Component/TextAndImageContainer/RightImageContainer';
 import { Link } from 'react-router-dom'
-import LettingProperty from '../../Component/LettingProperty'
-import LeftImageContainer from '../../Component/LeftImageContainer'
+import LettingProperty from '../../Component/PropertyDetails/LettingProperty'
+import LeftImageContainer from '../../Component/TextAndImageContainer/LeftImageContainer'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Card from '../../Component/Card'
-import SimpleProcess from '../../Component/SimpleProcess'
+import Card from '../../Component/Cards/Card'
+import SimpleProcess from '../../Component/Common/SimpleProcess'
 import Teams from '../../Component/Teams'
-import Reviews from '../../Component/Reviews'
+import Reviews from '../../Component/Common/Reviews'
 import RatingsContainer from '../../Component/RatingsContainer'
-import Testimonial from '../../Component/Testimonial'
-import Services from '../../Component/Services'
-import News from '../../Component/News'
-import CatagoryCard from '../../Component/CatagoryCard'
+import Testimonial from '../../Component/Common/Testimonial'
+import Services from '../../Component/Common/Services'
+import News from '../../Component/Common/News'
+import CatagoryCard from '../../Component/Cards/CatagoryCard'
 
 const Students = () => {
   const [showRentSection, setShowRentSection] = useState(true);

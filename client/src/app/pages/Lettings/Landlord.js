@@ -1,18 +1,18 @@
 import React from 'react'
 import Layout from '../../Layout/Layout'
-import PageAddress from '../../Component/PageAddress'
+import PageAddress from '../../Component/Common/PageAddress'
 import { findTenant, land_testimonial, landlord_nav, catagoryCard, letProperty,news, makingYourProperty, partnerBanner, rentalValue, landlordServices } from '../../Data'
-import ContentImage from '../../Component/ContentImage'
-import Card from '../../Component/Card'
-import Banner from '../../Component/Banner'
+import ContentImage from '../../Component/TextAndImageContainer/ContentImage'
+import Card from '../../Component/Cards/Card'
+import Banner from '../../Component/Common/Banner'
 import { Link } from 'react-router-dom'
-import LeftImageContainer from '../../Component/LeftImageContainer'
-import RightImageContainer from '../../Component/RightImageContainer'
-import Testimonial from '../../Component/Testimonial'
+import LeftImageContainer from '../../Component/TextAndImageContainer/LeftImageContainer'
+import RightImageContainer from '../../Component/TextAndImageContainer/RightImageContainer'
+import Testimonial from '../../Component/Common/Testimonial'
 import RatingsContainer from '../../Component/RatingsContainer'
 import Teams from "../../Component/Teams"
-import News from '../../Component/News'
-import CatagoryCard from '../../Component/CatagoryCard'
+import News from '../../Component/Common/News'
+import CatagoryCard from '../../Component/Cards/CatagoryCard'
 
 
 

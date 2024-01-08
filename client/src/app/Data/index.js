@@ -2530,8 +2530,14 @@ export const start = [
 // property search page
 
 export const rentContainer1 = [
+    // minPrice: null,
+        // maxPrice: null,
+        // bedrooms: null,
+        // propertyType: '',
+        // location: '',
+        // bathrooms: null,
     {
-        noOfbeds: 'How many bedrooms do you need?',
+        noOfbeds: 'How many bedrooms do you need?', name: "bedrooms",
         quantity:[
             {count: "1", value: "1"},
             {count: "2", value: "2"},
@@ -2546,18 +2552,24 @@ export const rentContainer1 = [
         ],
         container: [
             {
-                title: "What is your budget?",
+                title: "What is your budget?", name: "maxPrice",
                 type: "select",
                 options: [
-                    { title: "No Preferences", value: "no Preferences"}, 
-                    { title: "Less than $1000", value: "Less than $1000"},
-                    { title: "$1000 - $2000", value: "$1000 - $2000"},
-                    { title: "$2000 - $3000", value: "$2000 - $3000" }
+                    {
+                        title: "No Preferences", value: null
+                    }, 
+                    {
+                        title: "Less than $1000", value: 1000
+                    }, {
+                        title: "$1000 - $2000", value: 2500
+                    },{
+                        title: "$2000 - $3000", value: 3000
+                    }
                 ]
             },
             {
                 title: "Location (tick all that apply)",
-                type: "checkbox",
+                type: "checkbox", name: "location",
                 options: [
                     { title: "No Preferences", value: "no Preferences"}, 
                     {  title: "Armley", value: "Armley" },
@@ -2581,7 +2593,7 @@ export const rentContainer1 = [
             },
             {
                 title: "How many bathrooms do you need?",
-                type: "select",
+                type: "select", name: "bathrooms",
                 options: [
                     {title: "No Minimum", value: "No Minimum"}, 
                     {title: "1", value: "1"},
@@ -2594,7 +2606,7 @@ export const rentContainer1 = [
             },
             {
                 title: "Property Type",
-                type: "select",
+                type: "select", name: "propertyType",
                 options: [
                     {title: "No Preference", value: "No Preference"}, 
                     {title: "Appartment", value: "Appartment"},
@@ -2612,7 +2624,7 @@ export const rentContainer1 = [
             },
         ],
         availableOptions:[
-                    { title: "No Preferences", value: "no Preferences"}, 
+                    { title: "No Preferences", value: "no Preferences"},
                     { title: "From July 2023", value: "From July 2023"},
                     { title: "From May 2023", value: "From May 2023"},
                     { title: "From Next 2 Months", value: "From Next 2 Months" }
@@ -3803,7 +3815,7 @@ export const propertyUpdateForm = [
     },
     {
         label: "Property Type",
-        name: "PropertyType",
+        name: "propertyType",
         type: 'select',
         placeholder: "Property Type",
         options: [
@@ -3832,8 +3844,8 @@ export const propertyUpdateForm = [
         type: 'select',
         placeholder: "Choose a category",
         options: [
-            {label: "Furnished", value: "Furnished"},
-            {label: "Unfurnished", value: "Unfurnished"},
+            {label: "Furnished", value: "furnished"},
+            {label: "Unfurnished", value: "unfurnished"},
         ]
     },
     {
@@ -3938,6 +3950,7 @@ export const propertyUpdateForm = [
         name: "aditionalGuide",
         type: 'textarea',
         placeholder: "Enter the details",
-    }
+    },
+
 ]
 // propert-update form

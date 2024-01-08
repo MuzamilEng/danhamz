@@ -3,41 +3,43 @@ import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import RentSection from '../Component/RentSection'
+import RentSection from '../Component/BuyAndRent/RentSection'
 import { approach, banner, investors, lettingProperties, news, partnerBanner, properties, ratings, studentHomes, toggleInfo, welcome } from '../Data';
-import Category from '../Component/Category';
-import Property from '../Component/Property';
-import Reviews from '../Component/Reviews';
-import LettingProperty from '../Component/LettingProperty';
-import Services from '../Component/Services';
-import News from '../Component/News';
-import BuySection from '../Component/BuySection';
+import Category from '../Component/Common/Category';
+import Property from '../Component/PropertyDetails/Property';
+import Reviews from '../Component/Common/Reviews';
+import LettingProperty from '../Component/PropertyDetails/LettingProperty';
+import Services from '../Component/Common/Services';
+import News from '../Component/Common/News';
+import BuySection from '../Component/BuyAndRent/BuySection';
 import Layout from '../Layout/Layout';
-import LeftImageContainer from '../Component/LeftImageContainer';
+import LeftImageContainer from '../Component/TextAndImageContainer/LeftImageContainer';
 import RatingsContainer from '../Component/RatingsContainer';
 import { useGlobalContext } from '../UserContext/UserContext';
+import { useGetAllLettingsQuery } from '../store/storeApi';
 
 const Home = () => {
   const {salesProperties, setSalesProperties} = useGlobalContext();
+  const {data:lettingsProperties} = useGetAllLettingsQuery();
     const [showRentSection, setShowRentSection] = useState(true);
   const images = ["/images/slider_1.png", "/images/landlord_0.jpg", "/images/slider_2.jpg"];
 
-  const settings = { dots: true, arrows: false, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
+  const settings = { dots: false, arrows: false, infinite: true, speed: 500, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000 };
   return (
     <div>
       <Layout>
-          <section className='relative'>
-          <div className="absolute flex left-[10vw] top-0">
+          <section className='relative'>         
+          </section>
+          <article className='flex -mt-[1.5vw] flex-col justify-center items-center w-full p-2vw'>
+            <div className=" xl:grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 -ml-3vw justify-between items-start">
+              <div className="w-full">
+          <div className="flex mt-vw">
             <p className={`${showRentSection ? 'bg-white' : 'bg-gray-300'} text-vw w-7vw cursor-pointer hover:bg-gray-300 p-vw text-center`} onClick={() => setShowRentSection(true)} > Rent</p>
             <p className={`${showRentSection ? 'bg-gray-300' : 'bg-white'} text-vw ml-0.3vw w-7vw hover:bg-white cursor-pointer p-vw text-center`} onClick={() => setShowRentSection(false)} >Buy </p>
           </div>
-          </section>
-          <article className='flex mt-[0.5vw] flex-col justify-center items-center w-full p-2vw'>
-            <div className="flex -ml-3vw justify-between items-start">
-              <div className="w-full">
                 {showRentSection ? <RentSection /> : <BuySection />}
               </div>
-              <section className='w-[37vw] mt-vw ml-2vw'>
+              <section className='w-[37vw] mt-5vw ml-vw'>
                 <Slider {...settings}>
                   {images.map((image, index) => (
                     <div key={index}>
@@ -50,7 +52,7 @@ const Home = () => {
           </article>
           <article className='w-full bg-[#ffff] flex justify-center items-center p-4vw'>
             {banner?.map((item, index) => (
-              <section className='flex justify-between items-start' key={index}>
+              <section className='xl:grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 justify-between items-start' key={index}>
                 <div className="w-full max-w-[40vw]">
                   <h2 className='text-blue-900 text-[1.5vw] font-semibold w-[35vw]'>{item?.title}</h2>
                   <p className='text-blue-900 font-medium text-[1.4vw]'>{item?.welcome}</p>
@@ -97,9 +99,6 @@ const Home = () => {
                 <Property key={index} tag={item?.tag} icon={item?.icon} quantity={item?.bedrooms} price={item?.price} location={item?.location} icon2={item?.pics?.[0]?.icon} bed_rooms={item?.bedrooms} img={item?.image1?.url} img2={item?.image2?.url} img3={item?.image3?.url} img4={item?.image4?.url} img5={item?.image5?.url} />
                 </Link>
               ))}
-              {/* {properties?.map((item, index) => (
-                <Property key={index} tag={item?.tag} icon={item?.icon} quantity={item?.pics?.[0]?.quantity} price={item?.price} location={item?.location} icon2={item?.pics?.[0]?.icon} bed_rooms={item?.bed_rooms} img={item?.img} />
-              ))} */}
             </div>
             <Link to="/" className="bg-pink-400 mt-2vw block p-vw m-vw text-white font-medium text-[0.8vw] text-center">Start your search</Link>
           </div>
@@ -141,9 +140,14 @@ const Home = () => {
           <div className="flex flex-col justify-center items-center w-full p-3vw">
             <h1 className='text-blue-950 text-2vw font-medium capitalize'>Latest Properties to Let</h1>
             <div className="grid grid-cols-4 gap-2 mt-2vw">
-              {lettingProperties?.map((item, index) => (
-                //  const LettingProperty = ({tag, icon, quantity, weekPrice, location, monthPrice, bedRooms, img, bed_icon, available, furnished_icon,furnished,bill_icon, bills, date}) => {          // 
-                <LettingProperty key={index} bedRooms={item?.bedRooms} available={item?.available} icon={item?.icon} img={item?.img} quantity={item?.quantity} weekPrice={item?.weekPrice} monthPrice={item?.monthPrice} bed_icon={item?.bed_icon} location={item?.location} furnished={item?.furnished} furnished_icon={item?.furnished_icon} bill_icon={item?.bill_icon} bills={item?.bills} date={item?.date} />
+              {lettingsProperties?.slice(0, 4)?.map((item, index) => (
+               <Link to={`/details/${item?._id}`}>
+                <LettingProperty key={index} id={item?._id}
+                 quantity={item?.bedrooms}
+                 weekPrice={item?.pricePerWeek} monthPrice={item?.pricePerMonth} location={item?.propertyName}
+                 bedRooms={item?.bedrooms}  available={item?.available} furnished={item?.furnished} bills={item?.bills}
+                img={item?.image1?.url} img2={item?.image2?.url} img3={item?.image3?.url} img4={item?.image4?.url} img5={item?.image5?.url} img6={item?.image6?.url} img7={item?.image7?.url} img8={item?.image8?.url} img9={item?.image9?.url} img10={item?.image10?.url} img11={item?.image11?.url} img12={item?.image12?.url} img13={item?.image13?.url} img14={item?.image14?.url} img15={item?.image15?.url} />
+                </Link> 
               ))}
             </div>
             <div className="mt-2vw">

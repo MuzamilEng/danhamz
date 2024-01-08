@@ -3,9 +3,12 @@ const cloudinary = require('../cloudinary.config')
 
 const createLettings = async (req, res) => {
   const {
-    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
+    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception, lat, lng,
     location, keyFeatures, lettingDetails, propertyFor, propertyType, areaGuide, livingRoomGuide, kitchenGuide, bedroomsGuide, bathroomsGuide, externalsGuide, aditionalGuide,
   } = req.body;
+  console.log(req.body, "req.body");
+  const parsedLat = Number(lat?.[1]);
+  const parsedLng = Number(lng?.[1]);
 
   const imageUrls = [];
 
@@ -24,7 +27,7 @@ const createLettings = async (req, res) => {
     );
 
     const newContent = new Letting({
-      propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
+      propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception, lat:parsedLat, lng:parsedLng,
       location, keyFeatures, lettingDetails, propertyFor, propertyType, areaGuide, livingRoomGuide, kitchenGuide, bedroomsGuide, bathroomsGuide, externalsGuide, aditionalGuide, ...Object.assign({}, ...imageUrls),
     });
 
@@ -46,12 +49,15 @@ const createLettings = async (req, res) => {
 // Function to update an existing letting
 const updateLettings = async (req, res, next) => {
   const {
-    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
+    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,lat, lng,
     location, keyFeatures, lettingDetails, propertyFor, propertyType, areaGuide, livingRoomGuide, kitchenGuide, bedroomsGuide, bathroomsGuide, externalsGuide, aditionalGuide,
   } = req.body;
-
+  console.log(req.body);
+  const parsedLat = Number(lat?.[1]);
+const parsedLng = Number(lng?.[1]);
+console.log(lat, lng, "lat and lng");
   const updateFields = {
-    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,
+    propertyName, pricePerWeek, pricePerMonth, info, availableDate, furnished, bills, bedrooms, bathrooms, reception,  lat: typeof lat === 'object' ? parsedLat: lat, lng: typeof lng === 'object' ? parsedLng: lng,
     location, keyFeatures, lettingDetails, propertyFor, propertyType,areaGuide, livingRoomGuide, kitchenGuide, bedroomsGuide, bathroomsGuide, externalsGuide, aditionalGuide,
   };
 

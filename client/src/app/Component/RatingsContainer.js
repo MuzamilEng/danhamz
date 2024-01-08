@@ -1,6 +1,6 @@
 import React from 'react'
 import { ratings } from '../Data'
-import Reviews from './Reviews'
+import Reviews from './Common/Reviews'
 
 const RatingsContainer = () => {
   return (

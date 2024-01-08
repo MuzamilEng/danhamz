@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Layout from '../Layout/Layout'
-import RentSection from '../Component/RentSection';
-import BuySection from '../Component/BuySection';
-import PageAddress from '../Component/PageAddress';
-import RentProperty from '../Component/RentProperty';
+import RentSection from '../Component/BuyAndRent/RentSection';
+import BuySection from '../Component/BuyAndRent/BuySection';
+import PageAddress from '../Component/Common/PageAddress';
+import RentProperty from '../Component/BuyAndRent/RentProperty';
 
 const SearchProperty = () => {
     const [showRentSection, setShowRentSection] = useState(true);

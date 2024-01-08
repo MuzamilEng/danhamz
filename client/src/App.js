@@ -19,7 +19,7 @@ import Buyers from './app/pages/Sales/Buyers'
 import Mortgages from './app/pages/Sales/Mortgages'
 import InvestmentSales from './app/pages/Sales/InvestmentSales';
 import Auction from './app/pages/Sales/Auction';
-import PropertyDetails from './app/Component/PropertyDetails'
+import PropertyDetails from './app/Component/PropertyDetails/PropertyDetails'
 import PropertyValue from './app/pages/Sales/PropertyValue'
 import Refubs from './app/pages/Invest/Refubs'
 import InvestInLeeds from './app/pages/Invest/InvestInLeeds'
@@ -67,6 +67,7 @@ const App = () => {
         <Route path='/propertySearch' element={<PropertySearch />} />
         <Route path='/cms' element={<ShowProperties />} />
         <Route path='/edit-property/:id' element={<UpdateProperty />} />
+        <Route path='/add-lettings-property/' element={<UpdateProperty />} />
       </Routes>
     </>
   )
